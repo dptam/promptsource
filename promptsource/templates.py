@@ -40,6 +40,7 @@ INCLUDED_USERS = {
     "Helsinki-NLP",
     "Muennighoff",
     "facebook",
+    "codeparrot",
 }
 
 # These are the metrics with which templates can be tagged
