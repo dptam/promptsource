@@ -369,3 +369,16 @@ templates:
       original_task: true
     name: gpt-3-en-fr-source+target
     reference: GPT 3 paper
+  fc3b96b0-de5e-4ff4-b7bb-cda348ff7fcf: !Template
+    answer_choices: null
+    id: fc3b96b0-de5e-4ff4-b7bb-cda348ff7fcf
+    jinja: 'Q: What is the French translation of {{translation["en"]}} A:
+      |||  {{translation["fr"]}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: false
+      languages: []
+      metrics:
+      - BLEU
+      original_task: true
+    name: gpt3-en-fr
+    reference: GPT 3 paper
