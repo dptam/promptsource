@@ -76,12 +76,12 @@ templates:
     answer_choices: null
     id: e3c60771-5e99-49b1-b477-c2b69f645d59
     jinja: "I will first show a news article and then provide a summary of it in Spanish:\n\
-      Resume el siguiente art\xEDculo: {{text}}\n ===\nResumen: ||| {{target}}"
+      Article: {{text}}\n ===\nSummary: ||| {{target}}"
     metadata: !TemplateMetadata
       choices_in_prompt: false
       metrics:
       - BLEU
       - ROUGE
       original_task: true
-    name: language_specific_prompt
+    name: palm_prompt
     reference: ''
