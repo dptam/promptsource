@@ -18,7 +18,7 @@ templates:
   03bf5bf1-50dc-4278-ae77-c21fc9bb5b38: !Template
     answer_choices: null
     id: 03bf5bf1-50dc-4278-ae77-c21fc9bb5b38
-    jinja: 'What is the Chinese translation of: {{translation["en"]}}
+    jinja: 'Q: What is the Chinese translation of: {{translation["en"]}} A:
 
       |||  {{translation["zh"]}}'
     metadata: !TemplateMetadata
@@ -27,12 +27,12 @@ templates:
       metrics:
       - BLEU
       original_task: true
-    name: gpt-3-en-zh-target
+    name: gpt-3-en-zh
     reference: GPT-3 paper
   08d528bb-62b8-407f-a917-cd8f2f039dc0: !Template
     answer_choices: null
     id: 08d528bb-62b8-407f-a917-cd8f2f039dc0
-    jinja: 'What is the English translation of : {{translation["zh"]}}
+    jinja: 'Q: What is the English translation of: {{translation["zh"]}} A:
 
       |||  {{translation["en"]}}'
     metadata: !TemplateMetadata
@@ -41,7 +41,7 @@ templates:
       metrics:
       - BLEU
       original_task: true
-    name: gpt-3-zh-en-target
+    name: gpt-3-zh-en
     reference: GPT-3 paper
   0c961ed2-1fd4-425a-87cf-4f597464afd3: !Template
     answer_choices: null
