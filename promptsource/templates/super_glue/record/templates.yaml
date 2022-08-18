@@ -20,7 +20,7 @@ templates:
     answer_choices: '{{ entities | join("|||") }}'
     id: 11e27d59-b1f5-43a1-9ccc-17f1c3249173
     jinja: "The following document has been corrupted. Tell me what \"{{\"@placeholder\"\
-      }}\" is referring to.\n\nDocument: {{ passage }} \n{{ query }} \n||| {% if (\
+      }}\" is referring to.\n\nDocument: {{ passage }} \n{{ query }} \nWhat does it refer to?||| {% if (\
       \ answers | length ) > 0 %}{{ answers | choice }}\n{% endif %}"
     metadata: !TemplateMetadata
       choices_in_prompt: false

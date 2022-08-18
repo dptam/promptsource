@@ -44,9 +44,8 @@ templates:
 
       Question: {{question}}
 
-      |||
-
-      {{answers["text"][0]}}'
+      
+      Answer: ||| {{answers["text"][0]}}'
     metadata: !TemplateMetadata
       choices_in_prompt: false
       languages:
