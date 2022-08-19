@@ -107,7 +107,7 @@ templates:
     jinja: '{{ context[:answers.answer_start[0]-5]}}...
 
     Continue the above, such that it answers "{{question}}": 
-    ||| {{ context[answers.answer_start[0]-5]:}}'
+    ||| {{ context[answers.answer_start[0]-5:]}}'
     metadata: !TemplateMetadata
       choices_in_prompt: false
       languages: []
