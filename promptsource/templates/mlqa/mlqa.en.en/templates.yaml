@@ -120,7 +120,7 @@ templates:
     answer_choices: null
     id: 420fffe1-c752-43f8-bf50-ecf009703ef0
     jinja: 'I found a text that answers "{{question}}" with {{answers.text[0]}}.
-    It starts with {{ context[:10] }}. Can you continue it?
+    It starts with "{{ context[:10] }}". Can you continue it?
     
     ||| {{ context[10:] }}'
     metadata: !TemplateMetadata
