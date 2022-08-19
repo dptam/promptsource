@@ -81,7 +81,7 @@ templates:
     id: d11378d1-2f24-4509-bbbc-bfa2921300d5
     jinja: 'The _ in the sentence below refers to {{option1}}. True or False?
 
-      {{sentence}}|||
+      {{sentence}} |||
 
       {{answer_choices[answer|int - 1]}}'
     metadata: !TemplateMetadata
@@ -97,7 +97,7 @@ templates:
     answer_choices: '{{option1}} ||| {{option2}}'
     id: e7e42e9e-bc57-46ed-ad8a-76a5b90a5bb9
     jinja: "{{sentence}}\nReplace the _ in the above sentence with the correct option:\
-      \ \n- {{option1}}\n- {{option2}}\n|||\n{% if answer == '1' %} {{option1}} {%\
+      \ \n- {{option1}}\n- {{option2}}\nReplacement: |||\n{% if answer == '1' %} {{option1}} {%\
       \ else %} {{ option2 }} {% endif %}"
     metadata: !TemplateMetadata
       choices_in_prompt: true
