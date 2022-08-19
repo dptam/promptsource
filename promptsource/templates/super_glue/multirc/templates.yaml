@@ -188,8 +188,7 @@ templates:
   d3d78b88-8845-45b5-935a-6451da00b285: !Template
     answer_choices: No ||| Yes
     id: d3d78b88-8845-45b5-935a-6451da00b285
-    jinja: "Given the question {{ question }}, write a paragraph explaining it. ||| {{ paragraph }}{%\
-      \ endif %}"
+    jinja: "Given the question {{ question }}, write a paragraph explaining it. ||| {{ paragraph }}"
     metadata: !TemplateMetadata
       choices_in_prompt: false
       languages:
