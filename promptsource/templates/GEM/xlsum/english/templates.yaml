@@ -97,7 +97,7 @@ templates:
     answer_choices: null
     id: hc0096aa-e9db-4e96-85b4-0740085fee55
     jinja: '{{text[:500]}}... Continue the article for exactly another 5000 characters: |||
-    {% if len(text) > 5500 %}
+    {% if text|length > 5500 %}
     {{text[500:5500]}}
     {% endif %}'
     metadata: !TemplateMetadata
