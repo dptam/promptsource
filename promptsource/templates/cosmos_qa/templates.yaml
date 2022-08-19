@@ -262,7 +262,7 @@ templates:
 
       - {{ answer_choices | join("\n - ") }}
 
-      What's the best?
+      What is the best?
       |||
 
       {{ answer_choices[label] }}'
@@ -300,4 +300,4 @@ templates:
       - Accuracy
       original_task: false
     name: xp3longcontext
-    reference: Template with only question and generates the answer
+    reference: ''
