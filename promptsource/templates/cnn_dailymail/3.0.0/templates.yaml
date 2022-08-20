@@ -42,7 +42,7 @@ templates:
       Article: {{article}}
 
 
-      In 2 or 3 sentences, what are the main points one should remember from
+      In 2 to 4 sentences, what are the main points one should remember from
       this news article?
 
       |||
@@ -56,7 +56,7 @@ templates:
       - BLEU
       - ROUGE
       original_task: true
-    name: 2_or_3_sentences
+    name: 2_to_4_sentences
     reference: ''
   892cbf90-2c19-4664-943e-a004a0c9a7fa: !Template
     answer_choices: null
