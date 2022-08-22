@@ -21,7 +21,9 @@ templates:
     id: 5080f912-fac8-400f-983c-944baf9b10c0
     jinja: 'In the sentence below, does the _ stand for {{answer_choices[0]}} or {{answer_choices[1]}}?
 
-      {{sentence}}|||
+      {{sentence}}
+      
+      Write out what _ stands for. |||
 
       {{answer_choices[answer | int - 1]}}'
     metadata: !TemplateMetadata
@@ -79,9 +81,9 @@ templates:
   d11378d1-2f24-4509-bbbc-bfa2921300d5: !Template
     answer_choices: True ||| False
     id: d11378d1-2f24-4509-bbbc-bfa2921300d5
-    jinja: 'The _ in the sentence below refers to {{option1}}. True or False?
-
-      {{sentence}} |||
+    jinja: '{{sentence}}
+      
+      The _ in the sentence above refers to {{option1}}. True or False? |||
 
       {{answer_choices[answer|int - 1]}}'
     metadata: !TemplateMetadata
