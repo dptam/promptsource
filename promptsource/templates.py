@@ -356,7 +356,7 @@ class Template(yaml.YAMLObject):
         rtemplate = env.from_string(jinja)
         protected_example = self._escape_pipe(example)
         rendered_choices = rtemplate.render(**protected_example)
-        return [self._unescape_pipe(answer_choice.strip()) for answer_choice in rendered_choices.split("|||")]
+        return [self._unescape_pipe(answer_choice) for answer_choice in rendered_choices.split("|||")]
 
     def get_fixed_answer_choices_list(self):
         """
@@ -412,7 +412,7 @@ class Template(yaml.YAMLObject):
 
         # Splits on the separator, and then replaces back any occurrences of the
         # separator in the original example
-        parts = [self._unescape_pipe(part).strip() for part in rendered_example.split("|||")]
+        parts = [self._unescape_pipe(part) for part in rendered_example.split("|||")]
         if parts == [""]:
             # Handles the case of blank results
             # Example: `tydiqa` where prompts are conditionned on the language and thus most of the time will return a blank result
