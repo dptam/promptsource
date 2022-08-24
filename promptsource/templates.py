@@ -356,7 +356,7 @@ class Template(yaml.YAMLObject):
         rtemplate = env.from_string(jinja)
         protected_example = self._escape_pipe(example)
         rendered_choices = rtemplate.render(**protected_example)
-        return [self._unescape_pipe(answer_choice) for answer_choice in rendered_choices.split("|||")]
+        return [self._unescape_pipe(answer_choice).strip() for answer_choice in rendered_choices.split("|||")]
 
     def get_fixed_answer_choices_list(self):
         """
@@ -372,7 +372,7 @@ class Template(yaml.YAMLObject):
         if len(variables) == 0:
             rtemplate = env.from_string(jinja)
             rendered_choices = rtemplate.render()
-            return [answer_choice for answer_choice in rendered_choices.split("|||")]
+            return [answer_choice.strip() for answer_choice in rendered_choices.split("|||")]
         else:
             return None
 
