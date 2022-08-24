@@ -421,7 +421,7 @@ class Template(yaml.YAMLObject):
             raise ValueError("Prompt did not produce an input and at least one target.")
 
         # Remove double whitespace
-        if parts[0][-1].isspace() and all(p[0].isspace() for p in parts[1:]):
+        if parts[0][-1] == " " and all(p[0] == " " for p in parts[1:]):
             parts[0] = parts[0][:-1]
 
         return parts[0].lstrip(), [p.rstrip() for p in parts[1:]]
