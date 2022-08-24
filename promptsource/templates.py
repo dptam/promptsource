@@ -420,7 +420,11 @@ class Template(yaml.YAMLObject):
         if len(parts) < 2:
             raise ValueError("Prompt did not produce an input and at least one target.")
 
-        return parts[0], parts[1:]
+        # Remove double whitespace
+        if parts[0][-1].isspace() and all(p[0].isspace() for p in parts[1:]):
+            parts[0] = parts[0][:-1]
+
+        return parts[0].lstrip(), [p.rstrip() for p in parts[1:]]
 
     pipe_protector = "3ed2dface8203c4c9dfb1a5dc58e41e0"
 
