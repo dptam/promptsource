@@ -1,9 +1,9 @@
 dataset: xnli
 subset: ur
 templates:
-  37d2f061-06b0-4aa3-af53-871a2b06748f: !Template
+  37d2f261-06b0-4aa3-af53-871a2b06748f: !Template
     answer_choices: صحیح ||| کچھ نہیں ||| غلط
-    id: 37d2f061-06b0-4aa3-af53-871a2b06748f
+    id: 37d2f261-06b0-4aa3-af53-871a2b06748f
     jinja: '{{premise}}
 
       سوال: {{hypothesis}} صحیح، غلط, یا کچھ نہیں؟ ||| {{ answer_choices[label] }}'
@@ -14,7 +14,7 @@ templates:
       metrics:
       - Accuracy
       original_task: true
-    name: GPT-3 style
+    name: GPT-3 style_urht
     reference: 'Same as reported in Figure G7 of the GPT-3 paper, except that there
       is no task identifying tokens like "anli R1: ".'
   443b5ab1-614e-4d3f-a782-6ccff4af2380: !Template
@@ -41,9 +41,9 @@ templates:
       original_task: null
     name: justified in saying_urmt
     reference: ''
-  9b75ff67-bb66-413b-a33d-325707b035d7: !Template
+  9b75ff77-bb66-413b-a33d-325707b035d7: !Template
     answer_choices: ہاں ||| ممکن ہے ||| نہیں
-    id: 9b75ff67-bb66-413b-a33d-325707b035d7
+    id: 9b75ff77-bb66-413b-a33d-325707b035d7
     jinja: 'فرض کرو {{premise}} ہم یہ نتیجہ اخذ کر سکتے ہیں "{{hypothesis}}"? ہاں
       ، نہیں ، یا ممکن ہے ؟ ||| {{ answer_choices[label] }} '
     metadata: !TemplateMetadata
@@ -53,11 +53,11 @@ templates:
       metrics:
       - Accuracy
       original_task: true
-    name: can we infer
+    name: can we infer_urht
     reference: Webson & Pavlick 2021
-  9bda8e36-c881-4c9a-a3a9-eec68388a6f6: !Template
+  9bda8e44-c881-4c9a-a3a9-eec68388a6f6: !Template
     answer_choices: ہاں ||| ممکن ہے ||| نہیں
-    id: 9bda8e36-c881-4c9a-a3a9-eec68388a6f6
+    id: 9bda8e44-c881-4c9a-a3a9-eec68388a6f6
     jinja: '{{premise}} کیا ہمارا یہ کہنا درست ہے "{{hypothesis}}"? ہاں ، نہیں ، یا
       ممکن ہے ؟ ||| {{ answer_choices[label] }} '
     metadata: !TemplateMetadata
@@ -67,7 +67,7 @@ templates:
       metrics:
       - Accuracy
       original_task: true
-    name: justified in saying
+    name: justified in saying_urht
     reference: Webson & Pavlick 2021
   ccce5ce7-a6bd-48c0-9cc9-f6b77309133f: !Template
     answer_choices: جی ہاں ||| شاید ||| نہیں
@@ -94,9 +94,9 @@ templates:
       original_task: null
     name: guaranteed/possible/impossible_urmt
     reference: ''
-  d44c2947-f8e0-49ea-9770-e59f0581a921: !Template
+  d44c2947-f8e0-49ea-9880-e59f0581a921: !Template
     answer_choices: یقینی ||| ممکن ||| نا ممکن
-    id: d44c2947-f8e0-49ea-9770-e59f0581a921
+    id: d44c2947-f8e0-49ea-9880-e59f0581a921
     jinja: "فرض کرو یہ صحیح ہے كہ {{premise}} \n\nاِس لیے, \"{{hypothesis}}\"  {{\"\
       یقینی\"}}, {{\"ممکن\"}}, یا {{\"نا ممکن\"}} ہے ؟ ||| {{ answer_choices[label]\
       \ }}"
@@ -107,11 +107,11 @@ templates:
       metrics:
       - Accuracy
       original_task: true
-    name: guaranteed/possible/impossible
+    name: guaranteed/possible/impossible_urht
     reference: Sanh et al. 2021
-  da368462-3a66-4222-9de1-05d66037a708: !Template
+  da368462-3a66-4222-9de1-05d66037a718: !Template
     answer_choices: بالکل صحیح ||| غیر یقینی ||| غلط
-    id: da368462-3a66-4222-9de1-05d66037a708
+    id: da368462-3a66-4222-9de1-05d66037a718
     jinja: '{{premise}} صرف مندرجہ بالا تشریح اور دنیا كے بارے میں اپنی معلومات كے
       مطابق, "{{hypothesis}}" بالکل صحیح ہے ، غلط ہے ، یا غیر یقینی ہے ؟ ||| {{ answer_choices[label]
       }}'
@@ -122,7 +122,7 @@ templates:
       metrics:
       - Accuracy
       original_task: true
-    name: MNLI crowdsource
+    name: MNLI crowdsource_urht
     reference: Adapted from Williams et al. 2018's instructions to crowdsourcing workers.
   db00c977-f972-4fd8-b841-c924d443d242: !Template
     answer_choices: درست ||| بے نتیجہ ||| غلط
