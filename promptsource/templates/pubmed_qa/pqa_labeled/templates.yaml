@@ -114,7 +114,7 @@ templates:
     name: Generate Question Title with long answer
     reference: ''
   91d481e5-fac6-4532-b013-5ac1235b6e1a: !Template
-    answer_choices: Yes ||| No ||| Maybe
+    answer_choices: yes ||| no ||| maybe
     id: 91d481e5-fac6-4532-b013-5ac1235b6e1a
     jinja: "Given a PubMed abstract: {{ context.contexts | join(\", \") }}\n\nAnswer\
       \ the question: \"{{question}}\" as YES, NO, MAYBE.\n||| \n{{final_decision}}\n\
