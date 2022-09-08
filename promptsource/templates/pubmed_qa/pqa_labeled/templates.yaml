@@ -49,7 +49,7 @@ templates:
     name: 'Generate Question Title '
     reference: Given abstract, generate title (which is in the form of a question)
   1e0a77f8-0eb4-40a1-814d-8a111df66e5e: !Template
-    answer_choices: Yes ||| No ||| Maybe
+    answer_choices: yes ||| no ||| maybe
     id: 1e0a77f8-0eb4-40a1-814d-8a111df66e5e
     jinja: "Question: \"{{ question }}\" \n\nAnswer: \"{{ long_answer }}\"\n\nSummarize\
       \ the above answer as YES, NO, or MAYBE? \n|||\n{{final_decision}}"
