@@ -81,3 +81,31 @@ templates:
       original_task: true
     name: write_abstract_en
     reference: xsum 'read_below_DOC_write_abstract' template
+  dfa7b514-7385-4855-bb90-253073a34fde: !Template
+    answer_choices: null
+    id: dfa7b514-7385-4855-bb90-253073a34fde
+    jinja: "{{target}}\n\nGiven the above summary, write a detailed text in {{source_language_name}} for it. ||| {{source}}"
+    metadata: !TemplateMetadata
+      choices_in_prompt: false
+      languages: []
+      metrics:
+      - ROUGE
+      - BLEU
+      original_task: true
+    name: xp3longwritearticle
+    reference: ''
+  dff8b414-7485-4855-bb90-253073a34fde: !Template
+    answer_choices: null
+    id: dff8b414-7485-4855-bb90-253073a34fde
+    jinja: "{{target}}\n\nI'm interested in that, but I only have a few mins.
+    Can you give me at most the first 500 characters of a detailed explanation
+    in {{source_language_name}} about that? ||| {{source[:500]}}"
+    metadata: !TemplateMetadata
+      choices_in_prompt: false
+      languages: []
+      metrics:
+      - ROUGE
+      - BLEU
+      original_task: true
+    name: xp3longchars
+    reference: ''
