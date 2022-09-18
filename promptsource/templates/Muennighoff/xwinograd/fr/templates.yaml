@@ -1,110 +1,83 @@
 dataset: Muennighoff/xwinograd
-subset: en
+subset: fr
 templates:
-  38d31908-4aee-4545-aff2-7528cbf39197: !Template
-    answer_choices: '{{option1}} ||| {{option2}}'
-    id: 38d31908-4aee-4545-aff2-7528cbf39197
-    jinja: "{{sentence}}\nReplace the _ in the above sentence with the correct option:\
-      \ \n- {{option1}}\n- {{option2}}\n|||\n{% if answer == '1' %} {{option1}} {%\
-      \ else %} {{ option2 }} {% endif %}"
-    metadata: !TemplateMetadata
-      choices_in_prompt: true
-      languages:
-      - en
-      metrics:
-      - Accuracy
-      original_task: true
-    name: Replace
-    reference: ''
-  60ce5113-882f-4a9d-b21d-8d98b4644295: !Template
-    answer_choices: '{{option1}} ||| {{option2}}'
-    id: 60ce5113-882f-4a9d-b21d-8d98b4644295
-    jinja: 'Fill in the _ in the below sentence:
-
-      {{sentence}}
-
-
-      Choices:
-
-      - {{ option1 }}
-
-      - {{ option2 }}
-
-
-      Answer: ||| {% if answer == ''1'' %} {{option1}} {% else %} {{ option2 }} {%
-      endif %}'
-    metadata: !TemplateMetadata
-      choices_in_prompt: true
-      languages:
-      - en
-      metrics:
-      - Accuracy
-      original_task: true
-    name: fill in the blank
-    reference: ''
-  8f0f6d33-25e2-4394-b1f0-49a2a54767aa: !Template
-    answer_choices: True ||| False
-    id: 8f0f6d33-25e2-4394-b1f0-49a2a54767aa
-    jinja: 'The _ in the sentence below refers to {{option1}}. True or False?
-
-      {{sentence}}|||
-
-      {{answer_choices[answer|int - 1]}}'
-    metadata: !TemplateMetadata
-      choices_in_prompt: true
-      languages:
-      - en
-      metrics:
-      - Accuracy
-      original_task: false
-    name: True or False
-    reference: ''
-  90f9679e-7b6c-4ee7-a348-e905ed9aaf9e: !Template
+  0cde2151-74b7-4ced-a032-73921bc95afc: !Template
     answer_choices: '{{ option1 }} ||| {{ option2 }}'
-    id: 90f9679e-7b6c-4ee7-a348-e905ed9aaf9e
-    jinja: '{{ sentence }} In the previous sentence, does _ refer to {{ option1 }}
-      or  {{ option2 }}? ||| {% if answer == ''1'' %} {{option1}} {% else %} {{ option2
-      }} {% endif %}'
+    id: 0cde2151-74b7-4ced-a032-73921bc95afc
+    jinja: '{{ sentence }} Dans la phrase précédente, _ fait-il référence à {{ option1
+      }} ou {{ option2 }} ? ||| {% if answer == ''1'' %} {{option1}} {% else %} {{
+      option2 }} {% endif %}'
     metadata: !TemplateMetadata
-      choices_in_prompt: true
-      languages:
-      - en
-      metrics:
-      - Accuracy
-      original_task: true
-    name: does underscore refer to
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: does underscore refer to_frmt
     reference: ''
-  cd40cf1f-bda2-4757-b1b5-f1a20a3f7202: !Template
+  20e3e94e-c0c9-4025-92fb-ddac41ef7b7c: !Template
     answer_choices: '{{option1}} ||| {{option2}}'
-    id: cd40cf1f-bda2-4757-b1b5-f1a20a3f7202
-    jinja: '{{sentence}}
-
-      What does the _ in the above sentence refer to? {{ option1 }} or {{ option2
-      }}? ||| {% if answer == ''1'' %} {{option1}} {% else %} {{ option2 }} {% endif
-      %}'
-    metadata: !TemplateMetadata
-      choices_in_prompt: true
-      languages:
-      - en
-      metrics:
-      - Accuracy
-      original_task: true
-    name: underscore refer to
-    reference: ''
-  fc365d5d-bb5c-488c-93a0-4f90e6011c5d: !Template
-    answer_choices: '{{option1}} ||| {{option2}}'
-    id: fc365d5d-bb5c-488c-93a0-4f90e6011c5d
-    jinja: 'In the sentence below, does the _ stand for {{answer_choices[0]}} or {{answer_choices[1]}}?
+    id: 20e3e94e-c0c9-4025-92fb-ddac41ef7b7c
+    jinja: 'Dans la phrase ci-dessous, le _ signifie-t-il {{answer_choices[0]}} ou
+      {{answer_choices[1]}} ?
 
       {{sentence}}|||
 
       {{answer_choices[answer | int - 1]}}'
     metadata: !TemplateMetadata
-      choices_in_prompt: true
-      languages:
-      - en
-      metrics:
-      - Accuracy
-      original_task: true
-    name: stand for
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: stand for_frmt
+    reference: ''
+  705a0c83-d037-43d2-b8f2-c998f829c198: !Template
+    answer_choices: '{{option1}} ||| {{option2}}'
+    id: 705a0c83-d037-43d2-b8f2-c998f829c198
+    jinja: '{{sentence}}
+
+      Remplacez le _ dans la phrase ci-dessus par l''option correcte :
+
+      - {{option1}}
+
+      - {{option2}}
+
+      |||
+
+      {% if answer == ''1'' %} {{option1}} {% else %} {{ option2 }} {% endif %}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: Replace_frmt
+    reference: ''
+  71c1133b-3883-4aa2-b7a0-c08ad3ce453f: !Template
+    answer_choices: '{{option1}} ||| {{option2}}'
+    id: 71c1133b-3883-4aa2-b7a0-c08ad3ce453f
+    jinja: '{{sentence}}
+
+      À quoi le _ dans la phrase ci-dessus fait-il référence ? {{ option1 }} ou {{
+      option2 }} ? ||| {% if answer == ''1'' %} {{option1}} {% else %} {{ option2
+      }} {% endif %}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: underscore refer to_frmt
+    reference: ''
+  9182cd50-d28a-4a2f-a6b7-488b8abad60c: !Template
+    answer_choices: Vrai ||| Faux
+    id: 9182cd50-d28a-4a2f-a6b7-488b8abad60c
+    jinja: 'Le _ dans la phrase ci-dessous fait référence à {{option1}}. Vrai ou faux?
+
+      {{sentence}}|||
+
+      {{answer_choices[answer|int - 1]}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: True or False_frmt
     reference: ''
