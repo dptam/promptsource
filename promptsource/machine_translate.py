@@ -22,7 +22,7 @@ DS_TO_ENG_PROMPT = {
 ### ZH Datasets
 
 DATASETS = [
-#    ('xquad', 'xquad.zh'),
+    ('xquad', 'xquad.zh'),
     # Context & Answer is in ZH
     ('mlqa', 'mlqa.zh.ar'),
     ('mlqa', 'mlqa.zh.vi'),
@@ -39,6 +39,7 @@ DATASETS = [
     ('GEM/xlsum', "chinese_simplified"),
     # ('GEM/xlsum', "chinese_traditional"),
     # For WikiLingua there are already ZH prompts (except for xp3long prompts)
+    ("xquad", )
 ]
 
 

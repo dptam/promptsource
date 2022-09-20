@@ -125,7 +125,7 @@ templates:
 
       问题：“{{question}}”
 
-      答案选择：{{ answer_choices[:-1] | join('', '') }} 还是 {{ answer_choices[-1] }}？
+      答案选择：{{ answer_choices[:-1] | join(', ') }} 还是 {{ answer_choices[-1] }}？
 
       |||
 
@@ -164,7 +164,7 @@ templates:
 
       鉴于上面的对话/段落，问题“{{question}}”的答案是什么
 
-      答案选择：{{ answer_choices[:-1] | join('', '') }} 还是 {{ answer_choices[-1] }}？
+      答案选择：{{ answer_choices[:-1] | join(', ') }} 还是 {{ answer_choices[-1] }}？
 
       |||
 
