@@ -60,7 +60,7 @@ templates:
     name: answer-question-affirmative
     reference: ''
   51f68e4d-1440-4512-8f16-09c232085029: !Template
-    answer_choices: '{{ 选择 |加入（” ||| ") }}'
+    answer_choices: '{{ choice | join(" ||| ") }}'
     id: 51f68e4d-1440-4512-8f16-09c232085029
     jinja: "{% for statement in context %}
 
