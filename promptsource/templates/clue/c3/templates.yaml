@@ -115,7 +115,7 @@ templates:
     name: generate_question
     reference: ''
   6fb601d3-16b4-4cc3-b1af-f653cb6df46f: !Template
-    answer_choices: '{{ 选择 |加入（” ||| ") }}'
+    answer_choices: '{{ choice | join('' ||| '') }}'
     id: 6fb601d3-16b4-4cc3-b1af-f653cb6df46f
     jinja: '段落：{% for statement in context %}
 
@@ -154,7 +154,7 @@ templates:
     name: answer-question-interrogative
     reference: ''
   c0dc3493-f8ef-4c3b-9b30-8dcca5626fd6: !Template
-    answer_choices: '{{ 选择 |加入（'' ||| '') }}'
+    answer_choices: '{{ choice | join('' ||| '') }}'
     id: c0dc3493-f8ef-4c3b-9b30-8dcca5626fd6
     jinja: '{% for statement in context %}
 

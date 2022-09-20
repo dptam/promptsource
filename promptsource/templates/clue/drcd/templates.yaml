@@ -42,8 +42,8 @@ templates:
   382d0afc-e2cc-4176-8532-1ca201d7ec51: !Template
     answer_choices: ''
     id: 382d0afc-e2cc-4176-8532-1ca201d7ec51
-    jinja: '{{context[:answers["answer_start"]-5]}}... 你将如何继续前面的文本来回答“{{ question
-      }}”？ ||| {{context[answers["answer_start"]-5:]}}'
+    jinja: '{{context[:answers["answer_start"]-5]}}... 你将如何继续前面的文本来回答“{{ question}}”？ 
+    ||| {{context[answers["answer_start"]-5:]}}'
     metadata: !TemplateMetadata
       choices_in_prompt: null
       languages: null
