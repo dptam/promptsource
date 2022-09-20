@@ -62,7 +62,7 @@ templates:
   51f68e4d-1440-4512-8f16-09c232085029: !Template
     answer_choices: '{{ 选择 |加入（” ||| ") }}'
     id: 51f68e4d-1440-4512-8f16-09c232085029
-    jinja: '{% for statement in context %}
+    jinja: "{% for statement in context %}
 
       {{ statement }}
 
@@ -72,11 +72,11 @@ templates:
 
       选项：
 
-      - {{ answer_choices | join(''\n- '') }}
+      - {{ answer_choices | join('\n- ') }}
 
       |||
 
-      {{ answer }}'
+      {{ answer }}"
     metadata: !TemplateMetadata
       choices_in_prompt: null
       languages: null
