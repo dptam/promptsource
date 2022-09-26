@@ -1,5 +1,5 @@
 dataset: GEM/xlsum
-subset: potuguese
+subset: portuguese
 templates:
   0dde3126-1475-4808-8185-709beee3fa54: !Template
     answer_choices: ''
