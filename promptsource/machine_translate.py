@@ -42,8 +42,71 @@ DATASETS = [
     ("xquad", )
 ]
 
-
 LANG = "zh"
+
+
+### ES Datasets
+
+DATASETS = [
+    ('xquad', 'xquad.es'),
+    # Context & Answer is in ZH
+    ('mlqa', 'mlqa.es.es'),
+    ('paws-x', 'es'),
+    ('GEM/xlsum', "spanish"),
+    ('GEM/BiSECT', "es"),
+    #('GEM/wiki_lingua', 'es'),
+]
+
+
+LANG = "es"
+
+
+### FR Datasets
+
+DATASETS = [
+    #('xquad', 'xquad.fr'),
+    # Context & Answer is in ZH
+    #('mlqa', 'mlqa.es.es'),
+    ('paws-x', 'fr'),
+    ('GEM/xlsum', "french"),
+    ('GEM/BiSECT', "fr"),
+    #('GEM/wiki_lingua', 'es'),
+    ('pasinit/xlwic', "xlwic_fr_fr"),
+]
+
+LANG = "fr"
+
+### VI Datasets
+
+DATASETS = [
+    ('xquad', 'xquad.vi'),
+    # Context & Answer is in ZH
+    ('mlqa', 'mlqa.vi.vi'),
+    #('paws-x', 'vi'),
+    ('GEM/xlsum', "vietnamese"),
+    #('GEM/BiSECT', "fr"),
+    #('GEM/wiki_lingua', 'es'),
+]
+
+LANG = "vi"
+
+### AR Datasets
+
+DATASETS = [
+    ('xquad', 'xquad.ar'),
+    # Context & Answer is in ZH
+    ('mlqa', 'mlqa.ar.ar'),
+    #('paws-x', 'vi'),
+    ('GEM/xlsum', "arabic"),
+    #('GEM/BiSECT', "fr"),
+    #('GEM/wiki_lingua', 'es'),
+    ('khalidalt/tydiqa-primary', 'arabic'),
+    ('khalidalt/tydiqa-goldp', 'arabic'),
+]
+
+LANG = "ar"
+
+
 
 # Path to key
 os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "/Users/niklasmuennighoff/Desktop/gcp_translate_key.json"
@@ -109,8 +172,8 @@ for (ds_name, subset_name) in DATASETS:
     #for lang in LANGS:
     target_templates = template_collection.get_dataset(ds_name, subset_name)
     for uid, template in source_templates.templates.items():
-        if not("xp3long" in template.name.strip()):# not in PROMPTS:
-            continue
+        #if not("xp3long" in template.name.strip()):# not in PROMPTS:
+        #    continue
         print(f"Translating {template.name.strip()} to {LANG}")
         answer_choices = []
         if template.answer_choices is not None:
