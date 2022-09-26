@@ -4,7 +4,7 @@ templates:
   027f78fc-2367-4e1a-ac44-78b8ed30c9cb: !Template
     answer_choices: ''
     id: 027f78fc-2367-4e1a-ac44-78b8ed30c9cb
-    jinja: '...{{text[3000:3500]}}... Dee edemede ndị ọzọ: ||| {{text[5000:]}'
+    jinja: '...{{text[3000:3500]}}... Dee edemede ndị ọzọ: ||| {{text[5000:]}}'
     metadata: !TemplateMetadata
       choices_in_prompt: null
       languages: null
@@ -39,7 +39,7 @@ templates:
     answer_choices: ''
     id: 233a9feb-a867-4cf0-a621-ee3c3fe2f711
     jinja: 'Isiokwu: {{title}}\n Nyere aha a dị n''elu nke akụkọ ifo, chegodị akụkọ
-      a.\n ||| {{text[:7000]}'
+      a.\n ||| {{text[:7000]}}'
     metadata: !TemplateMetadata
       choices_in_prompt: null
       languages: null
@@ -63,7 +63,7 @@ templates:
     answer_choices: ''
     id: 7f372f8a-75a8-475b-a15d-7f0708bb3b90
     jinja: 'Isiokwu: {{title}}\n Nyere aha a dị n''elu nke akụkọ ifo, chegodị akụkọ
-      a.\n ||| {{text[:7000]}'
+      a.\n ||| {{text[:7000]}}'
     metadata: !TemplateMetadata
       choices_in_prompt: null
       languages: null
@@ -76,7 +76,7 @@ templates:
     id: 8db2d00f-ea58-4ab2-8997-51d6db9ee2d9
     jinja: 'N''inye aha dị n''okpuru na nchịkọta akụkọ, mepụta akụkọ dị mkpirikpi
       ma ọ bụ mmalite nke ogologo akụkọ iji soro ha gaa. Aha: {{title}}\nNchịkọta:
-      {{target}}\nAkụkụ ( mkpụrụedemede 500): ||| {{text[:500]}'
+      {{target}}\nAkụkụ ( mkpụrụedemede 500): ||| {{text[:500]}}'
     metadata: !TemplateMetadata
       choices_in_prompt: null
       languages: null
@@ -99,7 +99,7 @@ templates:
     answer_choices: ''
     id: bc328c0f-033d-413b-8dc0-1bad4c60c3ba
     jinja: '{{text[:1000]}}... Gaa n''ihu akụkọ maka mkpụrụedemede 4000 ọzọ max: |||
-      {{text[1000:5000]}'
+      {{text[1000:5000]}}'
     metadata: !TemplateMetadata
       choices_in_prompt: null
       languages: null
