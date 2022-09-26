@@ -39,7 +39,7 @@ templates:
     answer_choices: ''
     id: 7b3715a3-875f-449d-a459-2a2e71261d1e
     jinja: 'Akọle: {{title}}\nFun akọle ti o wa loke ti nkan arosọ, fojuinu nkan naa.\n
-      ||| {{text[:7000]}'
+      ||| {{text[:7000]}}'
     metadata: !TemplateMetadata
       choices_in_prompt: null
       languages: null
@@ -50,7 +50,7 @@ templates:
   a25da5e5-7f9e-4ad0-895d-b03f8ca4af13: !Template
     answer_choices: ''
     id: a25da5e5-7f9e-4ad0-895d-b03f8ca4af13
-    jinja: '...{{text[3000:3500]}}... Kọ iyoku nkan na: ||| {{text[5000:]}'
+    jinja: '...{{text[3000:3500]}}... Kọ iyoku nkan na: ||| {{text[5000:]}}'
     metadata: !TemplateMetadata
       choices_in_prompt: null
       languages: null
@@ -63,7 +63,7 @@ templates:
     id: ce2464be-965e-4d07-9b06-82e54f1d692d
     jinja: 'Fi fun akọle isalẹ ati akopọ ti nkan kan, ṣe agbekalẹ nkan kukuru kan
       tabi ibẹrẹ nkan gigun lati lọ pẹlu wọn. Akọle: {{title}}\nAkopọ: {{target}}\nAkọle
-      (Max 500 characters): ||| {{text[:500]}'
+      (Max 500 characters): ||| {{text[:500]}}'
     metadata: !TemplateMetadata
       choices_in_prompt: null
       languages: null
@@ -74,7 +74,7 @@ templates:
   d11ff462-c976-4fcd-8a66-2a11dbae1f9f: !Template
     answer_choices: ''
     id: d11ff462-c976-4fcd-8a66-2a11dbae1f9f
-    jinja: '{{text[:1000]} {{text[1000:5000]}'
+    jinja: '{{text[:1000]} {{text[1000:5000]}}'
     metadata: !TemplateMetadata
       choices_in_prompt: null
       languages: null
@@ -86,7 +86,7 @@ templates:
     answer_choices: ''
     id: d9bef738-f336-47c6-bcb8-e987a3a30e56
     jinja: 'Akọle: {{title}}\nFun akọle ti o wa loke ti nkan arosọ, fojuinu nkan naa.\n
-      ||| {{text[:7000]}'
+      ||| {{text[:7000]}}'
     metadata: !TemplateMetadata
       choices_in_prompt: null
       languages: null
