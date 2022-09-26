@@ -93,18 +93,18 @@ LANG = "vi"
 ### AR Datasets
 
 DATASETS = [
-    ('xquad', 'xquad.ar'),
+    #('xquad', 'xquad.ar'),
     # Context & Answer is in ZH
-    ('mlqa', 'mlqa.ar.ar'),
+    #('mlqa', 'mlqa.ar.ar'),
     #('paws-x', 'vi'),
-    ('GEM/xlsum', "arabic"),
+    ('GEM/xlsum', "chinese_traditional"),
     #('GEM/BiSECT', "fr"),
     #('GEM/wiki_lingua', 'es'),
-    ('khalidalt/tydiqa-primary', 'arabic'),
-    ('khalidalt/tydiqa-goldp', 'arabic'),
+    #('khalidalt/tydiqa-primary', 'arabic'),
+    #('khalidalt/tydiqa-goldp', 'arabic'),
 ]
 
-LANG = "ar"
+LANG = "zh-Hant"
 
 
 
