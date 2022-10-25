@@ -82,7 +82,6 @@ LANG = "fr"
 
 ### VI Datasets
 
-<<<<<<< HEAD
 """
 DATASETS = [
     ('xquad', 'xquad.vi'),
@@ -91,7 +90,6 @@ DATASETS = [
     #('paws-x', 'vi'),
     ('GEM/xlsum', "vietnamese"),
     #('GEM/wiki_lingua', 'vi'),
-=======
 LANGS = [
     #"id",
     #"sw",
@@ -104,7 +102,6 @@ LANGS = [
     "th",
     "it",
     "qu",
->>>>>>> xcopamt
 ]
 """
 
@@ -122,6 +119,30 @@ DATASETS = [
     ('khalidalt/tydiqa-primary', 'arabic'),
     ('khalidalt/tydiqa-goldp', 'arabic'),
 ]
+LANGS = [
+    "ar",
+    "es",
+    "eu",
+    "hi",
+    "id",
+    "zh",
+    "my",
+    "ru",
+    "sw",
+    "te",
+]
+
+SOURCE_DATASET = TARGET_DATASET = "Muennighoff/xstory_cloze"
+SOURCE_LANG = "en"
+
+### XWINOGRAD
+PROMPTS = [
+    "Replace",
+    "stand for",
+    "True or False",
+    "does underscore refer to",
+    "underscore refer to",
+]
 LANG = "ar"
 """
 
@@ -130,7 +151,6 @@ LANG = "ar"
 
 DATASETS = [('GEM/xlsum', "chinese_traditional"),]
 LANG = "zh-Hant"
-
 
 
 # Path to key
@@ -186,7 +206,6 @@ def normalize_string(zh_string, en_string):
 
 
 template_collection = TemplateCollection()
-<<<<<<< HEAD
 
 for (ds_name, subset_name) in DATASETS:
 
@@ -201,31 +220,14 @@ for (ds_name, subset_name) in DATASETS:
         #if not("xp3long" in template.name.strip()):# not in PROMPTS:
         #    continue
         print(f"Translating {template.name.strip()} to {LANG}")
-=======
-source_templates = template_collection.get_dataset(SOURCE_DATASET, SOURCE_LANG)
-
-for lang in LANGS:
-    target_templates = template_collection.get_dataset(TARGET_DATASET, lang)
-    for uid, template in source_templates.templates.items():
-        if template.name.strip() not in PROMPTS:
-            continue
-        print(f"Translating {template.name.strip()} to {lang}")
->>>>>>> xnliht
         answer_choices = []
         if template.answer_choices is not None:
             choices = template.answer_choices.split("|||")
             for c in choices:
-<<<<<<< HEAD
                 answer_choices.append(normalize_string(translate(LANG, c.strip()), c.strip()))
         or_jinja = template.jinja.strip()
         jinja = normalize_string(translate(LANG, or_jinja), or_jinja)
         template_name = template.name.strip() + f"_{LANG}mt"
-=======
-                answer_choices.append(normalize_string(translate(lang, c.strip()), c.strip()))
-        or_jinja = template.jinja.strip()
-        jinja = normalize_string(translate(lang, or_jinja), or_jinja)
-        template_name = template.name.strip() + f"_{lang}mt"
->>>>>>> xnliht
         target_template = Template(
             template_name, jinja=jinja, reference="", answer_choices=" ||| ".join(answer_choices)
         )
