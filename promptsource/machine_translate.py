@@ -82,6 +82,7 @@ LANG = "fr"
 
 ### VI Datasets
 
+<<<<<<< HEAD
 """
 DATASETS = [
     ('xquad', 'xquad.vi'),
@@ -90,6 +91,20 @@ DATASETS = [
     #('paws-x', 'vi'),
     ('GEM/xlsum', "vietnamese"),
     #('GEM/wiki_lingua', 'vi'),
+=======
+LANGS = [
+    #"id",
+    #"sw",
+    #"ta",
+    #"vi",
+    #"zh",
+    "tr",
+    "et",
+    "ht",
+    "th",
+    "it",
+    "qu",
+>>>>>>> xcopamt
 ]
 """
 
