@@ -74,7 +74,7 @@ templates:
   d11ff462-c976-4fcd-8a66-2a11dbae1f9f: !Template
     answer_choices: ''
     id: d11ff462-c976-4fcd-8a66-2a11dbae1f9f
-    jinja: '{{text[:1000]}} {{text[1000:5000]}}'
+    jinja: '{{text[:1000]}} ||| {{text[1000:5000]}}'
     metadata: !TemplateMetadata
       choices_in_prompt: null
       languages: null
