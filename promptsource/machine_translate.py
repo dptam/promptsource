@@ -21,6 +21,7 @@ DS_TO_ENG_PROMPT = {
 
 ### ZH Datasets
 
+"""
 DATASETS = [
     ('xquad', 'xquad.zh'),
     # Context & Answer is in ZH
@@ -43,10 +44,11 @@ DATASETS = [
 ]
 
 LANG = "zh"
-
+"""
 
 ### ES Datasets
 
+"""
 DATASETS = [
     ('xquad', 'xquad.es'),
     # Context & Answer is in ZH
@@ -56,13 +58,14 @@ DATASETS = [
     ('GEM/BiSECT', "es"),
     #('GEM/wiki_lingua', 'es'),
 ]
-
+"""
 
 LANG = "es"
 
 
 ### FR Datasets
 
+"""
 DATASETS = [
     #('xquad', 'xquad.fr'),
     # Context & Answer is in ZH
@@ -70,40 +73,47 @@ DATASETS = [
     ('paws-x', 'fr'),
     ('GEM/xlsum', "french"),
     ('GEM/BiSECT', "fr"),
-    #('GEM/wiki_lingua', 'es'),
+    #('GEM/wiki_lingua', 'fr'),
     ('pasinit/xlwic', "xlwic_fr_fr"),
 ]
+"""
 
 LANG = "fr"
 
 ### VI Datasets
 
+"""
 DATASETS = [
     ('xquad', 'xquad.vi'),
     # Context & Answer is in ZH
     ('mlqa', 'mlqa.vi.vi'),
     #('paws-x', 'vi'),
     ('GEM/xlsum', "vietnamese"),
-    #('GEM/BiSECT', "fr"),
-    #('GEM/wiki_lingua', 'es'),
+    #('GEM/wiki_lingua', 'vi'),
 ]
+"""
 
 LANG = "vi"
 
 ### AR Datasets
-
+"""
 DATASETS = [
-    #('xquad', 'xquad.ar'),
+    ('xquad', 'xquad.ar'),
     # Context & Answer is in ZH
-    #('mlqa', 'mlqa.ar.ar'),
+    ('mlqa', 'mlqa.ar.ar'),
     #('paws-x', 'vi'),
-    ('GEM/xlsum', "chinese_traditional"),
     #('GEM/BiSECT', "fr"),
     #('GEM/wiki_lingua', 'es'),
-    #('khalidalt/tydiqa-primary', 'arabic'),
-    #('khalidalt/tydiqa-goldp', 'arabic'),
+    ('khalidalt/tydiqa-primary', 'arabic'),
+    ('khalidalt/tydiqa-goldp', 'arabic'),
 ]
+LANG = "ar"
+"""
 
+
+# Choose datasets & lang, e.g.
+
+DATASETS = [('GEM/xlsum', "chinese_traditional"),]
 LANG = "zh-Hant"
 
 
