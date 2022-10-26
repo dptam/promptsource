@@ -73,7 +73,7 @@ templates:
       languages: null
       metrics: null
       original_task: null
-    name: C1 or C2? premise, so/because…_itmt
+    name: C1 or C2? premise_itmt
     reference: ''
   f6d10ae7-09f9-4233-956d-8f113b0468c8: !Template
     answer_choices: '{{choice1}} ||| {{choice2}}'

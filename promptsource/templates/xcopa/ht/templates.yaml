@@ -49,7 +49,7 @@ templates:
       languages: null
       metrics: null
       original_task: null
-    name: C1 or C2? premise, so/because…_htmt
+    name: C1 or C2? premise_htmt
     reference: ''
   99e2cef7-eec4-431f-93f3-0a63660eec7d: !Template
     answer_choices: '{{choice1}} ||| {{choice2}}'

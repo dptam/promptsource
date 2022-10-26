@@ -54,7 +54,7 @@ templates:
       languages: null
       metrics: null
       original_task: null
-    name: C1 or C2? premise, so/because…_trmt
+    name: C1 or C2? premise_trmt
     reference: ''
   8b6f30be-6e9c-41a9-a649-bd44557ec939: !Template
     answer_choices: '{{choice1}} ||| {{choice2}}'

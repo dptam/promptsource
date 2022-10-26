@@ -91,5 +91,5 @@ templates:
       languages: null
       metrics: null
       original_task: null
-    name: C1 or C2? premise, so/because…_etmt
+    name: C1 or C2? premise_etmt
     reference: ''

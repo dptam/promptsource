@@ -30,7 +30,7 @@ templates:
       languages: null
       metrics: null
       original_task: null
-    name: C1 or C2? premise, so/because…_qumt
+    name: C1 or C2? premise_qumt
     reference: ''
   c5b871ba-11eb-42e0-9f52-69560c9d8a7f: !Template
     answer_choices: '{{choice1}} ||| {{choice2}}'
