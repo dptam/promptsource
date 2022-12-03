@@ -1,0 +1,39 @@
+dataset: facebook/flores
+subset: cat_Latn-rus_Cyrl
+templates:
+  5b08a19d-8db1-4d4b-84e6-9efa3e85c353: !Template
+    answer_choices: null
+    id: 5b08a19d-8db1-4d4b-84e6-9efa3e85c353
+    jinja: '{{sentence_cat_Latn}} The previous text is in Catalan. Here is a translation
+      to Russian: ||| {{sentence_rus_Cyrl}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: prev-cat_Latn-rus_Cyrl
+    reference: ''
+  78575c8e-0191-4324-b773-f399a69f5514: !Template
+    answer_choices: null
+    id: 78575c8e-0191-4324-b773-f399a69f5514
+    jinja: '{{sentence_cat_Latn}} Here is the same text in Russian: |||{{sentence_rus_Cyrl}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: in-cat_Latn-rus_Cyrl
+    reference: ''
+  f43e3f99-f8c7-40e4-ae41-9fea0d93402f: !Template
+    answer_choices: null
+    id: f43e3f99-f8c7-40e4-ae41-9fea0d93402f
+    jinja: 'A text in Catalan: {{sentence_cat_Latn}}
+
+      The same text in Russian: |||{{sentence_rus_Cyrl}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: ab-cat_Latn-rus_Cyrl
+    reference: ''

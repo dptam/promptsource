@@ -1,0 +1,39 @@
+dataset: facebook/flores
+subset: rus_Cyrl-kin_Latn
+templates:
+  44731710-7dff-4247-9f47-1447fbd5d5c9: !Template
+    answer_choices: null
+    id: 44731710-7dff-4247-9f47-1447fbd5d5c9
+    jinja: '{{sentence_rus_Cyrl}} The previous text is in Russian. Here is a translation
+      to Kinyarwanda: ||| {{sentence_kin_Latn}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: prev-rus_Cyrl-kin_Latn
+    reference: ''
+  491c95e4-d9ba-4c46-a7e9-e622d728651b: !Template
+    answer_choices: null
+    id: 491c95e4-d9ba-4c46-a7e9-e622d728651b
+    jinja: '{{sentence_rus_Cyrl}} Here is the same text in Kinyarwanda: |||{{sentence_kin_Latn}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: in-rus_Cyrl-kin_Latn
+    reference: ''
+  e9d6c46d-af86-4ded-8018-9f57f44f52ef: !Template
+    answer_choices: null
+    id: e9d6c46d-af86-4ded-8018-9f57f44f52ef
+    jinja: 'A text in Russian: {{sentence_rus_Cyrl}}
+
+      The same text in Kinyarwanda: |||{{sentence_kin_Latn}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: ab-rus_Cyrl-kin_Latn
+    reference: ''

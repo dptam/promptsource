@@ -1,0 +1,39 @@
+dataset: facebook/flores
+subset: rus_Cyrl-lug_Latn
+templates:
+  235a9f75-7dc2-45bd-a28f-667113ae160b: !Template
+    answer_choices: null
+    id: 235a9f75-7dc2-45bd-a28f-667113ae160b
+    jinja: 'A text in Russian: {{sentence_rus_Cyrl}}
+
+      The same text in Ganda: |||{{sentence_lug_Latn}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: ab-rus_Cyrl-lug_Latn
+    reference: ''
+  e1ae7cec-c1bd-4a41-bc2f-fcba3abd8e33: !Template
+    answer_choices: null
+    id: e1ae7cec-c1bd-4a41-bc2f-fcba3abd8e33
+    jinja: '{{sentence_rus_Cyrl}} The previous text is in Russian. Here is a translation
+      to Ganda: ||| {{sentence_lug_Latn}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: prev-rus_Cyrl-lug_Latn
+    reference: ''
+  ff492fb8-0135-4656-95b9-53b94eb63731: !Template
+    answer_choices: null
+    id: ff492fb8-0135-4656-95b9-53b94eb63731
+    jinja: '{{sentence_rus_Cyrl}} Here is the same text in Ganda: |||{{sentence_lug_Latn}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: in-rus_Cyrl-lug_Latn
+    reference: ''

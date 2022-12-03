@@ -1,0 +1,39 @@
+dataset: facebook/flores
+subset: rus_Cyrl-kan_Knda
+templates:
+  64be4726-50b3-4b62-8d40-a1e126aec5fd: !Template
+    answer_choices: null
+    id: 64be4726-50b3-4b62-8d40-a1e126aec5fd
+    jinja: 'A text in Russian: {{sentence_rus_Cyrl}}
+
+      The same text in Kannada: |||{{sentence_kan_Knda}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: ab-rus_Cyrl-kan_Knda
+    reference: ''
+  a107fd06-ca4c-4069-b0b6-fd341eec8f5e: !Template
+    answer_choices: null
+    id: a107fd06-ca4c-4069-b0b6-fd341eec8f5e
+    jinja: '{{sentence_rus_Cyrl}} The previous text is in Russian. Here is a translation
+      to Kannada: ||| {{sentence_kan_Knda}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: prev-rus_Cyrl-kan_Knda
+    reference: ''
+  ff0ea4f0-b489-4b81-8d74-68fc1af783c2: !Template
+    answer_choices: null
+    id: ff0ea4f0-b489-4b81-8d74-68fc1af783c2
+    jinja: '{{sentence_rus_Cyrl}} Here is the same text in Kannada: |||{{sentence_kan_Knda}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: in-rus_Cyrl-kan_Knda
+    reference: ''

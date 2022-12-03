@@ -1,0 +1,39 @@
+dataset: facebook/flores
+subset: mar_Deva-rus_Cyrl
+templates:
+  deeb2396-e3bc-424f-9cb5-32e9808cb051: !Template
+    answer_choices: null
+    id: deeb2396-e3bc-424f-9cb5-32e9808cb051
+    jinja: 'A text in Marathi: {{sentence_mar_Deva}}
+
+      The same text in Russian: |||{{sentence_rus_Cyrl}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: ab-mar_Deva-rus_Cyrl
+    reference: ''
+  e8253c7f-a1bd-490d-96ed-f12f29711c1e: !Template
+    answer_choices: null
+    id: e8253c7f-a1bd-490d-96ed-f12f29711c1e
+    jinja: '{{sentence_mar_Deva}} The previous text is in Marathi. Here is a translation
+      to Russian: ||| {{sentence_rus_Cyrl}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: prev-mar_Deva-rus_Cyrl
+    reference: ''
+  fa2ba5bd-8dfc-48d3-98df-f34c41e8019f: !Template
+    answer_choices: null
+    id: fa2ba5bd-8dfc-48d3-98df-f34c41e8019f
+    jinja: '{{sentence_mar_Deva}} Here is the same text in Russian: |||{{sentence_rus_Cyrl}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: in-mar_Deva-rus_Cyrl
+    reference: ''

@@ -1,0 +1,39 @@
+dataset: facebook/flores
+subset: rus_Cyrl-wol_Latn
+templates:
+  4ecb5bb0-bbf8-4415-9499-7f8e1bcc5b31: !Template
+    answer_choices: null
+    id: 4ecb5bb0-bbf8-4415-9499-7f8e1bcc5b31
+    jinja: 'A text in Russian: {{sentence_rus_Cyrl}}
+
+      The same text in Wolof: |||{{sentence_wol_Latn}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: ab-rus_Cyrl-wol_Latn
+    reference: ''
+  b6433529-8e9e-4835-8c5f-f8e9bd2bda47: !Template
+    answer_choices: null
+    id: b6433529-8e9e-4835-8c5f-f8e9bd2bda47
+    jinja: '{{sentence_rus_Cyrl}} The previous text is in Russian. Here is a translation
+      to Wolof: ||| {{sentence_wol_Latn}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: prev-rus_Cyrl-wol_Latn
+    reference: ''
+  cc8ff38f-4800-4c6c-9cf5-8faded010a38: !Template
+    answer_choices: null
+    id: cc8ff38f-4800-4c6c-9cf5-8faded010a38
+    jinja: '{{sentence_rus_Cyrl}} Here is the same text in Wolof: |||{{sentence_wol_Latn}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: in-rus_Cyrl-wol_Latn
+    reference: ''

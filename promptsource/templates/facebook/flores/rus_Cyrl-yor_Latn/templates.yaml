@@ -1,0 +1,39 @@
+dataset: facebook/flores
+subset: rus_Cyrl-yor_Latn
+templates:
+  777de825-7c1d-486d-ae07-b88fda742340: !Template
+    answer_choices: null
+    id: 777de825-7c1d-486d-ae07-b88fda742340
+    jinja: '{{sentence_rus_Cyrl}} The previous text is in Russian. Here is a translation
+      to Yoruba: ||| {{sentence_yor_Latn}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: prev-rus_Cyrl-yor_Latn
+    reference: ''
+  844b61f9-f047-43c1-98ff-29beefb8d86c: !Template
+    answer_choices: null
+    id: 844b61f9-f047-43c1-98ff-29beefb8d86c
+    jinja: '{{sentence_rus_Cyrl}} Here is the same text in Yoruba: |||{{sentence_yor_Latn}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: in-rus_Cyrl-yor_Latn
+    reference: ''
+  b4968fc2-db87-406b-b492-e0e516303cf4: !Template
+    answer_choices: null
+    id: b4968fc2-db87-406b-b492-e0e516303cf4
+    jinja: 'A text in Russian: {{sentence_rus_Cyrl}}
+
+      The same text in Yoruba: |||{{sentence_yor_Latn}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: ab-rus_Cyrl-yor_Latn
+    reference: ''

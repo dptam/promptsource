@@ -1,0 +1,39 @@
+dataset: facebook/flores
+subset: rus_Cyrl-mal_Mlym
+templates:
+  3d73d89b-7ac2-4246-b882-512094c10644: !Template
+    answer_choices: null
+    id: 3d73d89b-7ac2-4246-b882-512094c10644
+    jinja: 'A text in Russian: {{sentence_rus_Cyrl}}
+
+      The same text in Malayalam: |||{{sentence_mal_Mlym}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: ab-rus_Cyrl-mal_Mlym
+    reference: ''
+  42378a1d-c935-444c-a9d1-7f5d5a8cb0a6: !Template
+    answer_choices: null
+    id: 42378a1d-c935-444c-a9d1-7f5d5a8cb0a6
+    jinja: '{{sentence_rus_Cyrl}} The previous text is in Russian. Here is a translation
+      to Malayalam: ||| {{sentence_mal_Mlym}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: prev-rus_Cyrl-mal_Mlym
+    reference: ''
+  ea9aa4be-def1-4b08-bed9-4389f656c414: !Template
+    answer_choices: null
+    id: ea9aa4be-def1-4b08-bed9-4389f656c414
+    jinja: '{{sentence_rus_Cyrl}} Here is the same text in Malayalam: |||{{sentence_mal_Mlym}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: in-rus_Cyrl-mal_Mlym
+    reference: ''

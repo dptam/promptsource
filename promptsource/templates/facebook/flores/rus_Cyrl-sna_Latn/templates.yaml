@@ -1,0 +1,39 @@
+dataset: facebook/flores
+subset: rus_Cyrl-sna_Latn
+templates:
+  3067206f-987e-41a8-9dd6-54b2e2d967f6: !Template
+    answer_choices: null
+    id: 3067206f-987e-41a8-9dd6-54b2e2d967f6
+    jinja: '{{sentence_rus_Cyrl}} Here is the same text in Shona: |||{{sentence_sna_Latn}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: in-rus_Cyrl-sna_Latn
+    reference: ''
+  57001ec0-9c0c-4e37-9afa-10acb29759aa: !Template
+    answer_choices: null
+    id: 57001ec0-9c0c-4e37-9afa-10acb29759aa
+    jinja: 'A text in Russian: {{sentence_rus_Cyrl}}
+
+      The same text in Shona: |||{{sentence_sna_Latn}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: ab-rus_Cyrl-sna_Latn
+    reference: ''
+  653343ee-cbc5-48dd-9336-9cf13fdbbd90: !Template
+    answer_choices: null
+    id: 653343ee-cbc5-48dd-9336-9cf13fdbbd90
+    jinja: '{{sentence_rus_Cyrl}} The previous text is in Russian. Here is a translation
+      to Shona: ||| {{sentence_sna_Latn}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: prev-rus_Cyrl-sna_Latn
+    reference: ''

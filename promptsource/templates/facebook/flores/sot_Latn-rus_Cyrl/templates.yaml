@@ -1,0 +1,39 @@
+dataset: facebook/flores
+subset: sot_Latn-rus_Cyrl
+templates:
+  682f3d0a-3118-438a-be01-de3c54a18e26: !Template
+    answer_choices: null
+    id: 682f3d0a-3118-438a-be01-de3c54a18e26
+    jinja: '{{sentence_sot_Latn}} The previous text is in Southern Sotho. Here is
+      a translation to Russian: ||| {{sentence_rus_Cyrl}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: prev-sot_Latn-rus_Cyrl
+    reference: ''
+  dd43cbf2-5144-4b21-91ba-922ef6e4e0ce: !Template
+    answer_choices: null
+    id: dd43cbf2-5144-4b21-91ba-922ef6e4e0ce
+    jinja: 'A text in Southern Sotho: {{sentence_sot_Latn}}
+
+      The same text in Russian: |||{{sentence_rus_Cyrl}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: ab-sot_Latn-rus_Cyrl
+    reference: ''
+  ef0881df-a829-4574-a4c6-c962054e1711: !Template
+    answer_choices: null
+    id: ef0881df-a829-4574-a4c6-c962054e1711
+    jinja: '{{sentence_sot_Latn}} Here is the same text in Russian: |||{{sentence_rus_Cyrl}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: in-sot_Latn-rus_Cyrl
+    reference: ''

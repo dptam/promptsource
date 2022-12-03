@@ -1,0 +1,39 @@
+dataset: facebook/flores
+subset: rus_Cyrl-urd_Arab
+templates:
+  2abb0384-6b8e-41ee-90fe-f6724b674fd3: !Template
+    answer_choices: null
+    id: 2abb0384-6b8e-41ee-90fe-f6724b674fd3
+    jinja: 'A text in Russian: {{sentence_rus_Cyrl}}
+
+      The same text in Urdu: |||{{sentence_urd_Arab}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: ab-rus_Cyrl-urd_Arab
+    reference: ''
+  623a3a03-6961-4aea-908b-41389fdd8c61: !Template
+    answer_choices: null
+    id: 623a3a03-6961-4aea-908b-41389fdd8c61
+    jinja: '{{sentence_rus_Cyrl}} The previous text is in Russian. Here is a translation
+      to Urdu: ||| {{sentence_urd_Arab}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: prev-rus_Cyrl-urd_Arab
+    reference: ''
+  e4edca77-e1b3-4c20-bbc7-978c3fa0326e: !Template
+    answer_choices: null
+    id: e4edca77-e1b3-4c20-bbc7-978c3fa0326e
+    jinja: '{{sentence_rus_Cyrl}} Here is the same text in Urdu: |||{{sentence_urd_Arab}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: in-rus_Cyrl-urd_Arab
+    reference: ''

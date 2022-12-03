@@ -1,0 +1,39 @@
+dataset: facebook/flores
+subset: rus_Cyrl-ory_Orya
+templates:
+  5a3be0ba-0b5d-4aa3-b701-1b6234524fca: !Template
+    answer_choices: null
+    id: 5a3be0ba-0b5d-4aa3-b701-1b6234524fca
+    jinja: '{{sentence_rus_Cyrl}} The previous text is in Russian. Here is a translation
+      to Odia: ||| {{sentence_ory_Orya}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: prev-rus_Cyrl-ory_Orya
+    reference: ''
+  74979f50-7335-4cec-9d2a-258851f84d99: !Template
+    answer_choices: null
+    id: 74979f50-7335-4cec-9d2a-258851f84d99
+    jinja: 'A text in Russian: {{sentence_rus_Cyrl}}
+
+      The same text in Odia: |||{{sentence_ory_Orya}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: ab-rus_Cyrl-ory_Orya
+    reference: ''
+  c9766b61-aba4-4f87-b561-7add9f9eec12: !Template
+    answer_choices: null
+    id: c9766b61-aba4-4f87-b561-7add9f9eec12
+    jinja: '{{sentence_rus_Cyrl}} Here is the same text in Odia: |||{{sentence_ory_Orya}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: in-rus_Cyrl-ory_Orya
+    reference: ''

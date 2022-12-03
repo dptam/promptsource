@@ -1,0 +1,39 @@
+dataset: facebook/flores
+subset: rus_Cyrl-guj_Gujr
+templates:
+  6e54940b-c0ea-4e36-8a25-d7532805f3ac: !Template
+    answer_choices: null
+    id: 6e54940b-c0ea-4e36-8a25-d7532805f3ac
+    jinja: 'A text in Russian: {{sentence_rus_Cyrl}}
+
+      The same text in Gujarati: |||{{sentence_guj_Gujr}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: ab-rus_Cyrl-guj_Gujr
+    reference: ''
+  8abbfa23-610e-4168-87c8-8c0fb4a3c6c1: !Template
+    answer_choices: null
+    id: 8abbfa23-610e-4168-87c8-8c0fb4a3c6c1
+    jinja: '{{sentence_rus_Cyrl}} The previous text is in Russian. Here is a translation
+      to Gujarati: ||| {{sentence_guj_Gujr}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: prev-rus_Cyrl-guj_Gujr
+    reference: ''
+  e5c7fb5f-64b6-4a6b-ab7d-b0940f1c8fe1: !Template
+    answer_choices: null
+    id: e5c7fb5f-64b6-4a6b-ab7d-b0940f1c8fe1
+    jinja: '{{sentence_rus_Cyrl}} Here is the same text in Gujarati: |||{{sentence_guj_Gujr}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: in-rus_Cyrl-guj_Gujr
+    reference: ''

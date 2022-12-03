@@ -1,0 +1,39 @@
+dataset: facebook/flores
+subset: rus_Cyrl-run_Latn
+templates:
+  29211eb6-074b-435d-81f8-4efa18623956: !Template
+    answer_choices: null
+    id: 29211eb6-074b-435d-81f8-4efa18623956
+    jinja: '{{sentence_rus_Cyrl}} Here is the same text in Rundi: |||{{sentence_run_Latn}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: in-rus_Cyrl-run_Latn
+    reference: ''
+  9d0bf7df-36a6-4d0a-b23e-f8ce93147433: !Template
+    answer_choices: null
+    id: 9d0bf7df-36a6-4d0a-b23e-f8ce93147433
+    jinja: 'A text in Russian: {{sentence_rus_Cyrl}}
+
+      The same text in Rundi: |||{{sentence_run_Latn}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: ab-rus_Cyrl-run_Latn
+    reference: ''
+  f9326055-0ce3-4ea1-8f4a-e314982bdf4c: !Template
+    answer_choices: null
+    id: f9326055-0ce3-4ea1-8f4a-e314982bdf4c
+    jinja: '{{sentence_rus_Cyrl}} The previous text is in Russian. Here is a translation
+      to Rundi: ||| {{sentence_run_Latn}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: prev-rus_Cyrl-run_Latn
+    reference: ''

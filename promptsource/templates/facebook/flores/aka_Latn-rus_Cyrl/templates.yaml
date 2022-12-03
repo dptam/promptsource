@@ -1,0 +1,39 @@
+dataset: facebook/flores
+subset: aka_Latn-rus_Cyrl
+templates:
+  466d8faa-1942-4bf7-8f22-e1d92c6c7227: !Template
+    answer_choices: null
+    id: 466d8faa-1942-4bf7-8f22-e1d92c6c7227
+    jinja: '{{sentence_aka_Latn}} Here is the same text in Russian: |||{{sentence_rus_Cyrl}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: in-aka_Latn-rus_Cyrl
+    reference: ''
+  f4d179dc-ec30-4bf1-9181-0db711d285d0: !Template
+    answer_choices: null
+    id: f4d179dc-ec30-4bf1-9181-0db711d285d0
+    jinja: 'A text in Akan: {{sentence_aka_Latn}}
+
+      The same text in Russian: |||{{sentence_rus_Cyrl}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: ab-aka_Latn-rus_Cyrl
+    reference: ''
+  fecbc89a-fe54-4418-b584-204756ac5d95: !Template
+    answer_choices: null
+    id: fecbc89a-fe54-4418-b584-204756ac5d95
+    jinja: '{{sentence_aka_Latn}} The previous text is in Akan. Here is a translation
+      to Russian: ||| {{sentence_rus_Cyrl}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: prev-aka_Latn-rus_Cyrl
+    reference: ''

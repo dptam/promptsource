@@ -1,0 +1,39 @@
+dataset: facebook/flores
+subset: npi_Deva-rus_Cyrl
+templates:
+  2448c7df-b021-4211-bdae-800835217ccc: !Template
+    answer_choices: null
+    id: 2448c7df-b021-4211-bdae-800835217ccc
+    jinja: '{{sentence_npi_Deva}} The previous text is in Nepali. Here is a translation
+      to Russian: ||| {{sentence_rus_Cyrl}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: prev-npi_Deva-rus_Cyrl
+    reference: ''
+  836e9746-51aa-403e-876d-2ebfb4b6236f: !Template
+    answer_choices: null
+    id: 836e9746-51aa-403e-876d-2ebfb4b6236f
+    jinja: 'A text in Nepali: {{sentence_npi_Deva}}
+
+      The same text in Russian: |||{{sentence_rus_Cyrl}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: ab-npi_Deva-rus_Cyrl
+    reference: ''
+  9dd2b517-76f3-4464-a7e1-76ff69743779: !Template
+    answer_choices: null
+    id: 9dd2b517-76f3-4464-a7e1-76ff69743779
+    jinja: '{{sentence_npi_Deva}} Here is the same text in Russian: |||{{sentence_rus_Cyrl}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: in-npi_Deva-rus_Cyrl
+    reference: ''

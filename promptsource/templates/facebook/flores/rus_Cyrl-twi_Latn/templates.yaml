@@ -1,0 +1,39 @@
+dataset: facebook/flores
+subset: rus_Cyrl-twi_Latn
+templates:
+  82bc2f40-ad11-4556-b939-79b025b082b6: !Template
+    answer_choices: null
+    id: 82bc2f40-ad11-4556-b939-79b025b082b6
+    jinja: '{{sentence_rus_Cyrl}} Here is the same text in Twi: |||{{sentence_twi_Latn}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: in-rus_Cyrl-twi_Latn
+    reference: ''
+  9619324f-1961-43e3-9a32-ddf25e9500f9: !Template
+    answer_choices: null
+    id: 9619324f-1961-43e3-9a32-ddf25e9500f9
+    jinja: 'A text in Russian: {{sentence_rus_Cyrl}}
+
+      The same text in Twi: |||{{sentence_twi_Latn}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: ab-rus_Cyrl-twi_Latn
+    reference: ''
+  a4c59d62-a366-49c2-bf9b-62ed0f786156: !Template
+    answer_choices: null
+    id: a4c59d62-a366-49c2-bf9b-62ed0f786156
+    jinja: '{{sentence_rus_Cyrl}} The previous text is in Russian. Here is a translation
+      to Twi: ||| {{sentence_twi_Latn}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: prev-rus_Cyrl-twi_Latn
+    reference: ''

@@ -1,0 +1,39 @@
+dataset: facebook/flores
+subset: lin_Latn-rus_Cyrl
+templates:
+  951adef3-566c-41e3-be89-56ceafa5dcd5: !Template
+    answer_choices: null
+    id: 951adef3-566c-41e3-be89-56ceafa5dcd5
+    jinja: '{{sentence_lin_Latn}} The previous text is in Lingala. Here is a translation
+      to Russian: ||| {{sentence_rus_Cyrl}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: prev-lin_Latn-rus_Cyrl
+    reference: ''
+  a58c40c0-2a00-4b31-b0e6-8f49fe9476e4: !Template
+    answer_choices: null
+    id: a58c40c0-2a00-4b31-b0e6-8f49fe9476e4
+    jinja: 'A text in Lingala: {{sentence_lin_Latn}}
+
+      The same text in Russian: |||{{sentence_rus_Cyrl}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: ab-lin_Latn-rus_Cyrl
+    reference: ''
+  d6813710-0a48-4b3f-94ca-d06f6f0c2f26: !Template
+    answer_choices: null
+    id: d6813710-0a48-4b3f-94ca-d06f6f0c2f26
+    jinja: '{{sentence_lin_Latn}} Here is the same text in Russian: |||{{sentence_rus_Cyrl}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: in-lin_Latn-rus_Cyrl
+    reference: ''

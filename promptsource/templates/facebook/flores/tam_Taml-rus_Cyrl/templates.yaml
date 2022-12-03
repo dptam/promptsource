@@ -1,0 +1,39 @@
+dataset: facebook/flores
+subset: tam_Taml-rus_Cyrl
+templates:
+  07537b5b-78c3-4160-9e28-98ab6e6848e9: !Template
+    answer_choices: null
+    id: 07537b5b-78c3-4160-9e28-98ab6e6848e9
+    jinja: '{{sentence_tam_Taml}} Here is the same text in Russian: |||{{sentence_rus_Cyrl}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: in-tam_Taml-rus_Cyrl
+    reference: ''
+  50b4dadd-9066-49d3-b587-8304f10b2829: !Template
+    answer_choices: null
+    id: 50b4dadd-9066-49d3-b587-8304f10b2829
+    jinja: '{{sentence_tam_Taml}} The previous text is in Tamil. Here is a translation
+      to Russian: ||| {{sentence_rus_Cyrl}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: prev-tam_Taml-rus_Cyrl
+    reference: ''
+  d50c2cec-15c2-4e2f-aec0-9b69ee7691b6: !Template
+    answer_choices: null
+    id: d50c2cec-15c2-4e2f-aec0-9b69ee7691b6
+    jinja: 'A text in Tamil: {{sentence_tam_Taml}}
+
+      The same text in Russian: |||{{sentence_rus_Cyrl}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: ab-tam_Taml-rus_Cyrl
+    reference: ''

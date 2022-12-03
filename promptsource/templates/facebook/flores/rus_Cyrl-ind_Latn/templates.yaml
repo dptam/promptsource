@@ -1,0 +1,39 @@
+dataset: facebook/flores
+subset: rus_Cyrl-ind_Latn
+templates:
+  19257482-67e5-463a-bdc5-33ddd0ce1694: !Template
+    answer_choices: null
+    id: 19257482-67e5-463a-bdc5-33ddd0ce1694
+    jinja: '{{sentence_rus_Cyrl}} The previous text is in Russian. Here is a translation
+      to Indonesian: ||| {{sentence_ind_Latn}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: prev-rus_Cyrl-ind_Latn
+    reference: ''
+  6634b2c9-3ef5-42f5-8162-85df9c505235: !Template
+    answer_choices: null
+    id: 6634b2c9-3ef5-42f5-8162-85df9c505235
+    jinja: '{{sentence_rus_Cyrl}} Here is the same text in Indonesian: |||{{sentence_ind_Latn}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: in-rus_Cyrl-ind_Latn
+    reference: ''
+  7b3c813f-8714-4072-93bb-536b6f3f657f: !Template
+    answer_choices: null
+    id: 7b3c813f-8714-4072-93bb-536b6f3f657f
+    jinja: 'A text in Russian: {{sentence_rus_Cyrl}}
+
+      The same text in Indonesian: |||{{sentence_ind_Latn}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: ab-rus_Cyrl-ind_Latn
+    reference: ''

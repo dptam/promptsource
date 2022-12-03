@@ -1,0 +1,39 @@
+dataset: facebook/flores
+subset: fra_Latn-rus_Cyrl
+templates:
+  0124e7c3-a95a-4603-acfb-fc2c07eebcaf: !Template
+    answer_choices: null
+    id: 0124e7c3-a95a-4603-acfb-fc2c07eebcaf
+    jinja: '{{sentence_fra_Latn}} The previous text is in French. Here is a translation
+      to Russian: ||| {{sentence_rus_Cyrl}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: prev-fra_Latn-rus_Cyrl
+    reference: ''
+  6f48594b-2c10-4313-b898-546dc140d140: !Template
+    answer_choices: null
+    id: 6f48594b-2c10-4313-b898-546dc140d140
+    jinja: '{{sentence_fra_Latn}} Here is the same text in Russian: |||{{sentence_rus_Cyrl}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: in-fra_Latn-rus_Cyrl
+    reference: ''
+  84458e10-0782-4eb5-b3ba-cc9d3b4a03a7: !Template
+    answer_choices: null
+    id: 84458e10-0782-4eb5-b3ba-cc9d3b4a03a7
+    jinja: 'A text in French: {{sentence_fra_Latn}}
+
+      The same text in Russian: |||{{sentence_rus_Cyrl}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: ab-fra_Latn-rus_Cyrl
+    reference: ''

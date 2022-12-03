@@ -1,0 +1,39 @@
+dataset: facebook/flores
+subset: rus_Cyrl-eus_Latn
+templates:
+  1a2b609e-fa5f-435a-ba63-9afda964d79e: !Template
+    answer_choices: null
+    id: 1a2b609e-fa5f-435a-ba63-9afda964d79e
+    jinja: '{{sentence_rus_Cyrl}} The previous text is in Russian. Here is a translation
+      to Basque: ||| {{sentence_eus_Latn}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: prev-rus_Cyrl-eus_Latn
+    reference: ''
+  8ddfefc0-b10c-464a-9780-c7272a5b1dd5: !Template
+    answer_choices: null
+    id: 8ddfefc0-b10c-464a-9780-c7272a5b1dd5
+    jinja: 'A text in Russian: {{sentence_rus_Cyrl}}
+
+      The same text in Basque: |||{{sentence_eus_Latn}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: ab-rus_Cyrl-eus_Latn
+    reference: ''
+  a56b2680-8f67-4dfe-b657-a6b605c6faa9: !Template
+    answer_choices: null
+    id: a56b2680-8f67-4dfe-b657-a6b605c6faa9
+    jinja: '{{sentence_rus_Cyrl}} Here is the same text in Basque: |||{{sentence_eus_Latn}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: in-rus_Cyrl-eus_Latn
+    reference: ''

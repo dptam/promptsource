@@ -1,0 +1,39 @@
+dataset: facebook/flores
+subset: tel_Telu-rus_Cyrl
+templates:
+  056eabc1-5dbf-4518-96ea-ee2defc2cd2a: !Template
+    answer_choices: null
+    id: 056eabc1-5dbf-4518-96ea-ee2defc2cd2a
+    jinja: '{{sentence_tel_Telu}} Here is the same text in Russian: |||{{sentence_rus_Cyrl}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: in-tel_Telu-rus_Cyrl
+    reference: ''
+  2e3960d4-8848-4985-a4ad-b7b5ccb43a76: !Template
+    answer_choices: null
+    id: 2e3960d4-8848-4985-a4ad-b7b5ccb43a76
+    jinja: '{{sentence_tel_Telu}} The previous text is in Telugu. Here is a translation
+      to Russian: ||| {{sentence_rus_Cyrl}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: prev-tel_Telu-rus_Cyrl
+    reference: ''
+  678d328b-4c6d-4dd0-a7aa-7352e46d5b23: !Template
+    answer_choices: null
+    id: 678d328b-4c6d-4dd0-a7aa-7352e46d5b23
+    jinja: 'A text in Telugu: {{sentence_tel_Telu}}
+
+      The same text in Russian: |||{{sentence_rus_Cyrl}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: ab-tel_Telu-rus_Cyrl
+    reference: ''

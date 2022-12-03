@@ -1,0 +1,39 @@
+dataset: facebook/flores
+subset: rus_Cyrl-tum_Latn
+templates:
+  57b32216-02ca-4992-b55b-a1bf84955996: !Template
+    answer_choices: null
+    id: 57b32216-02ca-4992-b55b-a1bf84955996
+    jinja: 'A text in Russian: {{sentence_rus_Cyrl}}
+
+      The same text in Tumbuka: |||{{sentence_tum_Latn}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: ab-rus_Cyrl-tum_Latn
+    reference: ''
+  83428ab1-67e9-4879-be20-3aded5879b85: !Template
+    answer_choices: null
+    id: 83428ab1-67e9-4879-be20-3aded5879b85
+    jinja: '{{sentence_rus_Cyrl}} The previous text is in Russian. Here is a translation
+      to Tumbuka: ||| {{sentence_tum_Latn}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: prev-rus_Cyrl-tum_Latn
+    reference: ''
+  8980d671-0cf7-40bf-aa13-52c3454d2f82: !Template
+    answer_choices: null
+    id: 8980d671-0cf7-40bf-aa13-52c3454d2f82
+    jinja: '{{sentence_rus_Cyrl}} Here is the same text in Tumbuka: |||{{sentence_tum_Latn}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: in-rus_Cyrl-tum_Latn
+    reference: ''

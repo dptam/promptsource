@@ -1,0 +1,39 @@
+dataset: facebook/flores
+subset: swh_Latn-rus_Cyrl
+templates:
+  16f4e5b5-4e2b-4bfc-931a-9a383eca17e1: !Template
+    answer_choices: null
+    id: 16f4e5b5-4e2b-4bfc-931a-9a383eca17e1
+    jinja: 'A text in Swahili: {{sentence_swh_Latn}}
+
+      The same text in Russian: |||{{sentence_rus_Cyrl}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: ab-swh_Latn-rus_Cyrl
+    reference: ''
+  4e0cdc30-bb81-4daa-9b93-0667fc41e9bb: !Template
+    answer_choices: null
+    id: 4e0cdc30-bb81-4daa-9b93-0667fc41e9bb
+    jinja: '{{sentence_swh_Latn}} Here is the same text in Russian: |||{{sentence_rus_Cyrl}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: in-swh_Latn-rus_Cyrl
+    reference: ''
+  b7a2d727-df3d-4680-af1f-a15ae543841b: !Template
+    answer_choices: null
+    id: b7a2d727-df3d-4680-af1f-a15ae543841b
+    jinja: '{{sentence_swh_Latn}} The previous text is in Swahili. Here is a translation
+      to Russian: ||| {{sentence_rus_Cyrl}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: prev-swh_Latn-rus_Cyrl
+    reference: ''

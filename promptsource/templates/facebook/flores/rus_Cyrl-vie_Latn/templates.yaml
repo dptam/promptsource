@@ -1,0 +1,39 @@
+dataset: facebook/flores
+subset: rus_Cyrl-vie_Latn
+templates:
+  92b2c9a0-3a9a-4777-87db-f51a73ac9e74: !Template
+    answer_choices: null
+    id: 92b2c9a0-3a9a-4777-87db-f51a73ac9e74
+    jinja: 'A text in Russian: {{sentence_rus_Cyrl}}
+
+      The same text in Vietnamese: |||{{sentence_vie_Latn}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: ab-rus_Cyrl-vie_Latn
+    reference: ''
+  d37cfe10-ee5a-40a1-a0a2-ff6f8af59632: !Template
+    answer_choices: null
+    id: d37cfe10-ee5a-40a1-a0a2-ff6f8af59632
+    jinja: '{{sentence_rus_Cyrl}} Here is the same text in Vietnamese: |||{{sentence_vie_Latn}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: in-rus_Cyrl-vie_Latn
+    reference: ''
+  d3ab7859-7fdb-4c5c-9e84-035582b88db5: !Template
+    answer_choices: null
+    id: d3ab7859-7fdb-4c5c-9e84-035582b88db5
+    jinja: '{{sentence_rus_Cyrl}} The previous text is in Russian. Here is a translation
+      to Vietnamese: ||| {{sentence_vie_Latn}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: prev-rus_Cyrl-vie_Latn
+    reference: ''

@@ -1,0 +1,39 @@
+dataset: facebook/flores
+subset: rus_Cyrl-ben_Beng
+templates:
+  254c2cfa-b145-4ead-8368-04c44fa7cea7: !Template
+    answer_choices: null
+    id: 254c2cfa-b145-4ead-8368-04c44fa7cea7
+    jinja: 'A text in Russian: {{sentence_rus_Cyrl}}
+
+      The same text in Bengali: |||{{sentence_ben_Beng}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: ab-rus_Cyrl-ben_Beng
+    reference: ''
+  29f73a5d-48cb-4770-a0e3-289332c0746f: !Template
+    answer_choices: null
+    id: 29f73a5d-48cb-4770-a0e3-289332c0746f
+    jinja: '{{sentence_rus_Cyrl}} The previous text is in Russian. Here is a translation
+      to Bengali: ||| {{sentence_ben_Beng}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: prev-rus_Cyrl-ben_Beng
+    reference: ''
+  6e13abc3-b48c-4493-b0a6-cf8194578b89: !Template
+    answer_choices: null
+    id: 6e13abc3-b48c-4493-b0a6-cf8194578b89
+    jinja: '{{sentence_rus_Cyrl}} Here is the same text in Bengali: |||{{sentence_ben_Beng}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: in-rus_Cyrl-ben_Beng
+    reference: ''

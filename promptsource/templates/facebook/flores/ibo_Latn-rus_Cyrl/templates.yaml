@@ -1,0 +1,39 @@
+dataset: facebook/flores
+subset: ibo_Latn-rus_Cyrl
+templates:
+  af870eae-f192-4816-880b-6c2a210c05eb: !Template
+    answer_choices: null
+    id: af870eae-f192-4816-880b-6c2a210c05eb
+    jinja: '{{sentence_ibo_Latn}} The previous text is in Igbo. Here is a translation
+      to Russian: ||| {{sentence_rus_Cyrl}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: prev-ibo_Latn-rus_Cyrl
+    reference: ''
+  d46e02ce-53ab-40d0-900e-4715231eca41: !Template
+    answer_choices: null
+    id: d46e02ce-53ab-40d0-900e-4715231eca41
+    jinja: 'A text in Igbo: {{sentence_ibo_Latn}}
+
+      The same text in Russian: |||{{sentence_rus_Cyrl}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: ab-ibo_Latn-rus_Cyrl
+    reference: ''
+  dd221327-0c3e-423b-95c2-e702c161b1b0: !Template
+    answer_choices: null
+    id: dd221327-0c3e-423b-95c2-e702c161b1b0
+    jinja: '{{sentence_ibo_Latn}} Here is the same text in Russian: |||{{sentence_rus_Cyrl}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: in-ibo_Latn-rus_Cyrl
+    reference: ''

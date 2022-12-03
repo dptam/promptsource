@@ -1,0 +1,39 @@
+dataset: facebook/flores
+subset: rus_Cyrl-zul_Latn
+templates:
+  1dc0766b-1140-4f6f-aa5e-d7d035941194: !Template
+    answer_choices: null
+    id: 1dc0766b-1140-4f6f-aa5e-d7d035941194
+    jinja: '{{sentence_rus_Cyrl}} Here is the same text in Zulu: |||{{sentence_zul_Latn}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: in-rus_Cyrl-zul_Latn
+    reference: ''
+  2a5de380-66a2-45cb-85d9-fcc6cbca06e4: !Template
+    answer_choices: null
+    id: 2a5de380-66a2-45cb-85d9-fcc6cbca06e4
+    jinja: 'A text in Russian: {{sentence_rus_Cyrl}}
+
+      The same text in Zulu: |||{{sentence_zul_Latn}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: ab-rus_Cyrl-zul_Latn
+    reference: ''
+  c294bd66-141a-42c1-ad5d-a592a64e4bfc: !Template
+    answer_choices: null
+    id: c294bd66-141a-42c1-ad5d-a592a64e4bfc
+    jinja: '{{sentence_rus_Cyrl}} The previous text is in Russian. Here is a translation
+      to Zulu: ||| {{sentence_zul_Latn}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: prev-rus_Cyrl-zul_Latn
+    reference: ''

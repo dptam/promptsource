@@ -1,0 +1,39 @@
+dataset: facebook/flores
+subset: rus_Cyrl-tsn_Latn
+templates:
+  325396cc-4384-4261-adc2-be14d044af89: !Template
+    answer_choices: null
+    id: 325396cc-4384-4261-adc2-be14d044af89
+    jinja: '{{sentence_rus_Cyrl}} The previous text is in Russian. Here is a translation
+      to Tswana: ||| {{sentence_tsn_Latn}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: prev-rus_Cyrl-tsn_Latn
+    reference: ''
+  9df0a68f-2775-46f8-8a08-5e3abdb442c0: !Template
+    answer_choices: null
+    id: 9df0a68f-2775-46f8-8a08-5e3abdb442c0
+    jinja: '{{sentence_rus_Cyrl}} Here is the same text in Tswana: |||{{sentence_tsn_Latn}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: in-rus_Cyrl-tsn_Latn
+    reference: ''
+  a74e46c1-d4df-4ce6-8c10-2a40d391d153: !Template
+    answer_choices: null
+    id: a74e46c1-d4df-4ce6-8c10-2a40d391d153
+    jinja: 'A text in Russian: {{sentence_rus_Cyrl}}
+
+      The same text in Tswana: |||{{sentence_tsn_Latn}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: ab-rus_Cyrl-tsn_Latn
+    reference: ''

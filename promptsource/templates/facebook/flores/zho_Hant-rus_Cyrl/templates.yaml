@@ -1,0 +1,39 @@
+dataset: facebook/flores
+subset: zho_Hant-rus_Cyrl
+templates:
+  695adbd6-c44b-4338-b0de-2421900e0d8c: !Template
+    answer_choices: null
+    id: 695adbd6-c44b-4338-b0de-2421900e0d8c
+    jinja: 'A text in Chinese (Traditional): {{sentence_zho_Hant}}
+
+      The same text in Russian: |||{{sentence_rus_Cyrl}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: ab-zho_Hant-rus_Cyrl
+    reference: ''
+  825d20df-174a-46a9-b69a-fa35eb76ed81: !Template
+    answer_choices: null
+    id: 825d20df-174a-46a9-b69a-fa35eb76ed81
+    jinja: '{{sentence_zho_Hant}} The previous text is in Chinese (Traditional). Here
+      is a translation to Russian: ||| {{sentence_rus_Cyrl}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: prev-zho_Hant-rus_Cyrl
+    reference: ''
+  eecd5a68-ff22-46a3-8185-e3a39a877f7e: !Template
+    answer_choices: null
+    id: eecd5a68-ff22-46a3-8185-e3a39a877f7e
+    jinja: '{{sentence_zho_Hant}} Here is the same text in Russian: |||{{sentence_rus_Cyrl}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: in-zho_Hant-rus_Cyrl
+    reference: ''

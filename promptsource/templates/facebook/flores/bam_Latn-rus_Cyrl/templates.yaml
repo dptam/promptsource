@@ -1,0 +1,39 @@
+dataset: facebook/flores
+subset: bam_Latn-rus_Cyrl
+templates:
+  060e3fc4-6c5f-401d-b3be-bd2f474250ea: !Template
+    answer_choices: null
+    id: 060e3fc4-6c5f-401d-b3be-bd2f474250ea
+    jinja: 'A text in Bambara: {{sentence_bam_Latn}}
+
+      The same text in Russian: |||{{sentence_rus_Cyrl}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: ab-bam_Latn-rus_Cyrl
+    reference: ''
+  2b911741-0045-4475-845c-d4641eb31ab9: !Template
+    answer_choices: null
+    id: 2b911741-0045-4475-845c-d4641eb31ab9
+    jinja: '{{sentence_bam_Latn}} The previous text is in Bambara. Here is a translation
+      to Russian: ||| {{sentence_rus_Cyrl}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: prev-bam_Latn-rus_Cyrl
+    reference: ''
+  2eb5d47a-6708-4c39-bfba-c44a8ebf6769: !Template
+    answer_choices: null
+    id: 2eb5d47a-6708-4c39-bfba-c44a8ebf6769
+    jinja: '{{sentence_bam_Latn}} Here is the same text in Russian: |||{{sentence_rus_Cyrl}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: in-bam_Latn-rus_Cyrl
+    reference: ''

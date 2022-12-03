@@ -1,0 +1,39 @@
+dataset: facebook/flores
+subset: rus_Cyrl-fon_Latn
+templates:
+  1f7f84cc-c2dc-4f90-a6a5-f870ef0dadb7: !Template
+    answer_choices: null
+    id: 1f7f84cc-c2dc-4f90-a6a5-f870ef0dadb7
+    jinja: '{{sentence_rus_Cyrl}} Here is the same text in Fon: |||{{sentence_fon_Latn}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: in-rus_Cyrl-fon_Latn
+    reference: ''
+  27b92ed8-a762-48fd-ad42-adb717a3b34b: !Template
+    answer_choices: null
+    id: 27b92ed8-a762-48fd-ad42-adb717a3b34b
+    jinja: 'A text in Russian: {{sentence_rus_Cyrl}}
+
+      The same text in Fon: |||{{sentence_fon_Latn}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: ab-rus_Cyrl-fon_Latn
+    reference: ''
+  34d0e343-a32c-4888-9528-a5b8f4b43056: !Template
+    answer_choices: null
+    id: 34d0e343-a32c-4888-9528-a5b8f4b43056
+    jinja: '{{sentence_rus_Cyrl}} The previous text is in Russian. Here is a translation
+      to Fon: ||| {{sentence_fon_Latn}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: prev-rus_Cyrl-fon_Latn
+    reference: ''

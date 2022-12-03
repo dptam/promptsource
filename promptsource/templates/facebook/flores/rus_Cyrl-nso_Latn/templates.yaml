@@ -1,0 +1,39 @@
+dataset: facebook/flores
+subset: rus_Cyrl-nso_Latn
+templates:
+  551958ce-2901-4894-8709-0c4a3e025980: !Template
+    answer_choices: null
+    id: 551958ce-2901-4894-8709-0c4a3e025980
+    jinja: '{{sentence_rus_Cyrl}} Here is the same text in Northern Sotho: |||{{sentence_nso_Latn}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: in-rus_Cyrl-nso_Latn
+    reference: ''
+  965a4a04-984d-4f18-ba86-2153013373b5: !Template
+    answer_choices: null
+    id: 965a4a04-984d-4f18-ba86-2153013373b5
+    jinja: '{{sentence_rus_Cyrl}} The previous text is in Russian. Here is a translation
+      to Northern Sotho: ||| {{sentence_nso_Latn}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: prev-rus_Cyrl-nso_Latn
+    reference: ''
+  ebbc3284-ad8c-45dc-8433-a00bee927d57: !Template
+    answer_choices: null
+    id: ebbc3284-ad8c-45dc-8433-a00bee927d57
+    jinja: 'A text in Russian: {{sentence_rus_Cyrl}}
+
+      The same text in Northern Sotho: |||{{sentence_nso_Latn}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: ab-rus_Cyrl-nso_Latn
+    reference: ''

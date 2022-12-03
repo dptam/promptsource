@@ -1,0 +1,39 @@
+dataset: facebook/flores
+subset: yor_Latn-rus_Cyrl
+templates:
+  22fbd9e3-c7a5-4d5f-a730-84bd8c982b21: !Template
+    answer_choices: null
+    id: 22fbd9e3-c7a5-4d5f-a730-84bd8c982b21
+    jinja: 'A text in Yoruba: {{sentence_yor_Latn}}
+
+      The same text in Russian: |||{{sentence_rus_Cyrl}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: ab-yor_Latn-rus_Cyrl
+    reference: ''
+  4beb8fc2-a6d6-43c5-b785-ce7b8cc9abdb: !Template
+    answer_choices: null
+    id: 4beb8fc2-a6d6-43c5-b785-ce7b8cc9abdb
+    jinja: '{{sentence_yor_Latn}} The previous text is in Yoruba. Here is a translation
+      to Russian: ||| {{sentence_rus_Cyrl}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: prev-yor_Latn-rus_Cyrl
+    reference: ''
+  63edf448-42cf-4769-ac90-d53b1f9692e6: !Template
+    answer_choices: null
+    id: 63edf448-42cf-4769-ac90-d53b1f9692e6
+    jinja: '{{sentence_yor_Latn}} Here is the same text in Russian: |||{{sentence_rus_Cyrl}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: in-yor_Latn-rus_Cyrl
+    reference: ''

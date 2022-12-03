@@ -1,0 +1,39 @@
+dataset: facebook/flores
+subset: rus_Cyrl-kik_Latn
+templates:
+  30ab6678-7bd9-4b86-af84-74b0dafc3ae5: !Template
+    answer_choices: null
+    id: 30ab6678-7bd9-4b86-af84-74b0dafc3ae5
+    jinja: 'A text in Russian: {{sentence_rus_Cyrl}}
+
+      The same text in Kikuyu: |||{{sentence_kik_Latn}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: ab-rus_Cyrl-kik_Latn
+    reference: ''
+  ce7311bd-29a9-4a88-b160-92ef5b486f03: !Template
+    answer_choices: null
+    id: ce7311bd-29a9-4a88-b160-92ef5b486f03
+    jinja: '{{sentence_rus_Cyrl}} Here is the same text in Kikuyu: |||{{sentence_kik_Latn}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: in-rus_Cyrl-kik_Latn
+    reference: ''
+  fd8f7dc5-0bbe-469e-9f30-940545de0f03: !Template
+    answer_choices: null
+    id: fd8f7dc5-0bbe-469e-9f30-940545de0f03
+    jinja: '{{sentence_rus_Cyrl}} The previous text is in Russian. Here is a translation
+      to Kikuyu: ||| {{sentence_kik_Latn}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: prev-rus_Cyrl-kik_Latn
+    reference: ''

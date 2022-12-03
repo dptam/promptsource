@@ -1,0 +1,39 @@
+dataset: facebook/flores
+subset: rus_Cyrl-pan_Guru
+templates:
+  38fdf62b-0ef4-4368-bcba-de5811d2d651: !Template
+    answer_choices: null
+    id: 38fdf62b-0ef4-4368-bcba-de5811d2d651
+    jinja: 'A text in Russian: {{sentence_rus_Cyrl}}
+
+      The same text in Eastern Panjabi: |||{{sentence_pan_Guru}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: ab-rus_Cyrl-pan_Guru
+    reference: ''
+  87eefa6a-b85b-4be2-9e11-1349877341b1: !Template
+    answer_choices: null
+    id: 87eefa6a-b85b-4be2-9e11-1349877341b1
+    jinja: '{{sentence_rus_Cyrl}} The previous text is in Russian. Here is a translation
+      to Eastern Panjabi: ||| {{sentence_pan_Guru}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: prev-rus_Cyrl-pan_Guru
+    reference: ''
+  8fef9f47-be00-4f68-8da8-7c9579a5300f: !Template
+    answer_choices: null
+    id: 8fef9f47-be00-4f68-8da8-7c9579a5300f
+    jinja: '{{sentence_rus_Cyrl}} Here is the same text in Eastern Panjabi: |||{{sentence_pan_Guru}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: in-rus_Cyrl-pan_Guru
+    reference: ''

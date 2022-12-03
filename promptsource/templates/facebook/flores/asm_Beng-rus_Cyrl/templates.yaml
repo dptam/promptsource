@@ -1,0 +1,39 @@
+dataset: facebook/flores
+subset: asm_Beng-rus_Cyrl
+templates:
+  44a30c82-9cca-418c-acc4-5b8cc03b12ff: !Template
+    answer_choices: null
+    id: 44a30c82-9cca-418c-acc4-5b8cc03b12ff
+    jinja: 'A text in Assamese: {{sentence_asm_Beng}}
+
+      The same text in Russian: |||{{sentence_rus_Cyrl}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: ab-asm_Beng-rus_Cyrl
+    reference: ''
+  e282bf71-9953-4605-a688-79a0d91f9a21: !Template
+    answer_choices: null
+    id: e282bf71-9953-4605-a688-79a0d91f9a21
+    jinja: '{{sentence_asm_Beng}} The previous text is in Assamese. Here is a translation
+      to Russian: ||| {{sentence_rus_Cyrl}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: prev-asm_Beng-rus_Cyrl
+    reference: ''
+  e62479b2-ed9c-4aa5-a551-72b74f2b2538: !Template
+    answer_choices: null
+    id: e62479b2-ed9c-4aa5-a551-72b74f2b2538
+    jinja: '{{sentence_asm_Beng}} Here is the same text in Russian: |||{{sentence_rus_Cyrl}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: in-asm_Beng-rus_Cyrl
+    reference: ''

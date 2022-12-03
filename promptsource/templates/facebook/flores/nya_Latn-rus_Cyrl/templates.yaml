@@ -1,0 +1,39 @@
+dataset: facebook/flores
+subset: nya_Latn-rus_Cyrl
+templates:
+  37e3bd19-a3e0-401a-b8b0-acbd731dc2b7: !Template
+    answer_choices: null
+    id: 37e3bd19-a3e0-401a-b8b0-acbd731dc2b7
+    jinja: '{{sentence_nya_Latn}} Here is the same text in Russian: |||{{sentence_rus_Cyrl}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: in-nya_Latn-rus_Cyrl
+    reference: ''
+  500a3bbf-170b-48d1-93bb-629ce91e2363: !Template
+    answer_choices: null
+    id: 500a3bbf-170b-48d1-93bb-629ce91e2363
+    jinja: '{{sentence_nya_Latn}} The previous text is in Nyanja. Here is a translation
+      to Russian: ||| {{sentence_rus_Cyrl}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: prev-nya_Latn-rus_Cyrl
+    reference: ''
+  7e43d4ca-3460-4097-ae2d-7a8f6bd00dca: !Template
+    answer_choices: null
+    id: 7e43d4ca-3460-4097-ae2d-7a8f6bd00dca
+    jinja: 'A text in Nyanja: {{sentence_nya_Latn}}
+
+      The same text in Russian: |||{{sentence_rus_Cyrl}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: ab-nya_Latn-rus_Cyrl
+    reference: ''

@@ -1,0 +1,39 @@
+dataset: facebook/flores
+subset: ind_Latn-rus_Cyrl
+templates:
+  19feed16-5d51-4f13-89be-52a0ff2d888a: !Template
+    answer_choices: null
+    id: 19feed16-5d51-4f13-89be-52a0ff2d888a
+    jinja: '{{sentence_ind_Latn}} Here is the same text in Russian: |||{{sentence_rus_Cyrl}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: in-ind_Latn-rus_Cyrl
+    reference: ''
+  62c14116-10d4-4a30-b9f3-c4f3f540eb6a: !Template
+    answer_choices: null
+    id: 62c14116-10d4-4a30-b9f3-c4f3f540eb6a
+    jinja: '{{sentence_ind_Latn}} The previous text is in Indonesian. Here is a translation
+      to Russian: ||| {{sentence_rus_Cyrl}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: prev-ind_Latn-rus_Cyrl
+    reference: ''
+  c94e2977-d99d-4ee7-9c22-9dce69f8dcb7: !Template
+    answer_choices: null
+    id: c94e2977-d99d-4ee7-9c22-9dce69f8dcb7
+    jinja: 'A text in Indonesian: {{sentence_ind_Latn}}
+
+      The same text in Russian: |||{{sentence_rus_Cyrl}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: ab-ind_Latn-rus_Cyrl
+    reference: ''

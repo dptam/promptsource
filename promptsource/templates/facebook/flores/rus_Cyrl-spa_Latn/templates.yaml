@@ -1,0 +1,39 @@
+dataset: facebook/flores
+subset: rus_Cyrl-spa_Latn
+templates:
+  58a0a340-3bda-4a64-82af-4c51421f1c6c: !Template
+    answer_choices: null
+    id: 58a0a340-3bda-4a64-82af-4c51421f1c6c
+    jinja: '{{sentence_rus_Cyrl}} Here is the same text in Spanish: |||{{sentence_spa_Latn}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: in-rus_Cyrl-spa_Latn
+    reference: ''
+  abf63b05-9d0a-48ad-be21-a498bfd5163d: !Template
+    answer_choices: null
+    id: abf63b05-9d0a-48ad-be21-a498bfd5163d
+    jinja: 'A text in Russian: {{sentence_rus_Cyrl}}
+
+      The same text in Spanish: |||{{sentence_spa_Latn}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: ab-rus_Cyrl-spa_Latn
+    reference: ''
+  b064b8fa-bf93-401a-b369-1a3718af3367: !Template
+    answer_choices: null
+    id: b064b8fa-bf93-401a-b369-1a3718af3367
+    jinja: '{{sentence_rus_Cyrl}} The previous text is in Russian. Here is a translation
+      to Spanish: ||| {{sentence_spa_Latn}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: prev-rus_Cyrl-spa_Latn
+    reference: ''
