@@ -1,0 +1,37 @@
+dataset: Helsinki-NLP/tatoeba_mt
+subset: rus-cmn_Hans
+templates:
+  85cc84d7-2eda-4453-9c20-e61fa181e1b4: !Template
+    answer_choices: null
+    id: 85cc84d7-2eda-4453-9c20-e61fa181e1b4
+    jinja: 'Translate the following text from Mandarin Chinese to Russian.
+
+
+      Text: {{ targetString }}
+
+
+      Translation:||| {{ sourceString }}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: translate-this-cmn_Hans-rus
+    reference: ''
+  e0f5dfdb-0143-4ca0-b263-62e70c160421: !Template
+    answer_choices: null
+    id: e0f5dfdb-0143-4ca0-b263-62e70c160421
+    jinja: 'Translate the following text from Russian to Mandarin Chinese.
+
+
+      Text: {{ sourceString }}
+
+
+      Translation:||| {{ targetString }}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: translate-this-rus-cmn_Hans
+    reference: ''

@@ -1,0 +1,37 @@
+dataset: Helsinki-NLP/tatoeba_mt
+subset: eus-rus
+templates:
+  6d25c376-c5ca-48b3-a8a9-6de3e781e4d7: !Template
+    answer_choices: null
+    id: 6d25c376-c5ca-48b3-a8a9-6de3e781e4d7
+    jinja: 'Translate the following text from Basque to Russian.
+
+
+      Text: {{ sourceString }}
+
+
+      Translation:||| {{ targetString }}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: translate-this-eus-rus
+    reference: ''
+  f8c79b72-4f40-4bca-bcc4-e7bab7f09173: !Template
+    answer_choices: null
+    id: f8c79b72-4f40-4bca-bcc4-e7bab7f09173
+    jinja: 'Translate the following text from Russian to Basque.
+
+
+      Text: {{ targetString }}
+
+
+      Translation:||| {{ sourceString }}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: translate-this-rus-eus
+    reference: ''

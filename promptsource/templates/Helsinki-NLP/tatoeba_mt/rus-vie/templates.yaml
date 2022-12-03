@@ -1,0 +1,37 @@
+dataset: Helsinki-NLP/tatoeba_mt
+subset: rus-vie
+templates:
+  0c15e185-73b8-4311-b58e-7f14afcc17f1: !Template
+    answer_choices: null
+    id: 0c15e185-73b8-4311-b58e-7f14afcc17f1
+    jinja: 'Translate the following text from Vietnamese to Russian.
+
+
+      Text: {{ targetString }}
+
+
+      Translation:||| {{ sourceString }}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: translate-this-vie-rus
+    reference: ''
+  d47eb1d3-4c7d-4f39-b85b-5c2762b8f440: !Template
+    answer_choices: null
+    id: d47eb1d3-4c7d-4f39-b85b-5c2762b8f440
+    jinja: 'Translate the following text from Russian to Vietnamese.
+
+
+      Text: {{ sourceString }}
+
+
+      Translation:||| {{ targetString }}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: translate-this-rus-vie
+    reference: ''

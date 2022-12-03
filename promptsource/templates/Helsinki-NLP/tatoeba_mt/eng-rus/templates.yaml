@@ -1,0 +1,37 @@
+dataset: Helsinki-NLP/tatoeba_mt
+subset: eng-rus
+templates:
+  24904d21-8e6b-4ff1-b9fd-ced01bb4b8e2: !Template
+    answer_choices: null
+    id: 24904d21-8e6b-4ff1-b9fd-ced01bb4b8e2
+    jinja: 'Translate the following text from Russian to English.
+
+
+      Text: {{ targetString }}
+
+
+      Translation:||| {{ sourceString }}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: translate-this-rus-eng
+    reference: ''
+  97de5020-54f1-4b4e-9168-138809f50e23: !Template
+    answer_choices: null
+    id: 97de5020-54f1-4b4e-9168-138809f50e23
+    jinja: 'Translate the following text from English to Russian.
+
+
+      Text: {{ sourceString }}
+
+
+      Translation:||| {{ targetString }}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: translate-this-eng-rus
+    reference: ''

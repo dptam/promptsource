@@ -1,0 +1,37 @@
+dataset: Helsinki-NLP/tatoeba_mt
+subset: rus-zho
+templates:
+  2aa577de-6653-40fc-8ea8-ffa2e375228c: !Template
+    answer_choices: null
+    id: 2aa577de-6653-40fc-8ea8-ffa2e375228c
+    jinja: 'Translate the following text from Russian to Chinese.
+
+
+      Text: {{ sourceString }}
+
+
+      Translation:||| {{ targetString }}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: translate-this-rus-zho
+    reference: ''
+  90ae716c-8cf0-4436-8dcb-ff54c778a1b1: !Template
+    answer_choices: null
+    id: 90ae716c-8cf0-4436-8dcb-ff54c778a1b1
+    jinja: 'Translate the following text from Chinese to Russian.
+
+
+      Text: {{ targetString }}
+
+
+      Translation:||| {{ sourceString }}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: translate-this-zho-rus
+    reference: ''

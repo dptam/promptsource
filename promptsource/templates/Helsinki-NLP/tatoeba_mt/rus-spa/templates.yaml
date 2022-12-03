@@ -1,0 +1,37 @@
+dataset: Helsinki-NLP/tatoeba_mt
+subset: rus-spa
+templates:
+  0f34755f-91f7-499b-bff4-3bd968bae213: !Template
+    answer_choices: null
+    id: 0f34755f-91f7-499b-bff4-3bd968bae213
+    jinja: 'Translate the following text from Russian to Spanish.
+
+
+      Text: {{ sourceString }}
+
+
+      Translation:||| {{ targetString }}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: translate-this-rus-spa
+    reference: ''
+  8858e68c-f7d3-42cf-b6de-a55f7536d73b: !Template
+    answer_choices: null
+    id: 8858e68c-f7d3-42cf-b6de-a55f7536d73b
+    jinja: 'Translate the following text from Spanish to Russian.
+
+
+      Text: {{ targetString }}
+
+
+      Translation:||| {{ sourceString }}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: translate-this-spa-rus
+    reference: ''

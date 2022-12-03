@@ -1,0 +1,37 @@
+dataset: Helsinki-NLP/tatoeba_mt
+subset: run-rus
+templates:
+  73e9fa8d-374a-4e70-be18-1473e3baf3b3: !Template
+    answer_choices: null
+    id: 73e9fa8d-374a-4e70-be18-1473e3baf3b3
+    jinja: 'Translate the following text from Russian to Rundi.
+
+
+      Text: {{ targetString }}
+
+
+      Translation:||| {{ sourceString }}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: translate-this-rus-run
+    reference: ''
+  bf74a98b-c209-476f-aa89-973e372a86af: !Template
+    answer_choices: null
+    id: bf74a98b-c209-476f-aa89-973e372a86af
+    jinja: 'Translate the following text from Rundi to Russian.
+
+
+      Text: {{ sourceString }}
+
+
+      Translation:||| {{ targetString }}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: translate-this-run-rus
+    reference: ''

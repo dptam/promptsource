@@ -1,0 +1,37 @@
+dataset: Helsinki-NLP/tatoeba_mt
+subset: ara-rus
+templates:
+  394e7c2f-f2a2-4d6a-8275-9932c4a74144: !Template
+    answer_choices: null
+    id: 394e7c2f-f2a2-4d6a-8275-9932c4a74144
+    jinja: 'Translate the following text from Arabic to Russian.
+
+
+      Text: {{ sourceString }}
+
+
+      Translation:||| {{ targetString }}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: translate-this-ara-rus
+    reference: ''
+  f7d2d831-36ed-4c80-af54-19e4ab1d70ee: !Template
+    answer_choices: null
+    id: f7d2d831-36ed-4c80-af54-19e4ab1d70ee
+    jinja: 'Translate the following text from Russian to Arabic.
+
+
+      Text: {{ targetString }}
+
+
+      Translation:||| {{ sourceString }}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: translate-this-rus-ara
+    reference: ''
