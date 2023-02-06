@@ -1,6 +1,23 @@
 dataset: Helsinki-NLP/tatoeba_mt
 subset: fra-cmn_Hans
 templates:
+  65cba922-d4d7-4ef3-ba58-8d841737b21a: !Template
+    answer_choices: null
+    id: 65cba922-d4d7-4ef3-ba58-8d841737b21a
+    jinja: 'Translate the following text from Mandarin Chinese to French.
+
+
+      Text: {{ targetString }}
+
+
+      Translation:||| {{ sourceString }}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: translate-this-cmn_Hans-fra
+    reference: ''
   750c5e6a-d7d0-47fe-80c5-3e6a88c83e27: !Template
     answer_choices: null
     id: 750c5e6a-d7d0-47fe-80c5-3e6a88c83e27
@@ -24,4 +41,21 @@ templates:
       metrics: null
       original_task: null
     name: translate-this-cmn_Hans-fra
+    reference: ''
+  a4353cba-cc59-4d5a-a7a8-2194e4dbcc6f: !Template
+    answer_choices: null
+    id: a4353cba-cc59-4d5a-a7a8-2194e4dbcc6f
+    jinja: 'Translate the following text from French to Mandarin Chinese.
+
+
+      Text: {{ sourceString }}
+
+
+      Translation:||| {{ targetString }}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: translate-this-fra-cmn_Hans
     reference: ''

@@ -1,6 +1,23 @@
 dataset: Helsinki-NLP/tatoeba_mt
 subset: fra-vie
 templates:
+  01e1758b-e25c-4ec2-a685-023fc35c367e: !Template
+    answer_choices: null
+    id: 01e1758b-e25c-4ec2-a685-023fc35c367e
+    jinja: 'Translate the following text from Vietnamese to French.
+
+
+      Text: {{ targetString }}
+
+
+      Translation:||| {{ sourceString }}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: translate-this-vie-fra
+    reference: ''
   672b2d92-50e4-49b2-a142-40d9e5284a6a: !Template
     answer_choices: null
     id: 672b2d92-50e4-49b2-a142-40d9e5284a6a
@@ -12,6 +29,23 @@ templates:
       metrics: null
       original_task: null
     name: translate-this-vie-fra
+    reference: ''
+  717ffab7-4071-423f-b910-24bbd152b5c7: !Template
+    answer_choices: null
+    id: 717ffab7-4071-423f-b910-24bbd152b5c7
+    jinja: 'Translate the following text from French to Vietnamese.
+
+
+      Text: {{ sourceString }}
+
+
+      Translation:||| {{ targetString }}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: translate-this-fra-vie
     reference: ''
   c1f0b1f9-c757-441e-bf40-69b9135de000: !Template
     answer_choices: null

@@ -1,6 +1,23 @@
 dataset: Helsinki-NLP/tatoeba_mt
 subset: ben-eng
 templates:
+  2cedd5a3-a2d9-4541-b8f9-a868114cf377: !Template
+    answer_choices: null
+    id: 2cedd5a3-a2d9-4541-b8f9-a868114cf377
+    jinja: 'Translate the following text from English to Bengali.
+
+
+      Text: {{ targetString }}
+
+
+      Translation:||| {{ sourceString }}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: translate-this-eng-ben
+    reference: ''
   3e6cf1b1-5bdc-4401-a440-670e34f9d7f0: !Template
     answer_choices: null
     id: 3e6cf1b1-5bdc-4401-a440-670e34f9d7f0
@@ -12,6 +29,23 @@ templates:
       metrics: null
       original_task: null
     name: translate-this-eng-ben
+    reference: ''
+  b6086af1-bf3f-49ef-9afd-79e13daa7b8e: !Template
+    answer_choices: null
+    id: b6086af1-bf3f-49ef-9afd-79e13daa7b8e
+    jinja: 'Translate the following text from Bengali to English.
+
+
+      Text: {{ sourceString }}
+
+
+      Translation:||| {{ targetString }}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: translate-this-ben-eng
     reference: ''
   c3409e18-3cc6-427a-a31a-a536df9d1d83: !Template
     answer_choices: null

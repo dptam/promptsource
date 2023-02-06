@@ -1,6 +1,23 @@
 dataset: Helsinki-NLP/tatoeba_mt
 subset: fra-spa
 templates:
+  070ceced-b14a-4e72-907c-42cf248641fe: !Template
+    answer_choices: null
+    id: 070ceced-b14a-4e72-907c-42cf248641fe
+    jinja: 'Translate the following text from Spanish to French.
+
+
+      Text: {{ targetString }}
+
+
+      Translation:||| {{ sourceString }}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: translate-this-spa-fra
+    reference: ''
   3189ea2f-8248-4b06-9a06-81631db11918: !Template
     answer_choices: null
     id: 3189ea2f-8248-4b06-9a06-81631db11918
@@ -24,4 +41,21 @@ templates:
       metrics: null
       original_task: null
     name: translate-this-spa-fra
+    reference: ''
+  ff4834fd-a0ed-4b3d-ad66-9a8aee2a50d0: !Template
+    answer_choices: null
+    id: ff4834fd-a0ed-4b3d-ad66-9a8aee2a50d0
+    jinja: 'Translate the following text from French to Spanish.
+
+
+      Text: {{ sourceString }}
+
+
+      Translation:||| {{ targetString }}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: translate-this-fra-spa
     reference: ''

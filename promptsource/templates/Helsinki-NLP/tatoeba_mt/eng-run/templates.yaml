@@ -1,6 +1,23 @@
 dataset: Helsinki-NLP/tatoeba_mt
 subset: eng-run
 templates:
+  2cc36b2f-c6d3-4b9a-8aeb-61ee982d1f30: !Template
+    answer_choices: null
+    id: 2cc36b2f-c6d3-4b9a-8aeb-61ee982d1f30
+    jinja: 'Translate the following text from English to Rundi.
+
+
+      Text: {{ sourceString }}
+
+
+      Translation:||| {{ targetString }}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: translate-this-eng-run
+    reference: ''
   5932b6d6-f501-4cb1-93b3-312b6dfd0688: !Template
     answer_choices: null
     id: 5932b6d6-f501-4cb1-93b3-312b6dfd0688
@@ -24,4 +41,21 @@ templates:
       metrics: null
       original_task: null
     name: translate-this-eng-run
+    reference: ''
+  d8f5f1ca-5397-475f-a3d1-4efb9ee6ea37: !Template
+    answer_choices: null
+    id: d8f5f1ca-5397-475f-a3d1-4efb9ee6ea37
+    jinja: 'Translate the following text from Rundi to English.
+
+
+      Text: {{ targetString }}
+
+
+      Translation:||| {{ sourceString }}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: translate-this-run-eng
     reference: ''

@@ -25,3 +25,37 @@ templates:
       original_task: null
     name: translate-this-spa-eng
     reference: ''
+  b4d41960-e965-48b5-8007-7d963759271c: !Template
+    answer_choices: null
+    id: b4d41960-e965-48b5-8007-7d963759271c
+    jinja: 'Translate the following text from Spanish to English.
+
+
+      Text: {{ targetString }}
+
+
+      Translation:||| {{ sourceString }}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: translate-this-spa-eng
+    reference: ''
+  edf3faef-0dc4-4202-ac01-c3a40689201a: !Template
+    answer_choices: null
+    id: edf3faef-0dc4-4202-ac01-c3a40689201a
+    jinja: 'Translate the following text from English to Spanish.
+
+
+      Text: {{ sourceString }}
+
+
+      Translation:||| {{ targetString }}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: translate-this-eng-spa
+    reference: ''

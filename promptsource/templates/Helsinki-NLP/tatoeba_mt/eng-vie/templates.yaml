@@ -13,6 +13,40 @@ templates:
       original_task: null
     name: translate-this-eng-vie
     reference: ''
+  21e1cc84-ef74-448e-9a7e-fd1f5120955c: !Template
+    answer_choices: null
+    id: 21e1cc84-ef74-448e-9a7e-fd1f5120955c
+    jinja: 'Translate the following text from Vietnamese to English.
+
+
+      Text: {{ targetString }}
+
+
+      Translation:||| {{ sourceString }}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: translate-this-vie-eng
+    reference: ''
+  8b6c5f40-760c-4156-9080-9edd5e171e1f: !Template
+    answer_choices: null
+    id: 8b6c5f40-760c-4156-9080-9edd5e171e1f
+    jinja: 'Translate the following text from English to Vietnamese.
+
+
+      Text: {{ sourceString }}
+
+
+      Translation:||| {{ targetString }}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: translate-this-eng-vie
+    reference: ''
   e53b2889-276f-412b-a242-ecfe2d2d01bc: !Template
     answer_choices: null
     id: e53b2889-276f-412b-a242-ecfe2d2d01bc

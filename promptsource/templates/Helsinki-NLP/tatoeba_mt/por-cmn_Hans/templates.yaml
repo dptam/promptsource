@@ -1,11 +1,45 @@
 dataset: Helsinki-NLP/tatoeba_mt
 subset: por-cmn_Hans
 templates:
+  5e26d27b-909f-4768-9182-fa1b643cf517: !Template
+    answer_choices: null
+    id: 5e26d27b-909f-4768-9182-fa1b643cf517
+    jinja: 'Translate the following text from Mandarin Chinese to Portuguese.
+
+
+      Text: {{ targetString }}
+
+
+      Translation:||| {{ sourceString }}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: translate-this-cmn_Hans-por
+    reference: ''
   8b86cfbd-2b90-4130-afae-13e5ef4d1d02: !Template
     answer_choices: null
     id: 8b86cfbd-2b90-4130-afae-13e5ef4d1d02
     jinja: Translate the following text from Portuguese to Mandarin Chinese {{ sourceString
       }}||| {{ targetString }}
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: translate-this-por-cmn_Hans
+    reference: ''
+  d2968bb6-89df-4651-ab69-30a32af58a13: !Template
+    answer_choices: null
+    id: d2968bb6-89df-4651-ab69-30a32af58a13
+    jinja: 'Translate the following text from Portuguese to Mandarin Chinese.
+
+
+      Text: {{ sourceString }}
+
+
+      Translation:||| {{ targetString }}'
     metadata: !TemplateMetadata
       choices_in_prompt: null
       languages: null

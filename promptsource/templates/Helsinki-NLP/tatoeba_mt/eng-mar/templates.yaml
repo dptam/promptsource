@@ -1,6 +1,40 @@
 dataset: Helsinki-NLP/tatoeba_mt
 subset: eng-mar
 templates:
+  09690cfd-fede-4caa-8885-7eddf20f7877: !Template
+    answer_choices: null
+    id: 09690cfd-fede-4caa-8885-7eddf20f7877
+    jinja: 'Translate the following text from Marathi to English.
+
+
+      Text: {{ targetString }}
+
+
+      Translation:||| {{ sourceString }}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: translate-this-mar-eng
+    reference: ''
+  0da3114c-c53d-4c76-a7d9-e03a551ab98f: !Template
+    answer_choices: null
+    id: 0da3114c-c53d-4c76-a7d9-e03a551ab98f
+    jinja: 'Translate the following text from English to Marathi.
+
+
+      Text: {{ sourceString }}
+
+
+      Translation:||| {{ targetString }}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: translate-this-eng-mar
+    reference: ''
   5645f620-0364-43b8-a4e0-44ef8a917c07: !Template
     answer_choices: null
     id: 5645f620-0364-43b8-a4e0-44ef8a917c07

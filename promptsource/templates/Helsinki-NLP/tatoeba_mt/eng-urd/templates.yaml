@@ -1,11 +1,45 @@
 dataset: Helsinki-NLP/tatoeba_mt
 subset: eng-urd
 templates:
+  1e599e2f-a6a1-4687-a981-d15f202cb7dc: !Template
+    answer_choices: null
+    id: 1e599e2f-a6a1-4687-a981-d15f202cb7dc
+    jinja: 'Translate the following text from English to Urdu.
+
+
+      Text: {{ sourceString }}
+
+
+      Translation:||| {{ targetString }}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: translate-this-eng-urd
+    reference: ''
   2316686e-e197-4c91-bd9a-60ef39d8ca93: !Template
     answer_choices: null
     id: 2316686e-e197-4c91-bd9a-60ef39d8ca93
     jinja: Translate the following text from Urdu to English {{ targetString }}|||
       {{ sourceString }}
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: translate-this-urd-eng
+    reference: ''
+  28c1a1da-62a3-40ea-8bf6-3f344521e5c4: !Template
+    answer_choices: null
+    id: 28c1a1da-62a3-40ea-8bf6-3f344521e5c4
+    jinja: 'Translate the following text from Urdu to English.
+
+
+      Text: {{ targetString }}
+
+
+      Translation:||| {{ sourceString }}'
     metadata: !TemplateMetadata
       choices_in_prompt: null
       languages: null

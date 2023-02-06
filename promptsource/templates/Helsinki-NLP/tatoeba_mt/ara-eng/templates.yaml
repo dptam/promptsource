@@ -25,3 +25,37 @@ templates:
       original_task: null
     name: translate-this-ara-eng
     reference: ''
+  e127a902-0093-4101-ab0e-ed4b944f8678: !Template
+    answer_choices: null
+    id: e127a902-0093-4101-ab0e-ed4b944f8678
+    jinja: 'Translate the following text from English to Arabic.
+
+
+      Text: {{ targetString }}
+
+
+      Translation:||| {{ sourceString }}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: translate-this-eng-ara
+    reference: ''
+  e23e261d-d7ab-4d85-895d-48d9b64d6297: !Template
+    answer_choices: null
+    id: e23e261d-d7ab-4d85-895d-48d9b64d6297
+    jinja: 'Translate the following text from Arabic to English.
+
+
+      Text: {{ sourceString }}
+
+
+      Translation:||| {{ targetString }}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: translate-this-ara-eng
+    reference: ''

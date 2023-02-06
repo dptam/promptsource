@@ -1,6 +1,40 @@
 dataset: Helsinki-NLP/tatoeba_mt
 subset: spa-zho
 templates:
+  08a4f742-8cbc-4ec7-9f3d-75b0e0407a00: !Template
+    answer_choices: null
+    id: 08a4f742-8cbc-4ec7-9f3d-75b0e0407a00
+    jinja: 'Translate the following text from Spanish to Chinese.
+
+
+      Text: {{ sourceString }}
+
+
+      Translation:||| {{ targetString }}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: translate-this-spa-zho
+    reference: ''
+  20fee2f8-0416-4244-8e98-f71cd6d6e60b: !Template
+    answer_choices: null
+    id: 20fee2f8-0416-4244-8e98-f71cd6d6e60b
+    jinja: 'Translate the following text from Chinese to Spanish.
+
+
+      Text: {{ targetString }}
+
+
+      Translation:||| {{ sourceString }}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: translate-this-zho-spa
+    reference: ''
   4bac0f02-dd94-45bf-8f7e-a39a66d1beb6: !Template
     answer_choices: null
     id: 4bac0f02-dd94-45bf-8f7e-a39a66d1beb6

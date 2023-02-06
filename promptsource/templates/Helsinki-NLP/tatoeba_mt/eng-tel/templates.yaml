@@ -13,6 +13,23 @@ templates:
       original_task: null
     name: translate-this-tel-eng
     reference: ''
+  3e6e763c-9af1-4236-a69c-4c195e910e1c: !Template
+    answer_choices: null
+    id: 3e6e763c-9af1-4236-a69c-4c195e910e1c
+    jinja: 'Translate the following text from English to Telugu.
+
+
+      Text: {{ sourceString }}
+
+
+      Translation:||| {{ targetString }}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: translate-this-eng-tel
+    reference: ''
   7bd52c18-182c-4c99-9ba7-e723f3cb692a: !Template
     answer_choices: null
     id: 7bd52c18-182c-4c99-9ba7-e723f3cb692a
@@ -24,4 +41,21 @@ templates:
       metrics: null
       original_task: null
     name: translate-this-eng-tel
+    reference: ''
+  cd56ac5c-5301-4a1e-a5dd-d37380b4d52a: !Template
+    answer_choices: null
+    id: cd56ac5c-5301-4a1e-a5dd-d37380b4d52a
+    jinja: 'Translate the following text from Telugu to English.
+
+
+      Text: {{ targetString }}
+
+
+      Translation:||| {{ sourceString }}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: translate-this-tel-eng
     reference: ''

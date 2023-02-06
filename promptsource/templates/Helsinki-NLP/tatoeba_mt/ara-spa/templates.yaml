@@ -1,6 +1,23 @@
 dataset: Helsinki-NLP/tatoeba_mt
 subset: ara-spa
 templates:
+  4e7e8e3a-0100-4614-8f12-f7bef451c35c: !Template
+    answer_choices: null
+    id: 4e7e8e3a-0100-4614-8f12-f7bef451c35c
+    jinja: 'Translate the following text from Spanish to Arabic.
+
+
+      Text: {{ targetString }}
+
+
+      Translation:||| {{ sourceString }}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: translate-this-spa-ara
+    reference: ''
   60875520-509d-4390-b37c-feab2414e139: !Template
     answer_choices: null
     id: 60875520-509d-4390-b37c-feab2414e139
@@ -18,6 +35,23 @@ templates:
     id: 6fd44ef5-8bfa-45fd-88ea-d52f0abc2954
     jinja: Translate the following text from Arabic to Spanish {{ sourceString }}|||
       {{ targetString }}
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: translate-this-ara-spa
+    reference: ''
+  fb645fa7-7682-4f18-8e16-e0a2ddbfea3f: !Template
+    answer_choices: null
+    id: fb645fa7-7682-4f18-8e16-e0a2ddbfea3f
+    jinja: 'Translate the following text from Arabic to Spanish.
+
+
+      Text: {{ sourceString }}
+
+
+      Translation:||| {{ targetString }}'
     metadata: !TemplateMetadata
       choices_in_prompt: null
       languages: null

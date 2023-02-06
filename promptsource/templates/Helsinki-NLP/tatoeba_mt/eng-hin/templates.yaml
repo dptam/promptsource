@@ -13,6 +13,23 @@ templates:
       original_task: null
     name: translate-this-eng-hin
     reference: ''
+  74f38984-8acd-4292-af96-2216ccdb3b97: !Template
+    answer_choices: null
+    id: 74f38984-8acd-4292-af96-2216ccdb3b97
+    jinja: 'Translate the following text from Hindi to English.
+
+
+      Text: {{ targetString }}
+
+
+      Translation:||| {{ sourceString }}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: translate-this-hin-eng
+    reference: ''
   85f8628a-86aa-485f-8f59-e4a5c4a3e371: !Template
     answer_choices: null
     id: 85f8628a-86aa-485f-8f59-e4a5c4a3e371
@@ -24,4 +41,21 @@ templates:
       metrics: null
       original_task: null
     name: translate-this-hin-eng
+    reference: ''
+  c2977571-e552-49cb-b4ea-7ef284b28aa1: !Template
+    answer_choices: null
+    id: c2977571-e552-49cb-b4ea-7ef284b28aa1
+    jinja: 'Translate the following text from English to Hindi.
+
+
+      Text: {{ sourceString }}
+
+
+      Translation:||| {{ targetString }}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: translate-this-eng-hin
     reference: ''

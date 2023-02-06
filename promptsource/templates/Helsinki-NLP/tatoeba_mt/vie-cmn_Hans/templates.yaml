@@ -1,6 +1,40 @@
 dataset: Helsinki-NLP/tatoeba_mt
 subset: vie-cmn_Hans
 templates:
+  0821f0a6-b2c1-4c04-8c3a-8e1bf9fd8336: !Template
+    answer_choices: null
+    id: 0821f0a6-b2c1-4c04-8c3a-8e1bf9fd8336
+    jinja: 'Translate the following text from Vietnamese to Mandarin Chinese.
+
+
+      Text: {{ sourceString }}
+
+
+      Translation:||| {{ targetString }}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: translate-this-vie-cmn_Hans
+    reference: ''
+  552b1523-e6ce-4ab6-b176-65a3fa447286: !Template
+    answer_choices: null
+    id: 552b1523-e6ce-4ab6-b176-65a3fa447286
+    jinja: 'Translate the following text from Mandarin Chinese to Vietnamese.
+
+
+      Text: {{ targetString }}
+
+
+      Translation:||| {{ sourceString }}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: translate-this-cmn_Hans-vie
+    reference: ''
   8a79e5c4-5820-4ba8-b8eb-ac29c0380ca2: !Template
     answer_choices: null
     id: 8a79e5c4-5820-4ba8-b8eb-ac29c0380ca2

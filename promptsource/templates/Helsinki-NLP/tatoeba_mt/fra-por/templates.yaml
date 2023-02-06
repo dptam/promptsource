@@ -13,6 +13,40 @@ templates:
       original_task: null
     name: translate-this-fra-por
     reference: ''
+  672ddf0b-ae21-44b2-82a0-007ed64793b8: !Template
+    answer_choices: null
+    id: 672ddf0b-ae21-44b2-82a0-007ed64793b8
+    jinja: 'Translate the following text from French to Portuguese.
+
+
+      Text: {{ sourceString }}
+
+
+      Translation:||| {{ targetString }}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: translate-this-fra-por
+    reference: ''
+  ab90e68c-7912-4488-953f-7caa083ddf04: !Template
+    answer_choices: null
+    id: ab90e68c-7912-4488-953f-7caa083ddf04
+    jinja: 'Translate the following text from Portuguese to French.
+
+
+      Text: {{ targetString }}
+
+
+      Translation:||| {{ sourceString }}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: translate-this-por-fra
+    reference: ''
   ba3e7016-3e45-4ea4-b240-ffd4f14899d1: !Template
     answer_choices: null
     id: ba3e7016-3e45-4ea4-b240-ffd4f14899d1

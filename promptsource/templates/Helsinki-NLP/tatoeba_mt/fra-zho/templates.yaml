@@ -1,6 +1,40 @@
 dataset: Helsinki-NLP/tatoeba_mt
 subset: fra-zho
 templates:
+  51039f0f-0cf1-4c87-b04e-64e686431a01: !Template
+    answer_choices: null
+    id: 51039f0f-0cf1-4c87-b04e-64e686431a01
+    jinja: 'Translate the following text from Chinese to French.
+
+
+      Text: {{ targetString }}
+
+
+      Translation:||| {{ sourceString }}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: translate-this-zho-fra
+    reference: ''
+  a9ca8ff8-e383-47b8-ace5-2ea4839c4d8f: !Template
+    answer_choices: null
+    id: a9ca8ff8-e383-47b8-ace5-2ea4839c4d8f
+    jinja: 'Translate the following text from French to Chinese.
+
+
+      Text: {{ sourceString }}
+
+
+      Translation:||| {{ targetString }}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: translate-this-fra-zho
+    reference: ''
   b6e2397f-6170-4a1c-9b9e-4efd970dcefc: !Template
     answer_choices: null
     id: b6e2397f-6170-4a1c-9b9e-4efd970dcefc

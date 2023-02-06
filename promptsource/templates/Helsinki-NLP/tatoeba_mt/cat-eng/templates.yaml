@@ -13,6 +13,23 @@ templates:
       original_task: null
     name: translate-this-eng-cat
     reference: ''
+  99259ec1-5f79-48ea-ab37-b3566102d58c: !Template
+    answer_choices: null
+    id: 99259ec1-5f79-48ea-ab37-b3566102d58c
+    jinja: 'Translate the following text from Catalan to English.
+
+
+      Text: {{ sourceString }}
+
+
+      Translation:||| {{ targetString }}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: translate-this-cat-eng
+    reference: ''
   b5fb150a-5b6d-460e-81a3-53ba4627ca9e: !Template
     answer_choices: null
     id: b5fb150a-5b6d-460e-81a3-53ba4627ca9e
@@ -24,4 +41,21 @@ templates:
       metrics: null
       original_task: null
     name: translate-this-cat-eng
+    reference: ''
+  c0f07851-37d6-4e39-bbc2-c48d196ddce8: !Template
+    answer_choices: null
+    id: c0f07851-37d6-4e39-bbc2-c48d196ddce8
+    jinja: 'Translate the following text from English to Catalan.
+
+
+      Text: {{ targetString }}
+
+
+      Translation:||| {{ sourceString }}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: translate-this-eng-cat
     reference: ''

@@ -13,11 +13,45 @@ templates:
       original_task: null
     name: translate-this-eng-por
     reference: ''
+  5382445b-f047-4721-9b8b-350505b7d3c8: !Template
+    answer_choices: null
+    id: 5382445b-f047-4721-9b8b-350505b7d3c8
+    jinja: 'Translate the following text from English to Portuguese.
+
+
+      Text: {{ sourceString }}
+
+
+      Translation:||| {{ targetString }}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: translate-this-eng-por
+    reference: ''
   c197c9a0-2046-4b7a-afea-cd1d45eb5cef: !Template
     answer_choices: null
     id: c197c9a0-2046-4b7a-afea-cd1d45eb5cef
     jinja: Translate the following text from Portuguese to English {{ targetString
       }}||| {{ sourceString }}
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: translate-this-por-eng
+    reference: ''
+  fc5c043d-370d-4445-8996-ea8a6be24337: !Template
+    answer_choices: null
+    id: fc5c043d-370d-4445-8996-ea8a6be24337
+    jinja: 'Translate the following text from Portuguese to English.
+
+
+      Text: {{ targetString }}
+
+
+      Translation:||| {{ sourceString }}'
     metadata: !TemplateMetadata
       choices_in_prompt: null
       languages: null

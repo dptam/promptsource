@@ -13,6 +13,40 @@ templates:
       original_task: null
     name: translate-this-zho-por
     reference: ''
+  4fb3ce0a-72cc-423d-b462-d2d1a3561ce4: !Template
+    answer_choices: null
+    id: 4fb3ce0a-72cc-423d-b462-d2d1a3561ce4
+    jinja: 'Translate the following text from Portuguese to Chinese.
+
+
+      Text: {{ sourceString }}
+
+
+      Translation:||| {{ targetString }}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: translate-this-por-zho
+    reference: ''
+  9adb872a-0840-404e-bbcc-dc3d5b336b31: !Template
+    answer_choices: null
+    id: 9adb872a-0840-404e-bbcc-dc3d5b336b31
+    jinja: 'Translate the following text from Chinese to Portuguese.
+
+
+      Text: {{ targetString }}
+
+
+      Translation:||| {{ sourceString }}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: translate-this-zho-por
+    reference: ''
   f816c2f6-55eb-47ba-9230-0a8949c87217: !Template
     answer_choices: null
     id: f816c2f6-55eb-47ba-9230-0a8949c87217

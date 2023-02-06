@@ -1,6 +1,23 @@
 dataset: Helsinki-NLP/tatoeba_mt
 subset: spa-cmn_Hans
 templates:
+  1c568b3b-25be-47f3-a93e-506c4fa9d5f7: !Template
+    answer_choices: null
+    id: 1c568b3b-25be-47f3-a93e-506c4fa9d5f7
+    jinja: 'Translate the following text from Mandarin Chinese to Spanish.
+
+
+      Text: {{ targetString }}
+
+
+      Translation:||| {{ sourceString }}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: translate-this-cmn_Hans-spa
+    reference: ''
   36bffdb8-925e-40e2-b5fd-2adb296b8dac: !Template
     answer_choices: null
     id: 36bffdb8-925e-40e2-b5fd-2adb296b8dac
@@ -12,6 +29,23 @@ templates:
       metrics: null
       original_task: null
     name: translate-this-cmn_Hans-spa
+    reference: ''
+  a541942f-aaec-43e5-9c20-6df7e09d39d5: !Template
+    answer_choices: null
+    id: a541942f-aaec-43e5-9c20-6df7e09d39d5
+    jinja: 'Translate the following text from Spanish to Mandarin Chinese.
+
+
+      Text: {{ sourceString }}
+
+
+      Translation:||| {{ targetString }}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: translate-this-spa-cmn_Hans
     reference: ''
   e0ad9ca7-af26-46d4-aae3-9ad929596205: !Template
     answer_choices: null

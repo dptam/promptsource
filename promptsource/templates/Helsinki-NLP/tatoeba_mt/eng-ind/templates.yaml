@@ -13,6 +13,40 @@ templates:
       original_task: null
     name: translate-this-eng-ind
     reference: ''
+  6e21f5f4-8d26-4024-aadd-75b40095e6e9: !Template
+    answer_choices: null
+    id: 6e21f5f4-8d26-4024-aadd-75b40095e6e9
+    jinja: 'Translate the following text from Indonesian to English.
+
+
+      Text: {{ targetString }}
+
+
+      Translation:||| {{ sourceString }}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: translate-this-ind-eng
+    reference: ''
+  8ee65c2c-a840-4777-8bbd-4aeef7995240: !Template
+    answer_choices: null
+    id: 8ee65c2c-a840-4777-8bbd-4aeef7995240
+    jinja: 'Translate the following text from English to Indonesian.
+
+
+      Text: {{ sourceString }}
+
+
+      Translation:||| {{ targetString }}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: translate-this-eng-ind
+    reference: ''
   d834eb4d-96ca-4f08-b845-0356c75578db: !Template
     answer_choices: null
     id: d834eb4d-96ca-4f08-b845-0356c75578db

@@ -13,6 +13,40 @@ templates:
       original_task: null
     name: translate-this-por-cat
     reference: ''
+  6806c2d9-9112-482d-9dad-b59f2eae07df: !Template
+    answer_choices: null
+    id: 6806c2d9-9112-482d-9dad-b59f2eae07df
+    jinja: 'Translate the following text from Catalan to Portuguese.
+
+
+      Text: {{ sourceString }}
+
+
+      Translation:||| {{ targetString }}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: translate-this-cat-por
+    reference: ''
+  9a65bc95-5193-40dd-8f4a-5be0d75cebbb: !Template
+    answer_choices: null
+    id: 9a65bc95-5193-40dd-8f4a-5be0d75cebbb
+    jinja: 'Translate the following text from Portuguese to Catalan.
+
+
+      Text: {{ targetString }}
+
+
+      Translation:||| {{ sourceString }}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: translate-this-por-cat
+    reference: ''
   b11dfc4f-387d-4c8c-a992-df7a67c50d8b: !Template
     answer_choices: null
     id: b11dfc4f-387d-4c8c-a992-df7a67c50d8b

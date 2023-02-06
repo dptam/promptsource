@@ -1,11 +1,45 @@
 dataset: Helsinki-NLP/tatoeba_mt
 subset: eng-cmn_Hant
 templates:
+  0d362ba0-7d6b-4647-828a-fff6d68480a1: !Template
+    answer_choices: null
+    id: 0d362ba0-7d6b-4647-828a-fff6d68480a1
+    jinja: 'Translate the following text from English to Mandarin Chinese.
+
+
+      Text: {{ sourceString }}
+
+
+      Translation:||| {{ targetString }}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: translate-this-eng-cmn_Hant
+    reference: ''
   48d886b8-8476-4d36-b751-b1add1c9b0dd: !Template
     answer_choices: null
     id: 48d886b8-8476-4d36-b751-b1add1c9b0dd
     jinja: Translate the following text from Mandarin Chinese to English {{ targetString
       }}||| {{ sourceString }}
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: translate-this-cmn_Hant-eng
+    reference: ''
+  5ee22635-0262-4599-959c-e39aff19180d: !Template
+    answer_choices: null
+    id: 5ee22635-0262-4599-959c-e39aff19180d
+    jinja: 'Translate the following text from Mandarin Chinese to English.
+
+
+      Text: {{ targetString }}
+
+
+      Translation:||| {{ sourceString }}'
     metadata: !TemplateMetadata
       choices_in_prompt: null
       languages: null

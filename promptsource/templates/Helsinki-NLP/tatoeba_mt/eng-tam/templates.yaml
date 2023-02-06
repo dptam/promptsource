@@ -1,6 +1,40 @@
 dataset: Helsinki-NLP/tatoeba_mt
 subset: eng-tam
 templates:
+  043e90bd-7c40-4b90-a156-4b0a999c09b5: !Template
+    answer_choices: null
+    id: 043e90bd-7c40-4b90-a156-4b0a999c09b5
+    jinja: 'Translate the following text from Tamil to English.
+
+
+      Text: {{ targetString }}
+
+
+      Translation:||| {{ sourceString }}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: translate-this-tam-eng
+    reference: ''
+  7fea7ad4-bfe7-4926-a54a-02ef677afc6b: !Template
+    answer_choices: null
+    id: 7fea7ad4-bfe7-4926-a54a-02ef677afc6b
+    jinja: 'Translate the following text from English to Tamil.
+
+
+      Text: {{ sourceString }}
+
+
+      Translation:||| {{ targetString }}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: translate-this-eng-tam
+    reference: ''
   9e599a25-3e64-46a0-a389-a281cc78f912: !Template
     answer_choices: null
     id: 9e599a25-3e64-46a0-a389-a281cc78f912
