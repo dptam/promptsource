@@ -1,5 +1,5 @@
 dataset: allenai/wmt22_african
-subset: x-x
+subset: x_x
 templates:
   5f7ec5cd-d4b5-4d92-ae82-1e453e10aac8: !Template
     answer_choices: null
