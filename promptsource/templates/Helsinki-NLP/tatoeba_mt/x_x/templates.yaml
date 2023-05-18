@@ -1,0 +1,25 @@
+dataset: Helsinki-NLP/tatoeba_mt
+subset: x_x
+templates:
+  19e1539f-2926-498a-8f6b-4564dff4f934: !Template
+    answer_choices: null
+    id: 19e1539f-2926-498a-8f6b-4564dff4f934
+    jinja: 'Translate the following text from {{source_language_name}} to {{target_language_name}}\n\nText: {{sourceString}}\n\nTranslation:|||{{targetString}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: continuation-x-x
+    reference: ''
+  ac1f56bb-910a-4200-8e16-e70634cc34a9: !Template
+    answer_choices: null
+    id: ac1f56bb-910a-4200-8e16-e70634cc34a9
+    jinja: '{{sourceString}}\n\nTranslate to {{target_language_name}}.|||{{targetString}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: command-x-x
+    reference: ''

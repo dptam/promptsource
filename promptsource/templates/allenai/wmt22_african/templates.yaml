@@ -1,0 +1,17 @@
+dataset: allenai/wmt22_african
+subset: x-x
+templates:
+  5f7ec5cd-d4b5-4d92-ae82-1e453e10aac8: !Template
+    answer_choices: null
+    id: 5f7ec5cd-d4b5-4d92-ae82-1e453e10aac8
+    jinja: 'Text in {{source_language_name}}: {{source}}
+
+      Translation of the previous text to {{target_language_name}}: ||| {{target}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: text-translation-x-x
+    reference: ''
+

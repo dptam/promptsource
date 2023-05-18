@@ -1,0 +1,39 @@
+dataset: facebook/flores
+subset: x_x
+templates:
+  19e1539f-2926-498a-8f6b-4564dff4f924: !Template
+    answer_choices: null
+    id: 19e1539f-2926-498a-8f6b-4564dff4f924
+    jinja: '{{source}} Give me the same text in {{target_language_name}}. |||{{target}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: command-x-x
+    reference: ''
+  ac1f56bb-910a-4200-8e16-e70634cc36a9: !Template
+    answer_choices: null
+    id: ac1f56bb-910a-4200-8e16-e70634cc36a9
+    jinja: 'A text in {{source_language_name}}: {{source}}
+
+      What''s the text in {{target_language_name}}? |||{{target}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: question-x-x
+    reference: ''
+  e4beb4f2-38fc-42bd-8faa-98f77802824f: !Template
+    answer_choices: null
+    id: e4beb4f2-38fc-42bd-8faa-98f77802824f
+    jinja: '{{source}} The previous text is in {{source_language_name}}. Here is a translation
+      to {{target_language_name}}: ||| {{target}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: null
+      languages: null
+      metrics: null
+      original_task: null
+    name: continuation-x-x
+    reference: ''
