@@ -4,9 +4,9 @@ templates:
   48ddea55-1710-4615-bbfa-fe5803e21e43: !Template
     answer_choices: null
     id: 48ddea55-1710-4615-bbfa-fe5803e21e43
-    jinja: 'If the {{source_language_name}} version says:\n\n\n\n{{text["x1"]}}\n\n\n\n; then the {{target_language_name} version
+    jinja: 'If the {{l1_name}} version says:\n\n\n\n{{l1}}\n\n\n\n; then the {{l2_name} version
       should say:
-      |||   {{text["x2"]}}'
+      |||   {{l2}}'
     metadata: !TemplateMetadata
       choices_in_prompt: false
       languages: []
@@ -18,7 +18,7 @@ templates:
   38ddea55-2710-4615-bbfa-fe5803e21e43: !Template
     answer_choices: null
     id: 38ddea55-2710-4615-bbfa-fe5803e21e43
-    jinja: '{{text["x1"]}}\n\nHow would you write that in {{target_language_name}}?|||{{text["x2"]}}'
+    jinja: '{{l1}}\n\nHow would you write that in {{l2_name}}?|||{{l2}}'
     metadata: !TemplateMetadata
       choices_in_prompt: false
       languages: []
@@ -30,7 +30,7 @@ templates:
   38ddea55-2710-4615-bbfa-fe5803e21e43: !Template
     answer_choices: null
     id: 38ddea55-2710-4615-bbfa-fe5803e21e43
-    jinja: '{{text["x1"]}}\n\n\nPlease translate to {{target_language_name}}.|||{{text["x2"]}}'
+    jinja: '{{l1}}\n\n\nPlease translate to {{l2_name}}.|||{{text["l2"]}}'
     metadata: !TemplateMetadata
       choices_in_prompt: false
       languages: []
