@@ -1,0 +1,41 @@
+dataset: multi_eurlex
+subset: x_x
+templates:
+  48ddea55-1710-4615-bbfa-fe5803e21e43: !Template
+    answer_choices: null
+    id: 48ddea55-1710-4615-bbfa-fe5803e21e43
+    jinja: 'If the {{source_language_name}} version says:\n\n\n\n{{text["x1"]}}\n\n\n\n; then the {{target_language_name} version
+      should say:
+      |||   {{text["x2"]}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: false
+      languages: []
+      metrics:
+      - BLEU
+      original_task: true
+    name: continuation-x-x
+    reference: ''
+  38ddea55-2710-4615-bbfa-fe5803e21e43: !Template
+    answer_choices: null
+    id: 38ddea55-2710-4615-bbfa-fe5803e21e43
+    jinja: '{{text["x1"]}}\n\nHow would you write that in {{target_language_name}}?|||{{text["x2"]}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: false
+      languages: []
+      metrics:
+      - BLEU
+      original_task: true
+    name: question-x-x
+    reference: ''    
+  38ddea55-2710-4615-bbfa-fe5803e21e43: !Template
+    answer_choices: null
+    id: 38ddea55-2710-4615-bbfa-fe5803e21e43
+    jinja: '{{text["x1"]}}\n\n\nPlease translate to {{target_language_name}}.|||{{text["x2"]}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: false
+      languages: []
+      metrics:
+      - BLEU
+      original_task: true
+    name: command-x-x
+    reference: ''        
