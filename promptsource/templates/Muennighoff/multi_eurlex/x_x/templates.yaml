@@ -30,7 +30,7 @@ templates:
   38ddea55-2710-4615-bbfa-fe5803e21e53: !Template
     answer_choices: null
     id: 38ddea55-2710-4615-bbfa-fe5803e21e53
-    jinja: '{{l1}}\n\n\nPlease translate to {{l2_name}}.|||{{text["l2"]}}'
+    jinja: '{{l1}}\n\n\nPlease translate to {{l2_name}}.|||{{l2}}'
     metadata: !TemplateMetadata
       choices_in_prompt: false
       languages: []
