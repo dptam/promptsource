@@ -12,7 +12,8 @@ templates:
     metadata: !TemplateMetadata
       choices_in_prompt: null
       languages: null
-      metrics: null
+      metrics:
+      - Accuracy
       original_task: null
     name: PAWS-ANLI GPT3_vimt
     reference: ''
@@ -50,7 +51,8 @@ templates:
     metadata: !TemplateMetadata
       choices_in_prompt: null
       languages: null
-      metrics: null
+      metrics:
+      - Accuracy
       original_task: null
     name: Concatenation-no-label_vimt
     reference: ''
@@ -69,7 +71,8 @@ templates:
     metadata: !TemplateMetadata
       choices_in_prompt: null
       languages: null
-      metrics: null
+      metrics:
+      - Accuracy
       original_task: null
     name: Rewrite_vimt
     reference: ''
@@ -84,7 +87,8 @@ templates:
     metadata: !TemplateMetadata
       choices_in_prompt: null
       languages: null
-      metrics: null
+      metrics:
+      - Accuracy
       original_task: null
     name: PAWS-ANLI GPT3-no-label_vimt
     reference: ''
@@ -103,7 +107,8 @@ templates:
     metadata: !TemplateMetadata
       choices_in_prompt: null
       languages: null
-      metrics: null
+      metrics:
+      - Accuracy
       original_task: null
     name: Concatenation_vimt
     reference: ''
@@ -122,7 +127,8 @@ templates:
     metadata: !TemplateMetadata
       choices_in_prompt: null
       languages: null
-      metrics: null
+      metrics:
+      - Accuracy
       original_task: null
     name: Rewrite-no-label_vimt
     reference: ''
@@ -141,7 +147,8 @@ templates:
     metadata: !TemplateMetadata
       choices_in_prompt: null
       languages: null
-      metrics: null
+      metrics:
+      - Accuracy
       original_task: null
     name: Meaning-no-label_vimt
     reference: ''
@@ -160,7 +167,8 @@ templates:
     metadata: !TemplateMetadata
       choices_in_prompt: null
       languages: null
-      metrics: null
+      metrics:
+      - Accuracy
       original_task: null
     name: context-question-no-label_vimt
     reference: ''
@@ -179,7 +187,8 @@ templates:
     metadata: !TemplateMetadata
       choices_in_prompt: null
       languages: null
-      metrics: null
+      metrics:
+      - Accuracy
       original_task: null
     name: Meaning_vimt
     reference: ''
@@ -198,7 +207,8 @@ templates:
     metadata: !TemplateMetadata
       choices_in_prompt: null
       languages: null
-      metrics: null
+      metrics:
+      - Accuracy
       original_task: null
     name: task_description-no-label_vimt
     reference: ''
@@ -219,7 +229,8 @@ templates:
     metadata: !TemplateMetadata
       choices_in_prompt: null
       languages: null
-      metrics: null
+      metrics:
+      - Accuracy
       original_task: null
     name: context-question_vimt
     reference: ''
