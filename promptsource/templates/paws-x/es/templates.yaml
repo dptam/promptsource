@@ -94,7 +94,9 @@ templates:
     metadata: !TemplateMetadata
       choices_in_prompt: null
       languages: null
-      metrics: null
+      metrics:
+      - BLEU
+      - ROUGE
       original_task: true
     name: paraphrase-task_esmt
     reference: ''
