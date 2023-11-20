@@ -14,7 +14,7 @@ templates:
       languages:
       metrics: 
       - Accuracy
-      original_task: null
+      original_task: true
     name: PAWS-ANLI GPT3_frmt
     reference: ''
   20b6c71b-c9b7-4a7d-a7d0-ef2459f94793: !Template
@@ -35,7 +35,7 @@ templates:
       languages: null
       metrics:
       - Accuracy
-      original_task: null
+      original_task: true
     name: Meaning_frmt
     reference: ''
   39e6d398-4baa-48b9-a947-55b3aa601d53: !Template
@@ -55,7 +55,7 @@ templates:
       languages: null
       metrics:
       - Accuracy
-      original_task: null
+      original_task: true
     name: Rewrite-no-label_frmt
     reference: ''
   62c3ac6c-6b48-451b-814b-a9479883f8f1: !Template
@@ -75,7 +75,7 @@ templates:
       languages: null
       metrics: 
       - Accuracy
-      original_task: null
+      original_task: true
     name: Concatenation-no-label_frmt
     reference: ''
   72adf23d-d1ba-4632-bae3-5f37a27bba25: !Template
@@ -94,7 +94,7 @@ templates:
       choices_in_prompt: null
       languages: null
       metrics: null
-      original_task: null
+      original_task: true
     name: paraphrase-task_frmt
     reference: ''
   767fcbbb-c40b-4861-94a8-da7b728e8198: !Template
@@ -114,7 +114,7 @@ templates:
       languages: null
       metrics:
       - Accuracy
-      original_task: null
+      original_task: true
     name: context-question-no-label_frmt
     reference: ''
   93689a37-8113-4120-8e73-84f109ea7324: !Template
@@ -134,7 +134,7 @@ templates:
       languages: null
       metrics:
       - Accuracy
-      original_task: null
+      original_task: true
     name: Concatenation_frmt
     reference: ''
   94dde34a-e50d-466c-86a0-dbbe8e9aa7e7: !Template
@@ -154,7 +154,7 @@ templates:
       languages: null
       metrics:
       - Accuracy
-      original_task: null
+      original_task: true
     name: Meaning-no-label_frmt
     reference: ''
   ce953c47-bd2d-4e7e-8f24-e1fdaea6bcb5: !Template
@@ -170,7 +170,7 @@ templates:
       languages: null
       metrics:
       - Accuracy
-      original_task: null
+      original_task: true
     name: PAWS-ANLI GPT3-no-label_frmt
     reference: ''
   ea0dde04-e357-45e9-86b6-a40dc083571d: !Template
@@ -192,7 +192,7 @@ templates:
       languages: null
       metrics:
       - Accuracy
-      original_task: null
+      original_task: true
     name: context-question_frmt
     reference: ''
   f10a89dc-744a-4a03-8c39-7c19a864bc16: !Template
@@ -212,7 +212,7 @@ templates:
       languages: null
       metrics:
       - Accuracy
-      original_task: null
+      original_task: true
     name: task_description-no-label_frmt
     reference: ''
   fadc29e4-5cd7-4502-ae97-816ef77dbbeb: !Template
@@ -232,6 +232,6 @@ templates:
       languages: null
       metrics:
       - Accuracy
-      original_task: null
+      original_task: true
     name: Rewrite_frmt
     reference: ''

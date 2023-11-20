@@ -14,7 +14,7 @@ templates:
       languages: null
       metrics:
       - Accuracy
-      original_task: null
+      original_task: true
     name: PAWS-ANLI GPT3_vimt
     reference: ''
   96bfe976-af10-490a-8b2e-9f1d47b72656: !Template
@@ -33,7 +33,7 @@ templates:
       choices_in_prompt: null
       languages: null
       metrics: null
-      original_task: null
+      original_task: true
     name: paraphrase-task_vimt
     reference: ''
   9afeafe8-558c-42b9-8b68-86232385c68d: !Template
@@ -53,7 +53,7 @@ templates:
       languages: null
       metrics:
       - Accuracy
-      original_task: null
+      original_task: true
     name: Concatenation-no-label_vimt
     reference: ''
   a51267de-c657-41e5-9e12-0f0de6632f37: !Template
@@ -73,7 +73,7 @@ templates:
       languages: null
       metrics:
       - Accuracy
-      original_task: null
+      original_task: true
     name: Rewrite_vimt
     reference: ''
   acff8cf9-42f5-4ed6-87a6-054eec2d8715: !Template
@@ -89,7 +89,7 @@ templates:
       languages: null
       metrics:
       - Accuracy
-      original_task: null
+      original_task: true
     name: PAWS-ANLI GPT3-no-label_vimt
     reference: ''
   b8777fdf-6e79-4d61-8c6b-68eed45a76a3: !Template
@@ -109,7 +109,7 @@ templates:
       languages: null
       metrics:
       - Accuracy
-      original_task: null
+      original_task: true
     name: Concatenation_vimt
     reference: ''
   c368769b-1f7b-472e-ac60-f75c5c62c72a: !Template
@@ -129,7 +129,7 @@ templates:
       languages: null
       metrics:
       - Accuracy
-      original_task: null
+      original_task: true
     name: Rewrite-no-label_vimt
     reference: ''
   c8df686c-d867-4c4c-9511-a7d2974509fa: !Template
@@ -149,7 +149,7 @@ templates:
       languages: null
       metrics:
       - Accuracy
-      original_task: null
+      original_task: true
     name: Meaning-no-label_vimt
     reference: ''
   d655f830-7c06-4d45-b171-0d0ea4b66c1a: !Template
@@ -169,7 +169,7 @@ templates:
       languages: null
       metrics:
       - Accuracy
-      original_task: null
+      original_task: true
     name: context-question-no-label_vimt
     reference: ''
   d6612fe4-a3bf-496c-83b2-27eeaf400d54: !Template
@@ -189,7 +189,7 @@ templates:
       languages: null
       metrics:
       - Accuracy
-      original_task: null
+      original_task: true
     name: Meaning_vimt
     reference: ''
   e30408ca-8c4d-441a-b4f7-779d47dd6550: !Template
@@ -209,7 +209,7 @@ templates:
       languages: null
       metrics:
       - Accuracy
-      original_task: null
+      original_task: true
     name: task_description-no-label_vimt
     reference: ''
   e419efb4-51ec-4cd5-a7a4-2d956c7081a1: !Template
@@ -231,6 +231,6 @@ templates:
       languages: null
       metrics:
       - Accuracy
-      original_task: null
+      original_task: true
     name: context-question_vimt
     reference: ''

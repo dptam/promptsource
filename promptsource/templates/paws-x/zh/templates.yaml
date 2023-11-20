@@ -18,7 +18,7 @@ templates:
       languages: null
       metrics:
       - Accuracy
-      original_task: null
+      original_task: true
     name: Rewrite-no-label_zhmt
     reference: ''
   11b72ab2-3a8f-4d23-b03e-bf75dc82ce77: !Template
@@ -34,7 +34,7 @@ templates:
       languages: null
       metrics:
       - Accuracy
-      original_task: null
+      original_task: true
     name: PAWS-ANLI GPT3-no-label_zhmt
     reference: ''
   2e9c15db-fb24-4157-82be-03464ce73479: !Template
@@ -54,7 +54,7 @@ templates:
       languages: null
       metrics:
       - Accuracy
-      original_task: null
+      original_task: true
     name: Rewrite_zhmt
     reference: ''
   3a0714c3-9544-4b1c-b3cb-1e6cbcc3e41d: !Template
@@ -74,7 +74,7 @@ templates:
       languages: null
       metrics:
       - Accuracy
-      original_task: null
+      original_task: true
     name: Concatenation-no-label_zhmt
     reference: ''
   54a8cbde-cc16-4abd-80e6-b7e057a247a1: !Template
@@ -96,7 +96,7 @@ templates:
       languages: null
       metrics:
       - Accuracy
-      original_task: null
+      original_task: true
     name: context-question_zhmt
     reference: ''
   6c74272e-9df6-4e36-bbe7-61703a68f82b: !Template
@@ -116,7 +116,7 @@ templates:
       languages: null
       metrics:
       - Accuracy
-      original_task: null
+      original_task: true
     name: Concatenation_zhmt
     reference: ''
   8e3d798a-f886-4291-9fc4-18f43786b84b: !Template
@@ -136,7 +136,7 @@ templates:
       languages: null
       metrics:
       - Accuracy
-      original_task: null
+      original_task: true
     name: Meaning_zhmt
     reference: ''
   a4df0518-d0a1-4092-9217-f0c11cd96ef8: !Template
@@ -156,7 +156,7 @@ templates:
       languages: null
       metrics:
       - Accuracy
-      original_task: null
+      original_task: true
     name: context-question-no-label_zhmt
     reference: ''
   aeab7810-808d-48ca-9dec-93fc26635991: !Template
@@ -176,7 +176,7 @@ templates:
       languages: null
       metrics:
       - Accuracy
-      original_task: null
+      original_task: true
     name: task_description-no-label_zhmt
     reference: ''
   b45b4873-b819-46d1-b9af-c4229eb8dbfd: !Template
@@ -192,7 +192,7 @@ templates:
       languages: null
       metrics:
       - Accuracy
-      original_task: null
+      original_task: true
     name: PAWS-ANLI GPT3_zhmt
     reference: ''
   e067afb8-5f0f-48d0-b917-92dcfbcc3d9f: !Template
@@ -212,7 +212,7 @@ templates:
       languages: null
       metrics:
       - Accuracy
-      original_task: null
+      original_task: true
     name: Meaning-no-label_zhmt
     reference: ''
   ec43a8d0-b64a-4066-9f99-f19caa06ff50: !Template
@@ -231,6 +231,6 @@ templates:
       choices_in_prompt: null
       languages: null
       metrics: null
-      original_task: null
+      original_task: true
     name: paraphrase-task_zhmt
     reference: ''
