@@ -17,8 +17,10 @@ templates:
       {% endif %}'
     metadata: !TemplateMetadata
       choices_in_prompt: null
-      languages: null
-      metrics: null
+      languages:
+      - fr
+      metrics:
+      - Accuracy
       original_task: null
     name: similar-sense_frmt
     reference: ''
@@ -42,8 +44,10 @@ templates:
       {% endif %}'
     metadata: !TemplateMetadata
       choices_in_prompt: null
-      languages: null
-      metrics: null
+      languages:
+      - fr
+      metrics:
+      - Accuracy
       original_task: null
     name: grammar_homework_frmt
     reference: ''
@@ -64,8 +68,10 @@ templates:
       {% endif %}'
     metadata: !TemplateMetadata
       choices_in_prompt: null
-      languages: null
-      metrics: null
+      languages:
+      - fr
+      metrics:
+      - Accuracy
       original_task: null
     name: question-context-meaning-with-label_frmt
     reference: ''
@@ -86,8 +92,10 @@ templates:
       {% endif %}'
     metadata: !TemplateMetadata
       choices_in_prompt: null
-      languages: null
-      metrics: null
+      languages:
+      - fr
+      metrics:
+      - Accuracy
       original_task: null
     name: GPT-3-prompt-with-label_frmt
     reference: ''
@@ -109,8 +117,10 @@ templates:
       {% endif %}'
     metadata: !TemplateMetadata
       choices_in_prompt: null
-      languages: null
-      metrics: null
+      languages:
+      - fr
+      metrics:
+      - Accuracy
       original_task: null
     name: polysemous_frmt
     reference: ''
@@ -132,8 +142,10 @@ templates:
       {% endif %}'
     metadata: !TemplateMetadata
       choices_in_prompt: null
-      languages: null
-      metrics: null
+      languages:
+      - fr
+      metrics:
+      - Accuracy
       original_task: null
     name: same_sense_frmt
     reference: ''
@@ -153,8 +165,10 @@ templates:
       {% endif %}'
     metadata: !TemplateMetadata
       choices_in_prompt: null
-      languages: null
-      metrics: null
+      languages:
+      - fr
+      metrics:
+      - Accuracy
       original_task: null
     name: question-context-meaning_frmt
     reference: ''
@@ -176,8 +190,10 @@ templates:
       {% endif %}'
     metadata: !TemplateMetadata
       choices_in_prompt: null
-      languages: null
-      metrics: null
+      languages:
+      - fr
+      metrics:
+      - Accuracy
       original_task: null
     name: affirmation_true_or_false_frmt
     reference: ''
@@ -198,8 +214,10 @@ templates:
       {% endif %}'
     metadata: !TemplateMetadata
       choices_in_prompt: null
-      languages: null
-      metrics: null
+      languages:
+      - fr
+      metrics:
+      - Accuracy
       original_task: null
     name: question-context_frmt
     reference: ''
@@ -220,8 +238,10 @@ templates:
       {% endif %}'
     metadata: !TemplateMetadata
       choices_in_prompt: null
-      languages: null
-      metrics: null
+      languages:
+      - fr
+      metrics:
+      - Accuracy
       original_task: null
     name: GPT-3-prompt_frmt
     reference: ''
