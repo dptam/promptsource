@@ -194,7 +194,7 @@ templates:
       - fr
       metrics:
       - Accuracy
-      original_task: null
+      original_task: true
     name: affirmation_true_or_false_frmt
     reference: ''
   6bf786ed-570b-4f60-9478-ffbaf9eff1f1: !Template
@@ -218,7 +218,7 @@ templates:
       - fr
       metrics:
       - Accuracy
-      original_task: null
+      original_task: true
     name: question-context_frmt
     reference: ''
   f3018e7d-f330-4263-b777-380eb14a5f05: !Template
@@ -242,6 +242,6 @@ templates:
       - fr
       metrics:
       - Accuracy
-      original_task: null
+      original_task: true
     name: GPT-3-prompt_frmt
     reference: ''
