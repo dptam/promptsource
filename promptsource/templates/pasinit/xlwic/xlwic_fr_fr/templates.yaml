@@ -21,7 +21,7 @@ templates:
       - fr
       metrics:
       - Accuracy
-      original_task: null
+      original_task: true
     name: similar-sense_frmt
     reference: ''
   1600d6e0-8a32-443c-b4c7-e6d98b6bb297: !Template
@@ -48,7 +48,7 @@ templates:
       - fr
       metrics:
       - Accuracy
-      original_task: null
+      original_task: true
     name: grammar_homework_frmt
     reference: ''
   23237e14-304a-4cd9-87e2-0feae2c2af1c: !Template
@@ -72,7 +72,7 @@ templates:
       - fr
       metrics:
       - Accuracy
-      original_task: null
+      original_task: true
     name: question-context-meaning-with-label_frmt
     reference: ''
   3c0bd2f3-62a2-42ae-9a89-a98393c1aee3: !Template
@@ -96,7 +96,7 @@ templates:
       - fr
       metrics:
       - Accuracy
-      original_task: null
+      original_task: true
     name: GPT-3-prompt-with-label_frmt
     reference: ''
   3ddbfa6b-603b-478e-98a0-ff71a5e39d0a: !Template
@@ -121,7 +121,7 @@ templates:
       - fr
       metrics:
       - Accuracy
-      original_task: null
+      original_task: true
     name: polysemous_frmt
     reference: ''
   57471fc4-0326-442f-a464-6d90f4658a11: !Template
@@ -146,7 +146,7 @@ templates:
       - fr
       metrics:
       - Accuracy
-      original_task: null
+      original_task: true
     name: same_sense_frmt
     reference: ''
   5b856ac0-24a6-41ae-a767-78573a0e56dc: !Template
@@ -169,7 +169,7 @@ templates:
       - fr
       metrics:
       - Accuracy
-      original_task: null
+      original_task: true
     name: question-context-meaning_frmt
     reference: ''
   68877a29-d08b-45e2-8a41-64f076901452: !Template
