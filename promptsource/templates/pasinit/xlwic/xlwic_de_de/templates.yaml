@@ -1,0 +1,238 @@
+dataset: pasinit/xlwic
+subset: en
+templates:
+  2959eebc-2cc1-4b71-9bf3-f3b58fe53cb5: !Template
+    answer_choices: Nein ||| Ja
+    id: 2959eebc-2cc1-4b71-9bf3-f3b58fe53cb5
+    jinja: 'Tut das Wort "{{target_word}}" haben diese beiden Sätze die gleiche Bedeutung?
+       Ja Nein?
+
+      {{context_1}}
+
+      {{context_2}}
+
+      ||| {% if label != -1%}
+
+      {{answer_choices[label]}}
+
+      {% endif %}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: true
+      languages:
+      - de
+      metrics:
+      - Accuracy
+      original_task: true
+    name: question-context-meaning-with-label_demt
+    reference: Generalized question-context format with label
+  ba3616b4-d456-4be7-bcf9-23e32bcecf83: !Template
+    answer_choices: Nein ||| Ja
+    id: ba3616b4-d456-4be7-bcf9-23e32bcecf83
+    jinja: 'Tut das Wort "{{target_word}}" haben diese beiden Sätze die gleiche Bedeutung?
+
+      {{context_1}}
+
+      {{context_2}}
+
+      ||| {% if label != -1%}
+
+      {{answer_choices[label]}}
+
+      {% endif %}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: false
+      languages:
+      - de
+      metrics:
+      - Accuracy
+      original_task: true
+    name: question-context-meaning_demt
+    reference: Generalized question-context format
+  c7626d2e-0f5c-496b-a8e6-79f28f6a5106: !Template
+    answer_choices: Nein ||| Ja
+    id: c7626d2e-0f5c-496b-a8e6-79f28f6a5106
+    jinja: 'Hausaufgaben
+
+
+      Entscheiden Sie, ob das Wort "{{target_word}}" wird in beiden Fällen mit der gleichen Bedeutung verwendet
+       folgende Sätze. Antwort mit Ja oder Nein.
+
+      {{context_1}}
+
+      {{context_2}}
+
+      ||| {% if label != -1%}
+
+      {{answer_choices[label]}}
+
+      {% endif %}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: true
+      languages:
+      - de
+      metrics:
+      - Accuracy
+      original_task: true
+    name: grammar_homework_demt
+    reference: ''
+  89136ad0-b4f4-4fbf-bd2c-ca6f52a2463f: !Template
+    answer_choices: Falsch ||| Richtig
+    id: 89136ad0-b4f4-4fbf-bd2c-ca6f52a2463f
+    jinja: 'Satz A: {{context_1}}
+
+      Satz B: {{context_2}}
+
+
+      "{{target_word}}" hat in den Sätzen A und B eine ähnliche Bedeutung. Richtig oder falsch?
+
+      ||| {% if label != -1%}
+
+      {{answer_choices[label]}}
+
+      {% endif %}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: true
+      languages:
+      - de
+      metrics:
+      - Accuracy
+      original_task: true
+    name: affirmation_true_or_false_demt
+    reference: ''
+  a6480407-31f7-4f9b-8318-a1bc693c7314: !Template
+    answer_choices: Nein ||| Ja
+    id: a6480407-31f7-4f9b-8318-a1bc693c7314
+    jinja: '{{context_1}}
+
+      {{context_2}}
+
+      Frage: Ist das Wort ''{{target_word}}'' wird in beiden Sätzen im gleichen Sinne verwendet
+       über?
+
+      ||| {% if label != -1%}
+
+      {{answer_choices[label]}}
+
+      {% endif %}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: false
+      languages:
+      - de
+      metrics:
+      - Accuracy
+      original_task: true
+    name: GPT-3-prompt_demt
+    reference: Following table G32. https://arxiv.org/pdf/2005.14165.pdf
+  5bbec887-2f72-4ff8-9cfb-8a37ace3dd47: !Template
+    answer_choices: Nein ||| Ja
+    id: 5bbec887-2f72-4ff8-9cfb-8a37ace3dd47
+    jinja: 'Satz 1: {{context_1}}
+
+      Satz 2: {{context_2}}
+
+
+      Stellen Sie fest, ob das Wort „{{target_word}}“ in beiden Sätzen im gleichen Sinne verwendet wird.
+       Ja oder nein?
+
+      ||| {% if label != -1%}
+
+      {{answer_choices[label]}}
+
+      {% endif %}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: true
+      languages:
+      - de
+      metrics:
+      - Accuracy
+      original_task: true
+    name: same_sense_demt
+    reference: ''
+  e0ce1353-812b-496d-b167-b8f0bbcee945: !Template
+    answer_choices: Nein ||| Ja
+    id: e0ce1353-812b-496d-b167-b8f0bbcee945
+    jinja: "Bestimmen Sie, ob das Wort '{{target_word}}' Stellen Sie fest, ob das Wort in den beiden Sätzen auf die gleiche Weise verwendet wird.
+       \ unten. \n{{context_1}}\n{{context_2}}\n||| {% if label != -1%}\n{{answer_choices[label]}}\n\
+      {% endif %}"
+    metadata: !TemplateMetadata
+      choices_in_prompt: false
+      languages:
+      - de
+      metrics:
+      - Accuracy
+      original_task: true
+    name: question-context_demt
+    reference: Generalized question-context format
+  05611585-39d9-4ca8-8c0b-306a94b5838c: !Template
+    answer_choices: Nein ||| Ja
+    id: 05611585-39d9-4ca8-8c0b-306a94b5838c
+    jinja: '{{context_1}}
+
+      {{context_2}}
+
+      Frage: Ist das Wort ''{{target_word}}'' wird in beiden Sätzen im gleichen Sinne verwendet
+       über? Ja Nein?
+
+      ||| {% if label != -1%}
+
+      {{answer_choices[label]}}
+
+      {% endif %}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: true
+      languages:
+      - de
+      metrics:
+      - Accuracy
+      original_task: true
+    name: GPT-3-prompt-with-label_demt
+    reference: Following table G32. https://arxiv.org/pdf/2005.14165.pdf add additional
+      label
+  c2210da0-68bf-4c33-a71e-8f7cb55a3044: !Template
+    answer_choices: Nein ||| Ja
+    id: c2210da0-68bf-4c33-a71e-8f7cb55a3044
+    jinja: 'Das Wort "{{target_word}}" hat mehrere Bedeutungen. Hat es die gleiche Bedeutung?
+       in den Sätzen 1 und 2? Ja oder nein?
+
+
+      Satz 1: {{context_1}}
+
+      Satz 2: {{context_2}}
+
+      ||| {% if label != -1%}
+
+      {{answer_choices[label]}}
+
+      {% endif %}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: true
+      languages:
+      - de
+      metrics:
+      - Accuracy
+      original_task: true
+    name: polysemous_demt
+    reference: ''
+  e3d3a8c9-fc05-48ef-90cf-443b53c37fb7: !Template
+    answer_choices: Nein ||| Ja
+    id: e3d3a8c9-fc05-48ef-90cf-443b53c37fb7
+    jinja: '{{context_1}}
+
+      {{context_2}}
+
+      Ähnliches Gefühl von {{target_word}}?
+
+      ||| {% if label != -1%}
+
+      {{answer_choices[label]}}
+
+      {% endif %}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: false
+      languages:
+      - de
+      metrics:
+      - Accuracy
+      original_task: true
+    name: similar-sense_demt
+    reference: Following https://arxiv.org/abs/2105.11447, https://github.com/ethanjperez/true_few_shot/tree/main/templates.super_glue

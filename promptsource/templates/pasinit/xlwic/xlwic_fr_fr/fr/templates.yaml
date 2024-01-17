@@ -1,0 +1,237 @@
+dataset: pasinit/xlwic
+subset: fr
+templates:
+  a1d199b2-22f6-4f8b-83ba-56d862a1c61f: !Template
+    answer_choices: Non ||| Oui
+    id: a1d199b2-22f6-4f8b-83ba-56d862a1c61f
+    jinja: 'Est-ce que le mot "{{target_word}}" ont le même sens dans ces deux phrases ?
+      Oui Non?
+
+      {{context_1}}
+
+      {{context_2}}
+
+      ||| {% if label != -1%}
+
+      {{answer_choices[label]}}
+
+      {% endif %}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: true
+      languages:
+      - fr
+      metrics:
+      - Accuracy
+      original_task: true
+    name: question-context-meaning-with-label_frmt
+    reference: Generalized question-context format with label
+  69752871-cdc2-4ee5-a286-b2c9dc75faee: !Template
+    answer_choices: Non ||| Oui
+    id: 69752871-cdc2-4ee5-a286-b2c9dc75faee
+    jinja: 'Est-ce que le mot "{{target_word}}" ont le même sens dans ces deux phrases ?
+
+      {{context_1}}
+
+      {{context_2}}
+
+      ||| {% if label != -1%}
+
+      {{answer_choices[label]}}
+
+      {% endif %}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: false
+      languages:
+      - fr
+      metrics:
+      - Accuracy
+      original_task: true
+    name: question-context-meaning_frmt
+    reference: Generalized question-context format
+  eb31451f-d82b-40a3-a05a-103d6734c357: !Template
+    answer_choices: Non ||| Oui
+    id: eb31451f-d82b-40a3-a05a-103d6734c357
+    jinja: 'Devoirs
+
+
+      Décidez si le mot "{{target_word}}" est utilisé avec la même signification dans les deux Phrases suivantes. Répondez par oui ou par non.
+
+      {{context_1}}
+
+      {{context_2}}
+
+      ||| {% if label != -1%}
+
+      {{answer_choices[label]}}
+
+      {% endif %}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: true
+      languages:
+      - fr
+      metrics:
+      - Accuracy
+      original_task: true
+    name: grammar_homework_frmt
+    reference: ''
+  79e3d79c-a28c-4a56-b8a7-fb0d1485a858: !Template
+    answer_choices: Faux ||| Vrai
+    id: 79e3d79c-a28c-4a56-b8a7-fb0d1485a858
+    jinja: 'Phrase A : {{context_1}}
+
+      Phrase B : {{context_2}}
+
+
+      "{{target_word}}" a une signification similaire dans les phrases A et B. Vrai ou Faux ?
+
+      ||| {% if label != -1%}
+
+      {{answer_choices[label]}}
+
+      {% endif %}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: true
+      languages:
+      - fr
+      metrics:
+      - Accuracy
+      original_task: true
+    name: affirmation_true_or_false_frmt
+    reference: ''
+  5a74228a-2a66-4e57-957c-337b66cc0d2a: !Template
+    answer_choices: Non ||| Oui
+    id: 5a74228a-2a66-4e57-957c-337b66cc0d2a
+    jinja: '{{context_1}}
+
+      {{context_2}}
+
+      Question : Le mot ''{{target_word}}'' utilisé dans le même sens dans les deux phrases
+       au-dessus de?
+
+      ||| {% if label != -1%}
+
+      {{answer_choices[label]}}
+
+      {% endif %}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: false
+      languages:
+      - fr
+      metrics:
+      - Accuracy
+      original_task: true
+    name: GPT-3-prompt_frmt
+    reference: Following table G32. https://arxiv.org/pdf/2005.14165.pdf
+  04fece56-ab28-469a-ba9e-0ca5e52a4899: !Template
+    answer_choices: Non ||| Oui
+    id: 04fece56-ab28-469a-ba9e-0ca5e52a4899
+    jinja: 'Phrase 1 : {{context_1}}
+
+      Phrase 2 : {{context_2}}
+
+
+      Déterminez si le mot "{{target_word}}" est utilisé dans le même sens dans les deux phrases.
+       Oui ou non?
+
+      ||| {% if label != -1%}
+
+      {{answer_choices[label]}}
+
+      {% endif %}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: true
+      languages:
+      - fr
+      metrics:
+      - Accuracy
+      original_task: true
+    name: same_sense_frmt
+    reference: ''
+  c181d6c7-1104-45dc-8d6f-d21eb9761c6e: !Template
+    answer_choices: Non ||| Oui
+    id: c181d6c7-1104-45dc-8d6f-d21eb9761c6e
+    jinja: "Déterminez si le mot '{{target_word}}' est utilisé de la même manière dans les deux phrases\
+       \ ci-dessous. \n{{context_1}}\n{{context_2}}\n||| {% if label != -1%}\n{{answer_choices[label]}}\n\
+      {% endif %}"
+    metadata: !TemplateMetadata
+      choices_in_prompt: false
+      languages:
+      - fr
+      metrics:
+      - Accuracy
+      original_task: true
+    name: question-context_frmt
+    reference: Generalized question-context format
+  4143e502-8002-4c67-bc20-18381f979891: !Template
+    answer_choices: Non ||| Oui
+    id: 4143e502-8002-4c67-bc20-18381f979891
+    jinja: '{{context_1}}
+
+      {{context_2}}
+
+      Question : Le mot ''{{target_word}}'' utilisé dans le même sens dans les deux phrases
+       au-dessus de? Oui Non?
+
+      ||| {% if label != -1%}
+
+      {{answer_choices[label]}}
+
+      {% endif %}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: true
+      languages:
+      - fr
+      metrics:
+      - Accuracy
+      original_task: true
+    name: GPT-3-prompt-with-label_frmt
+    reference: Following table G32. https://arxiv.org/pdf/2005.14165.pdf add additional
+      label
+  8316ae11-51c1-40ac-9f1e-ee8edf8eff53: !Template
+    answer_choices: Non ||| Oui
+    id: 8316ae11-51c1-40ac-9f1e-ee8edf8eff53
+    jinja: 'Le mot "{{target_word}}" a plusieurs significations. Est-ce que ça a la même signification
+       dans les phrases 1 et 2 ? Oui ou non?
+
+
+      Phrase 1: {{context_1}}
+
+      Phrase 2: {{context_2}}
+
+      ||| {% if label != -1%}
+
+      {{answer_choices[label]}}
+
+      {% endif %}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: true
+      languages:
+      - fr
+      metrics:
+      - Accuracy
+      original_task: true
+    name: polysemous_frmt
+    reference: ''
+  8ad37733-c2af-4ee0-bc68-75f315c06bdb: !Template
+    answer_choices: Non ||| Oui
+    id: 8ad37733-c2af-4ee0-bc68-75f315c06bdb
+    jinja: '{{context_1}}
+
+      {{context_2}}
+
+      Un sentiment similaire de {{target_word}}?
+
+      ||| {% if label != -1%}
+
+      {{answer_choices[label]}}
+
+      {% endif %}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: false
+      languages:
+      - fr
+      metrics:
+      - Accuracy
+      original_task: true
+    name: similar-sense_frmt
+    reference: Following https://arxiv.org/abs/2105.11447, https://github.com/ethanjperez/true_few_shot/tree/main/templates.super_glue
