@@ -3,13 +3,13 @@ templates:
   13c02904-e4e2-4b4f-b115-44b437d22041: !Template
     answer_choices: null
     id: 13c02904-e4e2-4b4f-b115-44b437d22041
-    jinja: '{{article{{docment}}}}
+    jinja: '{{document}}
 
 
       ===
 
 
-      Scrivi un riassunto del testo sopra: |||  {{article{{summary}}}}'
+      Scrivi un riassunto del testo sopra: |||  {{summary}}'
     metadata: !TemplateMetadata
       choices_in_prompt: false
       languages:
@@ -22,10 +22,10 @@ templates:
   30292806-8e58-463c-8d92-ba525411c6fa: !Template
     answer_choices: null
     id: 30292806-8e58-463c-8d92-ba525411c6fa
-    jinja: 'Articolo: {{article{{docment}}}}
+    jinja: 'Articolo: {{document}}
 
 
-      Riepilogo: |||  {{article{{summary}}}}'
+      Riepilogo: |||  {{summary}}'
     metadata: !TemplateMetadata
       choices_in_prompt: false
       languages:
@@ -38,9 +38,9 @@ templates:
   3d388a1e-3361-407b-baa7-61397cc58382: !Template
     answer_choices: null
     id: 3d388a1e-3361-407b-baa7-61397cc58382
-    jinja: '{{article{{docment}}}}
+    jinja: '{{document}}
 
-      Come lo riformuleresti in poche parole? |||  {{article{{summary}}}}'
+      Come lo riformuleresti in poche parole? |||  {{summary}}'
     metadata: !TemplateMetadata
       choices_in_prompt: false
       languages:
@@ -56,10 +56,10 @@ templates:
     jinja: 'Il mio compagno di stanza del college mi ha chiesto cosa significa questo articolo:
 
 
-      {{article{{docment}}}}
+      {{document}}
 
 
-      Quindi l`ho ricapitolato in parole povere: |||  {{article{{summary}}}}'
+      Quindi l`ho ricapitolato in parole povere: |||  {{summary}}'
     metadata: !TemplateMetadata
       choices_in_prompt: false
       languages:
@@ -72,9 +72,9 @@ templates:
   57a7a3f1-91f8-4f4b-b72d-745d7cb7b1e3: !Template
     answer_choices: null
     id: 57a7a3f1-91f8-4f4b-b72d-745d7cb7b1e3
-    jinja: '{{article{{docment}}}}
+    jinja: '{{document}}
 
-      Ciò si riduce alla semplice idea che |||  {{article{{summary}}}}'
+      Ciò si riduce alla semplice idea che |||  {{summary}}'
     metadata: !TemplateMetadata
       choices_in_prompt: false
       languages:
@@ -87,9 +87,9 @@ templates:
   65a3c419-57e9-48c2-b090-0c5d7adb23c6: !Template
     answer_choices: null
     id: 65a3c419-57e9-48c2-b090-0c5d7adb23c6
-    jinja: 'Riassumere: {{article{{docment}}}}|||
+    jinja: 'Riassumere: {{document}}|||
 
-       {{article{{summary}}}}'
+       {{summary}}'
     metadata: !TemplateMetadata
       choices_in_prompt: false
       languages:
@@ -102,9 +102,9 @@ templates:
   752fda48-e64c-47a7-8342-17c2c113f600: !Template
     answer_choices: null
     id: 752fda48-e64c-47a7-8342-17c2c113f600
-    jinja: 'Riassumo questo documento: {{article{{docment}}}}
+    jinja: 'Riassumo questo documento: {{document}}
 
-      Riepilogo: |||  {{article{{summary}}}}'
+      Riepilogo: |||  {{summary}}'
     metadata: !TemplateMetadata
       choices_in_prompt: false
       languages:
@@ -117,13 +117,13 @@ templates:
   826ffcd4-c0e6-4f4c-bd9a-fcf8ee169ede: !Template
     answer_choices: null
     id: 826ffcd4-c0e6-4f4c-bd9a-fcf8ee169ede
-    jinja: '{{article{{docment}}}}
+    jinja: '{{document}}
 
 
       ===
 
 
-      Considerato il documento di cui sopra, scrivi una frase per riassumere: |||  {{article{{summary}}}}'
+      Considerato il documento di cui sopra, scrivi una frase per riassumere: |||  {{summary}}'
     metadata: !TemplateMetadata
       choices_in_prompt: false
       languages:
@@ -139,10 +139,10 @@ templates:
     jinja: 'Innanzitutto, leggi l`articolo qui sotto.
 
 
-      {{article{{docment}}}}
+      {{document}}
 
 
-      Ora, puoi scrivermi un abstract estremamente breve al riguardo?  |||  {{article{{summary}}}}'
+      Ora, puoi scrivermi un abstract estremamente breve al riguardo?  |||  {{summary}}'
     metadata: !TemplateMetadata
       choices_in_prompt: false
       languages:
@@ -155,10 +155,10 @@ templates:
   d878b768-9da2-4d9d-9517-1edcca3b1b26: !Template
     answer_choices: null
     id: d878b768-9da2-4d9d-9517-1edcca3b1b26
-    jinja: '{{article{{docment}}}}
+    jinja: '{{document}}
 
 
-      TL;DR: ||| {{article{{summary}}}}'
+      TL;DR ||| {{summary}}'
     metadata: !TemplateMetadata
       choices_in_prompt: false
       languages:
