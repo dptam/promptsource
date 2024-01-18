@@ -1,0 +1,68 @@
+dataset: tydiqa
+subset: primary_task
+templates:
+  16f11e56-a78d-4e33-bba1-586f9947baf7: !Template
+    answer_choices: Да ||| Нет ||| Нет
+    id: 16f11e56-a78d-4e33-bba1-586f9947baf7
+    jinja: 'Интересно {{question_text}}.
+
+      Помогите мне ответить на этот вопрос с помощью «{{answer_choices[0]}}» или «{{answer_choices[1]}}»
+      или «{{answer_choices[2]}}», если ни один из первых двух ответов не применяется.
+
+      Вот что я нашел в Интернете:
+
+      Тема: {{document_title}}
+
+      Статья: {{document_plaintext}}
+
+      |||
+
+      {{annotations.yes_no_answer[0] | capitalize}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: true
+      languages:
+      - en
+      metrics:
+      - Accuracy
+      original_task: true
+    name: en_heres_what_I_found
+    reference: ''
+  297fc59f-bd92-493b-ae61-3c3adcb46eb3: !Template
+    answer_choices: Да ||| Нет ||| Нет
+    id: 297fc59f-bd92-493b-ae61-3c3adcb46eb3
+    jinja: "Вопрос: {{question_text}}\nОтветьте на вопрос с {{\"Yes\"}} или {{\"No\"\
+      }}.Если это невозможно, ответьте {{\"None\"}}.\nПодсказка: {{document_plaintext}}\n
+      |||\n{{annotations.yes_no_answer[0] | capitalize}}"
+    metadata: !TemplateMetadata
+      choices_in_prompt: false
+      languages:
+      - en
+      metrics:
+      - Accuracy
+      original_task: true
+    name: en_yes_no_none
+    reference: ''
+  7b8b7707-dbad-40d2-a5c2-430e6ace10bb: !Template
+    answer_choices: Да ||| Нет ||| Нет
+    id: 7b8b7707-dbad-40d2-a5c2-430e6ace10bb
+    jinja: 'Ответьте на следующий вопрос с «{{answer_choices[0]}}» или «{{answer_choices[1]}}»
+      или «{{answer_choices[2]}}», если ни один из первых двух ответов не применяется.
+
+      Вопрос: {{question_text}}
+
+      Тема: {{document_title}}
+
+      Статья: {{document_plaintext}}
+
+      |||
+
+      {{annotations.yes_no_answer[0] | capitalize}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: true
+      languages:
+      - en
+      metrics:
+      - Accuracy
+      original_task: true
+    name: en_read_and_answer
+    reference: ''

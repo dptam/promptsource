@@ -1,0 +1,68 @@
+dataset: tydiqa
+subset: primary_task
+templates:
+  16f11e56-a78d-4e33-bba1-586f9947baf7: !Template
+    answer_choices: ใช่ ||| ไม่ ||| ไม่มี
+    id: 16f11e56-a78d-4e33-bba1-586f9947baf7
+    jinja: 'ฉันสงสัย {{question_text}}.
+
+      ช่วยฉันตอบคำถามนี้ด้วย "{{answer_choices[0]}}" หรือ "{{answer_choices[1]}}"
+      หรือ "{{answer_choices[2]}}" หากไม่มีคำตอบสองคำแรก
+
+      นี่คือสิ่งที่ฉันพบบนอินเทอร์เน็ต:
+
+      หัวข้อ: {{document_title}}
+
+      บทความ: {{document_plaintext}}
+
+      |||
+
+      {{annotations.yes_no_answer[0] | capitalize}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: true
+      languages:
+      - en
+      metrics:
+      - Accuracy
+      original_task: true
+    name: en_heres_what_I_found
+    reference: ''
+  297fc59f-bd92-493b-ae61-3c3adcb46eb3: !Template
+    answer_choices: ใช่ ||| ไม่ ||| ไม่มี
+    id: 297fc59f-bd92-493b-ae61-3c3adcb46eb3
+    jinja: "คำถาม: {{question_text}}\nตอบคำถามด้วย {{\"Yes\"}} หรือ {{\"No\"}}หากเป็นไปไม่ได้ให้ตอบ
+      {{\"None\"}}\nคำแนะนำ: {{document_plaintext}}\n|||\n{{annotations.yes_no_answer[0]
+      | capitalize}}"
+    metadata: !TemplateMetadata
+      choices_in_prompt: false
+      languages:
+      - en
+      metrics:
+      - Accuracy
+      original_task: true
+    name: en_yes_no_none
+    reference: ''
+  7b8b7707-dbad-40d2-a5c2-430e6ace10bb: !Template
+    answer_choices: ใช่ ||| ไม่ ||| ไม่มี
+    id: 7b8b7707-dbad-40d2-a5c2-430e6ace10bb
+    jinja: 'ตอบคำถามต่อไปนี้ด้วย "{{answer_choices[0]}}" หรือ "{{answer_choices[1]}}"
+      หรือ "{{answer_choices[2]}}" หากไม่มีคำตอบสองคำแรก
+
+      คำถาม: {{question_text}}
+
+      หัวข้อ: {{document_title}}
+
+      บทความ: {{document_plaintext}}
+
+      |||
+
+      {{annotations.yes_no_answer[0] | capitalize}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: true
+      languages:
+      - en
+      metrics:
+      - Accuracy
+      original_task: true
+    name: en_read_and_answer
+    reference: ''
