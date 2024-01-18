@@ -46,25 +46,7 @@ templates:
       - Accuracy
       original_task: true
     name: id_heres_what_I_found
-    reference: ''
-  
-  976fb48f-7135-4344-91c8-cee2e535b8ab: !Template
-    answer_choices: Ya ||| Tidak
-    id: 976fb48f-7135-4344-91c8-cee2e535b8ab
-    jinja: "{% if language == \"indonesian\" %} \n    {% if annotations.yes_no_answer[0]\
-      \ == \"YES\" or annotations.yes_no_answer[0] == \"NO\" %} \nJawab pertanyaan\
-      \ terkait {{document_title}}.\nPertanyaan: {{question_text}}. Ya atau Tidak?\n\
-      ||| \n{{{\"NO\":\"Tidak\",\"YES\": \"Ya\", \"NONE\": \"Tidak ada\"}[annotations.yes_no_answer[0]]}}\n\
-      \    {% endif %}\n{% endif %}"
-    metadata: !TemplateMetadata
-      choices_in_prompt: true
-      languages: []
-      metrics:
-      - Accuracy
-      original_task: false
-    name: id_open_domain_qa
-    reference: Ask Yes/No question
-  
+    reference: ''  
   b368b4af-b8b1-4b0f-ab72-a4db0649ca65: !Template
     answer_choices: Ya ||| Tidak ||| Tidak ada
     id: b368b4af-b8b1-4b0f-ab72-a4db0649ca65
@@ -94,82 +76,3 @@ templates:
       original_task: true
     name: id_read_and_answer
     reference: ''
-  d6139cbc-7b25-4539-80c7-2b0832183951: !Template
-    answer_choices: Ya ||| Tidak
-    id: d6139cbc-7b25-4539-80c7-2b0832183951
-    jinja: "{% if language == \"indonesian\" %} \n    {% if annotations.yes_no_answer[0]\
-      \ == \"YES\" or annotations.yes_no_answer[0] == \"NO\" %} \nJawab pertanyaan\
-      \ terkait {{document_title}}. {{question_text}}\n||| \n{{{\"NO\":\"Tidak\",\"\
-      YES\": \"Ya\", \"NONE\": \"Tidak ada\"}[annotations.yes_no_answer[0]]}}\n  \
-      \  {% endif %} \n{% endif %} "
-    metadata: !TemplateMetadata
-      choices_in_prompt: false
-      languages: []
-      metrics:
-      - Accuracy
-      original_task: false
-    name: id_open_domain_qa_without_choices
-    reference: Answer Yes/No question
-  ebba1db1-daf2-4e40-9dca-4cbe4298cd3e: !Template
-    answer_choices: Ya ||| Tidak
-    id: ebba1db1-daf2-4e40-9dca-4cbe4298cd3e
-    jinja: '{% if language == "indonesian" %}
-
-      {{question_text}}
-
-      Apakah ini termasuk kalimat tanya "Ya/Tidak"?
-
-      |||
-
-      {% if annotations. yes_no_answer[0] == "NONE" %}
-
-      Tidak
-
-      {% else %}
-
-      Ya
-
-      {% endif %}
-
-      {% endif %}'
-    metadata: !TemplateMetadata
-      choices_in_prompt: false
-      languages: []
-      metrics:
-      - Accuracy
-      original_task: false
-    name: id_yes_no_question
-    reference: Ask if this is a yes no question
-  f93c6cde-cd5e-4d25-8549-f186546cea26: !Template
-    answer_choices: Ya ||| Tidak
-    id: f93c6cde-cd5e-4d25-8549-f186546cea26
-    jinja: "{% if language == \"indonesian\" %} \n    {% if annotations.yes_no_answer[0]\
-      \ == \"YES\" or annotations.yes_no_answer[0] == \"NO\" %} \nSetelah membaca\
-      \ potongan teks Wikipedia di bawah ini, mohon jawab pertanyaan: \n{{question_text}}\
-      \ \n{{document_plaintext}}\n||| \n{{{\"NO\":\"Tidak\", \"YES\":\"Ya\", \"NONE\"\
-      : \"Tidak ada\"}[annotations.yes_no_answer[0]]}}\n    {% endif %}\n{% endif\
-      \ %}"
-    metadata: !TemplateMetadata
-      choices_in_prompt: false
-      languages: []
-      metrics:
-      - Accuracy
-      original_task: true
-    name: id_after_reading_the_text
-    reference: Reading Comprehension
-  fe910acd-a156-4f46-a757-4382821fcfd2: !Template
-    answer_choices: Ya ||| Tidak
-    id: fe910acd-a156-4f46-a757-4382821fcfd2
-    jinja: "{% if language == \"indonesian\" %} \n    {% if annotations.yes_no_answer[0]\
-      \ == \"YES\" or annotations.yes_no_answer[0] == \"NO\" %} \nMenurut potongan\
-      \ teks berikut, {{question_text}}\n{{document_plaintext}}\n||| \n{{{\"NO\":\"\
-      Tidak\", \"YES\":\"Ya\", \"NONE\": \"Tidak ada\"}[annotations.yes_no_answer[0]]}}\n\
-      \    {% endif %}\n{% endif %}"
-    metadata: !TemplateMetadata
-      choices_in_prompt: false
-      languages: []
-      metrics:
-      - Accuracy
-      original_task: true
-    name: id_based_on_the_text
-    reference: Binary question without mentioning KB
