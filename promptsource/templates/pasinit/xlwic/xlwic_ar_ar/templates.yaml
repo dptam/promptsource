@@ -1,0 +1,235 @@
+dataset: pasinit/xlwic
+subset: en
+templates:
+  24e73f39-a0d1-44c2-b9a4-4e48f9f1608e: !Template
+    answer_choices: لا ||| نعم
+    id: 24e73f39-a0d1-44c2-b9a4-4e48f9f1608e
+    jinja: 'هل كلمة "{{target_word}}" لها نفس المعنى في هاتين الجملتين؟ نعم / لا؟
+
+      {{context_1}}
+
+      {{context_2}}
+
+      ||| {% إذا تم التصنيف != -1%}
+
+      {{answer_choices[label]}}
+
+      {٪ إنهاء إذا ٪}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: true
+      languages:
+      - en
+      metrics:
+      - Accuracy
+      original_task: true
+    name: question-context-meaning-with-label
+    reference: Generalized question-context format with label
+  4503ead5-4fa5-4f77-95dc-f0c2ed3eecdc: !Template
+    answer_choices: لا ||| نعم
+    id: 4503ead5-4fa5-4f77-95dc-f0c2ed3eecdc
+    jinja: 'هل كلمة "{{target_word}}" لها نفس المعنى في هاتين الجملتين؟
+
+      {{context_1}}
+
+      {{context_2}}
+
+      ||| {% إذا تم التصنيف != -1%}
+
+      {{answer_choices[label]}}
+
+      {٪ إنهاء إذا ٪}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: false
+      languages:
+      - en
+      metrics:
+      - Accuracy
+      original_task: true
+    name: question-context-meaning
+    reference: Generalized question-context format
+  711d13dc-d414-4b9b-9204-e4f325e859e7: !Template
+    answer_choices: لا ||| نعم
+    id: 711d13dc-d414-4b9b-9204-e4f325e859e7
+    jinja: 'العمل في المنزل
+
+
+      قرر ما إذا كانت الكلمة "{{target_word}}" مستخدمة بنفس المعنى في الجملتين التاليتين.
+      الإجابة بنعم أو لا.
+
+      {{context_1}}
+
+      {{context_2}}
+
+      ||| {% إذا تم التصنيف != -1%}
+
+      {{answer_choices[label]}}
+
+      {٪ إنهاء إذا ٪}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: true
+      languages:
+      - en
+      metrics:
+      - Accuracy
+      original_task: true
+    name: grammar_homework
+    reference: ''
+  925b5ed0-7728-4890-95a4-a74cb7ae1bb4: !Template
+    answer_choices: خطأ ||| صحيح
+    id: 925b5ed0-7728-4890-95a4-a74cb7ae1bb4
+    jinja: 'الجملة أ: {{context_1}}
+
+      الجملة ب: {{context_2}}
+
+
+      "{{target_word}}" لها معنى مماثل في الجملتين A وB. صحيح أم خطأ؟
+
+      ||| {% إذا تم التصنيف != -1%}
+
+      {{answer_choices[label]}}
+
+      {٪ إنهاء إذا ٪}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: true
+      languages:
+      - en
+      metrics:
+      - Accuracy
+      original_task: true
+    name: affirmation_true_or_false
+    reference: ''
+  d3a0a5d8-cfe9-4a7f-8a3c-3c526e0ad0c6: !Template
+    answer_choices: لا ||| نعم
+    id: d3a0a5d8-cfe9-4a7f-8a3c-3c526e0ad0c6
+    jinja: '{{context_1}}
+
+      {{context_2}}
+
+      سؤال: هل كلمة {{target_word}} تستخدم بنفس المعنى في الجملتين أعلاه؟
+
+      ||| {% إذا تم التصنيف != -1%}
+
+      {{answer_choices[label]}}
+
+      {٪ إنهاء إذا ٪}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: false
+      languages:
+      - en
+      metrics:
+      - Accuracy
+      original_task: true
+    name: GPT-3-prompt
+    reference: Following table G32. https://arxiv.org/pdf/2005.14165.pdf
+  de8b5a93-1841-4897-84db-b100f1c84f4b: !Template
+    answer_choices: لا ||| نعم
+    id: de8b5a93-1841-4897-84db-b100f1c84f4b
+    jinja: 'الجملة 1: {{context_1}}
+
+      الجملة 2: {{context_2}}
+
+
+      تحديد ما إذا كانت كلمة "{{target_word}}" تستخدم بنفس المعنى في الجملتين. نعم
+      أو لا؟
+
+      ||| {% إذا تم التصنيف != -1%}
+
+      {{answer_choices[label]}}
+
+      {٪ إنهاء إذا ٪}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: true
+      languages:
+      - en
+      metrics:
+      - Accuracy
+      original_task: true
+    name: same_sense
+    reference: ''
+  dfbc1637-10b8-4f20-a31c-55292f3cebd0: !Template
+    answer_choices: لا ||| نعم
+    id: dfbc1637-10b8-4f20-a31c-55292f3cebd0
+    jinja: "حدد ما إذا كانت الكلمة \"{{target_word}}\" مستخدمة بنفس الطريقة في الجملتين
+      أدناه.\n{{context_1}}\n{{context_2}}\n||| {% إذا تم التصنيف != -1%}\n{{answer_choices[label]}}\n
+      {٪ إنهاء إذا ٪}"
+    metadata: !TemplateMetadata
+      choices_in_prompt: false
+      languages:
+      - en
+      metrics:
+      - Accuracy
+      original_task: true
+    name: question-context
+    reference: Generalized question-context format
+  e9e1db2a-ab0b-4621-bb41-01d5788d3873: !Template
+    answer_choices: لا ||| نعم
+    id: e9e1db2a-ab0b-4621-bb41-01d5788d3873
+    jinja: '{{context_1}}
+
+      {{context_2}}
+
+      سؤال: هل كلمة {{target_word}} تستخدم بنفس المعنى في الجملتين أعلاه؟ نعم / لا؟
+
+      ||| {% إذا تم التصنيف != -1%}
+
+      {{answer_choices[label]}}
+
+      {٪ إنهاء إذا ٪}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: true
+      languages:
+      - en
+      metrics:
+      - Accuracy
+      original_task: true
+    name: GPT-3-prompt-with-label
+    reference: Following table G32. https://arxiv.org/pdf/2005.14165.pdf add additional
+      label
+  ed2080cf-3117-49ba-9aff-c988a21fdb69: !Template
+    answer_choices: لا ||| نعم
+    id: ed2080cf-3117-49ba-9aff-c988a21fdb69
+    jinja: 'كلمة "{{target_word}}" لها معاني متعددة. هل لها نفس المعنى في الجملتين
+      1 و 2؟ نعم أو لا؟
+
+
+      الجملة 1: {{context_1}}
+
+      الجملة 2: {{context_2}}
+
+      ||| {% إذا تم التصنيف != -1%}
+
+      {{answer_choices[label]}}
+
+      {٪ إنهاء إذا ٪}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: true
+      languages:
+      - en
+      metrics:
+      - Accuracy
+      original_task: true
+    name: polysemous
+    reference: ''
+  g934a96d-fe4d-4075-aa47-5595b9a604c7: !Template
+    answer_choices: لا ||| نعم
+    id: g934a96d-fe4d-4075-aa47-5595b9a604c7
+    jinja: '{{context_1}}
+
+      {{context_2}}
+
+      شعور مماثل {{target_word}}؟
+
+      ||| {% إذا تم التصنيف != -1%}
+
+      {{answer_choices[label]}}
+
+      {٪ إنهاء إذا ٪}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: false
+      languages:
+      - en
+      metrics:
+      - Accuracy
+      original_task: true
+    name: similar-sense
+    reference: Following https://arxiv.org/abs/2105.11447, https://github.com/ethanjperez/true_few_shot/tree/main/templates.super_glue
