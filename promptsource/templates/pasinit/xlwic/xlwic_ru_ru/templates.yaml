@@ -11,11 +11,11 @@ templates:
 
       {{context_2}}
 
-      ||| {%, если метка != -1%}
+      ||| {% if label != -1%}
 
       {{answer_choices[label]}}
 
-      {% конечный %}'
+      {% endif %}'
     metadata: !TemplateMetadata
       choices_in_prompt: true
       languages:
@@ -34,11 +34,11 @@ templates:
 
       {{context_2}}
 
-      ||| {%, если метка != -1%}
+      ||| {% if label != -1%}
 
       {{answer_choices[label]}}
 
-      {% конечный %}'
+      {% endif %}'
     metadata: !TemplateMetadata
       choices_in_prompt: false
       languages:
@@ -61,11 +61,11 @@ templates:
 
       {{context_2}}
 
-      ||| {%, если метка != -1%}
+      ||| {% if label != -1%}
 
       {{answer_choices[label]}}
 
-      {% конечный %}'
+      {% endif %}'
     metadata: !TemplateMetadata
       choices_in_prompt: true
       languages:
@@ -85,11 +85,11 @@ templates:
 
       «{{target_word}}» имеет схожее значение в предложениях A и B. Верно или неверно?
 
-      ||| {%, если метка != -1%}
+      ||| {% if label != -1%}
 
       {{answer_choices[label]}}
 
-      {% конечный %}'
+      {% endif %}'
     metadata: !TemplateMetadata
       choices_in_prompt: true
       languages:
@@ -109,11 +109,11 @@ templates:
       Вопрос: Используется ли слово «{{target_word}}» в одном и том же смысле в двух
       предложениях выше?
 
-      ||| {%, если метка != -1%}
+      ||| {% if label != -1%}
 
       {{answer_choices[label]}}
 
-      {% конечный %}'
+      {% endif %}'
     metadata: !TemplateMetadata
       choices_in_prompt: false
       languages:
@@ -134,11 +134,11 @@ templates:
       Определите, используется ли слово «{{target_word}}» в одном и том же смысле
       в обоих предложениях. Да или нет?
 
-      ||| {%, если метка != -1%}
+      ||| {% if label != -1%}
 
       {{answer_choices[label]}}
 
-      {% конечный %}'
+      {% endif %}'
     metadata: !TemplateMetadata
       choices_in_prompt: true
       languages:
@@ -152,8 +152,8 @@ templates:
     answer_choices: Нет ||| Да
     id: dfbc1637-10b8-4f20-a31c-55292f3cebd0
     jinja: "Определите, одинаково ли слово «{{target_word}}» используется в двух предложениях
-      ниже.\n{{context_1}}\n{{context_2}}\n||| {%, если метка != -1%}\n{{answer_choices[label]}}\n
-      {% конечный %}"
+      ниже.\n{{context_1}}\n{{context_2}}\n||| {% if label != -1%}\n{{answer_choices[label]}}\n
+      {% endif %}"
     metadata: !TemplateMetadata
       choices_in_prompt: false
       languages:
@@ -173,11 +173,11 @@ templates:
       Вопрос: Используется ли слово «{{target_word}}» в одном и том же смысле в двух
       предложениях выше? Да нет?
 
-      ||| {%, если метка != -1%}
+      ||| {% if label != -1%}
 
       {{answer_choices[label]}}
 
-      {% конечный %}'
+      {% endif %}'
     metadata: !TemplateMetadata
       choices_in_prompt: true
       languages:
@@ -199,11 +199,11 @@ templates:
 
       Предложение 2: {{context_2}}
 
-      ||| {%, если метка != -1%}
+      ||| {% if label != -1%}
 
       {{answer_choices[label]}}
 
-      {% конечный %}'
+      {% endif %}'
     metadata: !TemplateMetadata
       choices_in_prompt: true
       languages:
@@ -222,11 +222,11 @@ templates:
 
       Похожее чувство {{target_word}}?
 
-      ||| {%, если метка != -1%}
+      ||| {% if label != -1%}
 
       {{answer_choices[label]}}
 
-      {% конечный %}'
+      {% endif %}'
     metadata: !TemplateMetadata
       choices_in_prompt: false
       languages:

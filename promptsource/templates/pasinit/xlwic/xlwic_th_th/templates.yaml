@@ -10,11 +10,11 @@ templates:
 
       {{context_2}}
 
-      ||| {% ถ้าป้ายกำกับ != -1%}
+      ||| {% if label != -1%}
 
       {{answer_choices[label]}}
 
-      {% สิ้นสุด %}'
+      {% endif %}'
     metadata: !TemplateMetadata
       choices_in_prompt: true
       languages:
@@ -33,11 +33,11 @@ templates:
 
       {{context_2}}
 
-      ||| {% ถ้าป้ายกำกับ != -1%}
+      ||| {% if label != -1%}
 
       {{answer_choices[label]}}
 
-      {% สิ้นสุด %}'
+      {% endif %}'
     metadata: !TemplateMetadata
       choices_in_prompt: false
       languages:
@@ -60,11 +60,11 @@ templates:
 
       {{context_2}}
 
-      ||| {% ถ้าป้ายกำกับ != -1%}
+      ||| {% if label != -1%}
 
       {{answer_choices[label]}}
 
-      {% สิ้นสุด %}'
+      {% endif %}'
     metadata: !TemplateMetadata
       choices_in_prompt: true
       languages:
@@ -84,11 +84,11 @@ templates:
 
       "{{target_word}}" มีความหมายคล้ายกันในประโยค A และ B จริงหรือเท็จ?
 
-      ||| {% ถ้าป้ายกำกับ != -1%}
+      ||| {% if label != -1%}
 
       {{answer_choices[label]}}
 
-      {% สิ้นสุด %}'
+      {% endif %}'
     metadata: !TemplateMetadata
       choices_in_prompt: true
       languages:
@@ -107,11 +107,11 @@ templates:
 
       คำถาม: คำว่า ''{{target_word}}'' ใช้ในความหมายเดียวกันในสองประโยคข้างต้นหรือไม่
 
-      ||| {% ถ้าป้ายกำกับ != -1%}
+      ||| {% if label != -1%}
 
       {{answer_choices[label]}}
 
-      {% สิ้นสุด %}'
+      {% endif %}'
     metadata: !TemplateMetadata
       choices_in_prompt: false
       languages:
@@ -132,11 +132,11 @@ templates:
       พิจารณาว่าคำว่า "{{target_word}}" ถูกใช้ในความหมายเดียวกันในทั้งสองประโยคหรือไม่
       ใช่หรือไม่?
 
-      ||| {% ถ้าป้ายกำกับ != -1%}
+      ||| {% if label != -1%}
 
       {{answer_choices[label]}}
 
-      {% สิ้นสุด %}'
+      {% endif %}'
     metadata: !TemplateMetadata
       choices_in_prompt: true
       languages:
@@ -150,8 +150,8 @@ templates:
     answer_choices: ไม่ ||| ใช่
     id: dfbc1637-10b8-4f20-a31c-55292f3cebd0
     jinja: "ตรวจสอบว่าคำว่า '{{target_word}}' ถูกใช้ในลักษณะเดียวกันในสองประโยคด้านล่างหรือไม่\n
-      {{context_1}}\n{{context_2}}\n||| {% ถ้าป้ายกำกับ != -1%}\n{{answer_choices[label]}}\n
-      {% สิ้นสุด %}"
+      {{context_1}}\n{{context_2}}\n||| {% if label != -1%}\n{{answer_choices[label]}}\n
+      {% endif %}"
     metadata: !TemplateMetadata
       choices_in_prompt: false
       languages:
@@ -171,11 +171,11 @@ templates:
       คำถาม: คำว่า ''{{target_word}}'' ใช้ในความหมายเดียวกันในสองประโยคข้างต้นหรือไม่
       ใช่ไม่ใช่?
 
-      ||| {% ถ้าป้ายกำกับ != -1%}
+      ||| {% if label != -1%}
 
       {{answer_choices[label]}}
 
-      {% สิ้นสุด %}'
+      {% endif %}'
     metadata: !TemplateMetadata
       choices_in_prompt: true
       languages:
@@ -197,11 +197,11 @@ templates:
 
       ประโยคที่ 2: {{context_2}}
 
-      ||| {% ถ้าป้ายกำกับ != -1%}
+      ||| {% if label != -1%}
 
       {{answer_choices[label]}}
 
-      {% สิ้นสุด %}'
+      {% endif %}'
     metadata: !TemplateMetadata
       choices_in_prompt: true
       languages:
@@ -220,11 +220,11 @@ templates:
 
       ความรู้สึกที่คล้ายกันของ {{target_word}}?
 
-      ||| {% ถ้าป้ายกำกับ != -1%}
+      ||| {% if label != -1%}
 
       {{answer_choices[label]}}
 
-      {% สิ้นสุด %}'
+      {% endif %}'
     metadata: !TemplateMetadata
       choices_in_prompt: false
       languages:

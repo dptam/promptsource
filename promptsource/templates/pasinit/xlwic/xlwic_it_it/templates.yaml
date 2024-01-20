@@ -11,11 +11,11 @@ templates:
 
       {{context_2}}
 
-      ||| {% se etichetta!= -1%}
+      ||| {% if label != -1%}
 
       {{answer_choices[label]}}
 
-      {% finisci se %}'
+      {% endif %}'
     metadata: !TemplateMetadata
       choices_in_prompt: true
       languages:
@@ -34,11 +34,11 @@ templates:
 
       {{context_2}}
 
-      ||| {% se etichetta!= -1%}
+      ||| {% if label != -1%}
 
       {{answer_choices[label]}}
 
-      {% finisci se %}'
+      {% endif %}'
     metadata: !TemplateMetadata
       choices_in_prompt: false
       languages:
@@ -61,11 +61,11 @@ templates:
 
       {{context_2}}
 
-      ||| {% se etichetta!= -1%}
+      ||| {% if label != -1%}
 
       {{answer_choices[label]}}
 
-      {% finisci se %}'
+      {% endif %}'
     metadata: !TemplateMetadata
       choices_in_prompt: true
       languages:
@@ -85,11 +85,11 @@ templates:
 
       "{{target_word}}" ha un significato simile nelle frasi A e B. Vero o falso?
 
-      ||| {% se etichetta!= -1%}
+      ||| {% if label != -1%}
 
       {{answer_choices[label]}}
 
-      {% finisci se %}'
+      {% endif %}'
     metadata: !TemplateMetadata
       choices_in_prompt: true
       languages:
@@ -109,11 +109,11 @@ templates:
       Domanda: la parola ''{{target_word}}'' è usata nello stesso senso nelle due
       frasi sopra?
 
-      ||| {% se etichetta!= -1%}
+      ||| {% if label != -1%}
 
       {{answer_choices[label]}}
 
-      {% finisci se %}'
+      {% endif %}'
     metadata: !TemplateMetadata
       choices_in_prompt: false
       languages:
@@ -134,11 +134,11 @@ templates:
       Determina se la parola "{{target_word}}" è usata nello stesso senso in entrambe
       le frasi. Sì o no?
 
-      ||| {% se etichetta!= -1%}
+      ||| {% if label != -1%}
 
       {{answer_choices[label]}}
 
-      {% finisci se %}'
+      {% endif %}'
     metadata: !TemplateMetadata
       choices_in_prompt: true
       languages:
@@ -152,8 +152,8 @@ templates:
     answer_choices: No ||| Sì
     id: dfbc1637-10b8-4f20-a31c-55292f3cebd0
     jinja: "Determina se la parola '{{target_word}}' è utilizzata allo stesso modo
-      nelle due frasi seguenti.\n{{context_1}}\n{{context_2}}\n||| {% se etichetta!=
-      -1%}\n{{answer_choices[label]}}\n{% finisci se %}"
+      nelle due frasi seguenti.\n{{context_1}}\n{{context_2}}\n||| {% if label !=
+      -1%}\n{{answer_choices[label]}}\n{% endif %}"
     metadata: !TemplateMetadata
       choices_in_prompt: false
       languages:
@@ -173,11 +173,11 @@ templates:
       Domanda: la parola ''{{target_word}}'' è usata nello stesso senso nelle due
       frasi sopra? Si No?
 
-      ||| {% se etichetta!= -1%}
+      ||| {% if label != -1%}
 
       {{answer_choices[label]}}
 
-      {% finisci se %}'
+      {% endif %}'
     metadata: !TemplateMetadata
       choices_in_prompt: true
       languages:
@@ -199,11 +199,11 @@ templates:
 
       Frase 2: {{context_2}}
 
-      ||| {% se etichetta!= -1%}
+      ||| {% if label != -1%}
 
       {{answer_choices[label]}}
 
-      {% finisci se %}'
+      {% endif %}'
     metadata: !TemplateMetadata
       choices_in_prompt: true
       languages:
@@ -222,11 +222,11 @@ templates:
 
       Senso simile di {{target_word}}?
 
-      ||| {% se etichetta!= -1%}
+      ||| {% if label != -1%}
 
       {{answer_choices[label]}}
 
-      {% finisci se %}'
+      {% endif %}'
     metadata: !TemplateMetadata
       choices_in_prompt: false
       languages:

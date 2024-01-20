@@ -10,11 +10,11 @@ templates:
 
       {{context_2}}
 
-      ||| {% إذا تم التصنيف != -1%}
+      ||| {% if label != -1%}
 
       {{answer_choices[label]}}
 
-      {٪ إنهاء إذا ٪}'
+      {% endif %}'
     metadata: !TemplateMetadata
       choices_in_prompt: true
       languages:
@@ -33,11 +33,11 @@ templates:
 
       {{context_2}}
 
-      ||| {% إذا تم التصنيف != -1%}
+      ||| {% if label != -1%}
 
       {{answer_choices[label]}}
 
-      {٪ إنهاء إذا ٪}'
+      {% endif %}'
     metadata: !TemplateMetadata
       choices_in_prompt: false
       languages:
@@ -60,11 +60,11 @@ templates:
 
       {{context_2}}
 
-      ||| {% إذا تم التصنيف != -1%}
+      ||| {% if label != -1%}
 
       {{answer_choices[label]}}
 
-      {٪ إنهاء إذا ٪}'
+      {% endif %}'
     metadata: !TemplateMetadata
       choices_in_prompt: true
       languages:
@@ -82,13 +82,13 @@ templates:
       الجملة ب: {{context_2}}
 
 
-      "{{target_word}}" لها معنى مماثل في الجملتين A وB. صحيح أم خطأ؟
+      "{{target_word}}" لها معنى مشابه في الجملتين A وB. صحيح أم خطأ؟
 
-      ||| {% إذا تم التصنيف != -1%}
+      ||| {% if label != -1%}
 
       {{answer_choices[label]}}
 
-      {٪ إنهاء إذا ٪}'
+      {% endif %}'
     metadata: !TemplateMetadata
       choices_in_prompt: true
       languages:
@@ -107,11 +107,11 @@ templates:
 
       سؤال: هل كلمة {{target_word}} تستخدم بنفس المعنى في الجملتين أعلاه؟
 
-      ||| {% إذا تم التصنيف != -1%}
+      ||| {% if label != -1%}
 
       {{answer_choices[label]}}
 
-      {٪ إنهاء إذا ٪}'
+      {% endif %}'
     metadata: !TemplateMetadata
       choices_in_prompt: false
       languages:
@@ -132,11 +132,11 @@ templates:
       تحديد ما إذا كانت كلمة "{{target_word}}" تستخدم بنفس المعنى في الجملتين. نعم
       أو لا؟
 
-      ||| {% إذا تم التصنيف != -1%}
+      ||| {% if label != -1%}
 
       {{answer_choices[label]}}
 
-      {٪ إنهاء إذا ٪}'
+      {% endif %}'
     metadata: !TemplateMetadata
       choices_in_prompt: true
       languages:
@@ -150,8 +150,8 @@ templates:
     answer_choices: لا ||| نعم
     id: dfbc1637-10b8-4f20-a31c-55292f3cebd0
     jinja: "حدد ما إذا كانت الكلمة \"{{target_word}}\" مستخدمة بنفس الطريقة في الجملتين
-      أدناه.\n{{context_1}}\n{{context_2}}\n||| {% إذا تم التصنيف != -1%}\n{{answer_choices[label]}}\n
-      {٪ إنهاء إذا ٪}"
+      أدناه.\n{{context_1}}\n{{context_2}}\n||| {% if label != -1%}\n{{answer_choices[label]}}\n
+      {% endif %}"
     metadata: !TemplateMetadata
       choices_in_prompt: false
       languages:
@@ -170,11 +170,11 @@ templates:
 
       سؤال: هل كلمة {{target_word}} تستخدم بنفس المعنى في الجملتين أعلاه؟ نعم / لا؟
 
-      ||| {% إذا تم التصنيف != -1%}
+      ||| {% if label != -1%}
 
       {{answer_choices[label]}}
 
-      {٪ إنهاء إذا ٪}'
+      {% endif %}'
     metadata: !TemplateMetadata
       choices_in_prompt: true
       languages:
@@ -196,11 +196,11 @@ templates:
 
       الجملة 2: {{context_2}}
 
-      ||| {% إذا تم التصنيف != -1%}
+      ||| {% if label != -1%}
 
       {{answer_choices[label]}}
 
-      {٪ إنهاء إذا ٪}'
+      {% endif %}'
     metadata: !TemplateMetadata
       choices_in_prompt: true
       languages:
@@ -219,11 +219,11 @@ templates:
 
       شعور مماثل {{target_word}}؟
 
-      ||| {% إذا تم التصنيف != -1%}
+      ||| {% if label != -1%}
 
       {{answer_choices[label]}}
 
-      {٪ إنهاء إذا ٪}'
+      {% endif %}'
     metadata: !TemplateMetadata
       choices_in_prompt: false
       languages:
