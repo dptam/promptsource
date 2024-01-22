@@ -2,7 +2,7 @@ dataset: tydiqa
 subset: primary_task
 templates:
   16f11e56-a78d-4e33-bba1-586f9947baf7: !Template
-    answer_choices: Да ||| Нет ||| Нет
+    answer_choices: Да ||| Нет ||| Никто
     id: 16f11e56-a78d-4e33-bba1-586f9947baf7
     jinja: 'Интересно {{question_text}}.
 
@@ -17,7 +17,7 @@ templates:
 
       |||
 
-      {{annotations.yes_no_answer[0] | capitalize}}'
+      {{{"NO":"Нет","YES": "Да", "NONE": "Никто"}[annotations.yes_no_answer[0]]}}'
     metadata: !TemplateMetadata
       choices_in_prompt: true
       languages:
@@ -32,7 +32,7 @@ templates:
     id: 297fc59f-bd92-493b-ae61-3c3adcb46eb3
     jinja: "Вопрос: {{question_text}}\nОтветьте на вопрос с {{\"Yes\"}} или {{\"No\"\
       }}.Если это невозможно, ответьте {{\"None\"}}.\nПодсказка: {{document_plaintext}}\n
-      |||\n{{annotations.yes_no_answer[0] | capitalize}}"
+      |||\n{{{"NO":"Нет","YES": "Да", "NONE": "Никто"}[annotations.yes_no_answer[0]]}}"
     metadata: !TemplateMetadata
       choices_in_prompt: false
       languages:
@@ -56,7 +56,7 @@ templates:
 
       |||
 
-      {{annotations.yes_no_answer[0] | capitalize}}'
+      {{{"NO":"Нет","YES": "Да", "NONE": "Никто"}[annotations.yes_no_answer[0]]}}'
     metadata: !TemplateMetadata
       choices_in_prompt: true
       languages:

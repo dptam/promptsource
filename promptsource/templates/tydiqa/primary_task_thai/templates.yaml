@@ -17,7 +17,7 @@ templates:
 
       |||
 
-      {{annotations.yes_no_answer[0] | capitalize}}'
+      {{{"NO":"ไม่","YES": "ใช่", "NONE": "ไม่มี"}[annotations.yes_no_answer[0]]}}'
     metadata: !TemplateMetadata
       choices_in_prompt: true
       languages:
@@ -31,8 +31,7 @@ templates:
     answer_choices: ใช่ ||| ไม่ ||| ไม่มี
     id: 297fc59f-bd92-493b-ae61-3c3adcb46eb3
     jinja: "คำถาม: {{question_text}}\nตอบคำถามด้วย {{\"Yes\"}} หรือ {{\"No\"}}หากเป็นไปไม่ได้ให้ตอบ
-      {{\"None\"}}\nคำแนะนำ: {{document_plaintext}}\n|||\n{{annotations.yes_no_answer[0]
-      | capitalize}}"
+      {{\"None\"}}\nคำแนะนำ: {{document_plaintext}}\n|||\n{{{"NO":"ไม่","YES": "ใช่", "NONE": "ไม่มี"}[annotations.yes_no_answer[0]]}}'"
     metadata: !TemplateMetadata
       choices_in_prompt: false
       languages:
@@ -56,7 +55,7 @@ templates:
 
       |||
 
-      {{annotations.yes_no_answer[0] | capitalize}}'
+      {{{"NO":"ไม่","YES": "ใช่", "NONE": "ไม่มี"}[annotations.yes_no_answer[0]]}}'
     metadata: !TemplateMetadata
       choices_in_prompt: true
       languages:
