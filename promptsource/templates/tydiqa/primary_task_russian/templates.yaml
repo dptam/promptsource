@@ -30,9 +30,9 @@ templates:
   297fc59f-bd92-493b-ae61-3c3adcb46eb3: !Template
     answer_choices: Да ||| Нет ||| Нет
     id: 297fc59f-bd92-493b-ae61-3c3adcb46eb3
-    jinja: "Вопрос: {{question_text}}\nОтветьте на вопрос с {{\"Yes\"}} или {{\"No\"\
+    jinja: "Вопрос: {{question_text}}\nОтветьте на вопрос с {{\"Да\"}} или {{\"Нет\"\
       }}.Если это невозможно, ответьте {{\"None\"}}.\nПодсказка: {{document_plaintext}}\n
-      |||\n{{{"NO":"Нет","YES": "Да", "NONE": "Никто"}[annotations.yes_no_answer[0]]}}"
+      |||\n{{{\"NO\":\"Нет\",\"YES\": \"Да\", "NONE": \"Никто\"}[annotations.yes_no_answer[0]]}}"
     metadata: !TemplateMetadata
       choices_in_prompt: false
       languages:
