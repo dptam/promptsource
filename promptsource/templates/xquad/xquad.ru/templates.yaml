@@ -1,0 +1,154 @@
+dataset: xquad
+subset: xquad.en
+templates:
+  10efb2e0-390c-4bab-9dc7-d90db707b6ae: !Template
+    answer_choices:
+    id: 10efb2e0-390c-4bab-9dc7-d90db707b6ae
+    jinja: '{{context}}
+
+
+      Создайте вопрос из приведенного выше отрывка: |||{{question}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: false
+      languages:
+      - en
+      metrics:
+      - BLEU
+      - ROUGE
+      original_task: false
+    name: given_context_generate_question
+    reference: ''
+  120fffe0-b752-43f8-bf50-ecf009703ef0: !Template
+    answer_choices:
+    id: 120fffe0-b752-43f8-bf50-ecf009703ef0
+    jinja: '{{context}}
+
+
+      Q: {{question}}
+
+
+      Ссылаясь на приведенный выше отрывок, правильный ответ на заданный вопрос -
+      |||{{answers["text"][0]}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: false
+      languages:
+      - en
+      metrics:
+      - Squad
+      original_task: true
+    name: answer_given_context_and_question
+    reference: ''
+  32a9896f-34d5-4bde-8843-6d01d4621016: !Template
+    answer_choices:
+    id: 32a9896f-34d5-4bde-8843-6d01d4621016
+    jinja: "{{context}}\n\nСо ссылкой на приведенный выше контекст, {{question}} |||\n\
+      \n{{answers.text[0]}}"
+    metadata: !TemplateMetadata
+      choices_in_prompt: false
+      languages:
+      - en
+      metrics:
+      - Squad
+      original_task: true
+    name: answer_the_question
+    reference: ''
+  4bae0661-a3e5-448a-bfa2-69b096b01283: !Template
+    answer_choices:
+    id: 4bae0661-a3e5-448a-bfa2-69b096b01283
+    jinja: '{{context}}
+
+
+      Из приведенного выше отрывка разумный вопрос с «{{answers["text"][0]}}», поскольку
+      ответ был бы: |||{{question}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: false
+      languages:
+      - en
+      metrics:
+      - BLEU
+      - ROUGE
+      original_task: false
+    name: jeopardy
+    reference: jeopardy style- wiki_qa
+  90b53380-5c3b-4884-8cd1-9b4316da7993: !Template
+    answer_choices:
+    id: 90b53380-5c3b-4884-8cd1-9b4316da7993
+    jinja: 'См. Приведенный ниже отрыв и ответьте на следующий вопрос:
+
+
+      Отрывок: {{context}}
+
+
+      Вопрос 1__
+
+      |||
+
+      {{answers["text"][0]}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: false
+      languages:
+      - en
+      metrics:
+      - Squad
+      original_task: true
+    name: answer_question_given_context
+    reference: ''
+  9cff064e-97e0-4026-94bc-3f7987856ec7: !Template
+    answer_choices:
+    id: 9cff064e-97e0-4026-94bc-3f7987856ec7
+    jinja: '{{context}}
+
+
+      Q: {{question}}
+
+
+      A: |||{{answers["text"][0]}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: false
+      languages:
+      - en
+      metrics:
+      - Squad
+      original_task: true
+    name: given_context_answer_question_variation
+    reference: ''
+  f3d9ac66-1188-40d4-9ac9-17e0af50b788: !Template
+    answer_choices:
+    id: f3d9ac66-1188-40d4-9ac9-17e0af50b788
+    jinja: "Прочитайте следующий отрывок и ответьте на вопрос, который следует:\n\
+      {{context}}\n{{question}}\n|||{{answers.text[0]}}"
+    metadata: !TemplateMetadata
+      choices_in_prompt: false
+      languages: []
+      metrics:
+      - Squad
+      original_task: true
+    name: read_passage
+    reference: ''
+  f3d9bc66-1188-40d4-9ac9-17e0af50b788: !Template
+    answer_choices:
+    id: f3d9bc66-1188-40d4-9ac9-17e0af50b788
+    jinja: "{{question}} Очевидно, это {{answers.text[0]}}.Можете ли вы предоставить
+      мне контекст?|||{{context}}"
+    metadata: !TemplateMetadata
+      choices_in_prompt: false
+      languages: []
+      metrics:
+      - Squad
+      original_task: true
+    name: xp3longcontext
+    reference: ''
+  f3d9bd66-1188-40d4-9ac9-17e0af50b788: !Template
+    answer_choices:
+    id: f3d9bd66-1188-40d4-9ac9-17e0af50b788
+    jinja: "Учитывая ответ {{answers.text[0]}} {{question}}, напишите текст, который
+      объясняет это.Ответ должен начинаться с номера Char {{answers.answer_start[0]}}.Текст:
+      |||{{context}}"
+    metadata: !TemplateMetadata
+      choices_in_prompt: false
+      languages: []
+      metrics:
+      - Squad
+      original_task: true
+    name: xp3longchar
+    reference: ''
