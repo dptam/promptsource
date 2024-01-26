@@ -842,7 +842,7 @@ class DatasetTemplates:
             )
             return {}
         print(self.dataset_name, self.yaml_path)
-        yaml_dict = yaml.load(open(self.yaml_path, "r"), Loader=yaml.FullLoader)
+        yaml_dict = yaml.load(open(self.yaml_path, "r", encoding='utf8'), Loader=yaml.FullLoader)
         return yaml_dict[self.TEMPLATES_KEY]
 
     def write_to_file(self) -> None:
