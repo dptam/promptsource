@@ -45,7 +45,8 @@ templates:
   7b8b7707-dbad-40d2-a5c2-430e6ace10bb: !Template
     answer_choices: ใช่ ||| ไม่ ||| ไม่มี
     id: 7b8b7707-dbad-40d2-a5c2-430e6ace10bb
-    jinja: 'ตอบคำถามต่อไปนี้ด้วย "{{answer_choices[0]}}" หรือ "{{answer_choices[1]}}"
+    jinja: 'ตอบคำถามต่อไปนี้ด้วย "{{answer_choices[0]}}" หรือ "{{answer_choices    
+      [1]}}"
       หรือ "{{answer_choices[2]}}" หากไม่มีคำตอบสองคำแรก
 
       คำถาม: {{question_text}}
