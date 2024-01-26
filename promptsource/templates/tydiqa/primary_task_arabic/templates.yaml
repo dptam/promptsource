@@ -17,7 +17,7 @@ templates:
 
       |||
 
-       {{{"NO":"لا","YES": "نعم", "NONE": "لا أحد"}[annotations.yes_no_answer[0] | capitalize]'
+       {{{"NO":"لا","YES": "نعم", "NONE": "لا أحد"}[annotations.yes_no_answer[0] | capitalize]]}}'
     metadata: !TemplateMetadata
       choices_in_prompt: true
       languages:
@@ -30,9 +30,9 @@ templates:
   297fc59f-bd92-493b-ae61-3c3adcb46eb3: !Template
     answer_choices: نعم ||| لا ||| لا شيء
     id: 297fc59f-bd92-493b-ae61-3c3adcb46eb3
-    jinja: 'سؤال: {{question_text}}\nأجب على السؤال مع {{\"Yes\"}} أو {{\"No\"}}.إذا
+    jinja: 'سؤال: {{question_text}}\nأجب على السؤال مع {{\"Yes\"}} أو {{\"No\"}}.إذا     
       لم يكن ذلك ممكنًا ، أجب {{\"None\"}}.\nتلميح: {{document_plaintext}}\n|||\n
-{{{"NO":"لا","YES": "نعم", "NONE": "لا أحد"}[annotations.yes_no_answer[0] | capitalize]"'
+{{{"NO":"لا","YES": "نعم", "NONE": "لا أحد"}[annotations.yes_no_answer[0] | capitalize]]}}"'
     metadata: !TemplateMetadata
       choices_in_prompt: false
       languages:
@@ -56,7 +56,7 @@ templates:
 
       |||
 
-       {{{"NO":"لا","YES": "نعم", "NONE": "لا أحد"}[annotations.yes_no_answer[0] | capitalize]'
+       {{{"NO":"لا","YES": "نعم", "NONE": "لا أحد"}[annotations.yes_no_answer[0] | capitalize]]}}'
     metadata: !TemplateMetadata
       choices_in_prompt: true
       languages:
