@@ -14,7 +14,7 @@ templates:
       languages: null
       metrics: 
       - Accuracy
-      original_task: null
+      original_task: true
     name: guaranteed/possible/impossible_rumt
     reference: ''
   2858121b-f5e9-4e91-a30a-fc2c7af1c223: !Template
@@ -27,7 +27,7 @@ templates:
       languages: null
       metrics: 
       - Accuracy
-      original_task: null
+      original_task: true
     name: can we infer_rumt
     reference: ''
   67b21e12-5fb0-4bb7-a0fd-3d2bc551d0b2: !Template
@@ -40,7 +40,7 @@ templates:
       languages: null
       metrics: 
       - Accuracy
-      original_task: null
+      original_task: true
     name: justified in saying_rumt
     reference: ''
   9e093809-e6e8-4d5e-af5f-81e69412206e: !Template
@@ -54,7 +54,7 @@ templates:
       languages: null
       metrics:
       - Accuracy
-      original_task: null
+      original_task: true
     name: MNLI crowdsource_rumt
     reference: ''
   e7aa68b6-262a-4802-b6df-04b0fdab3de8: !Template
@@ -69,6 +69,6 @@ templates:
       languages: null
       metrics:
       - Accuracy
-      original_task: null
+      original_task: true
     name: GPT-3 style_rumt
     reference: ''
