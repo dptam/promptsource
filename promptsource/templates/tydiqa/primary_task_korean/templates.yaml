@@ -1,0 +1,67 @@
+dataset: tydiqa
+subset: primary_task
+templates:
+  16f11e56-a78d-4e33-bba1-586f9947baf7: !Template
+    answer_choices: 예 ||| 아니요 ||| 없음
+    id: 16f11e56-a78d-4e33-bba1-586f9947baf7
+    jinja: '{{question_text}} 궁금합니다.
+
+      처음 두 답변 중 어느 것도 해당되지 않는 경우 "{{answer_choices[0]}}", "{{answer_choices[1]}}"
+      또는 "{{answer_choices[2]}}"으로 이 질문에 답변하도록 도와주세요.
+
+      제가 인터넷에서 찾은 내용은 다음과 같습니다.
+
+      주제: {{document_title}}
+
+      기사: {{document_plaintext}}
+
+      |||
+
+      {{{"NO":"아니요","YES": "예", "NONE": "없음"}[annotations.yes_no_answer[0]]}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: true
+      languages:
+      - en
+      metrics:
+      - Accuracy
+      original_task: true
+    name: en_heres_what_I_found
+    reference: ''
+  297fc59f-bd92-493b-ae61-3c3adcb46eb3: !Template
+    answer_choices: 예 ||| 아니요 ||| 없음
+    id: 297fc59f-bd92-493b-ae61-3c3adcb46eb3
+    jinja: '질문: {{question_text}}\n질문에 {{\"Yes\"}} 또는 {{\"No\"}}로 답하세요. 가능하지 않다면 {{\"\
+      None\"}}이라고 대답하세요.\n힌트: {{document_plaintext}}\n|||\n      {{{"NO":"아니요","YES": "예", "NONE": "없음"}[annotations.yes_no_answer[0]]}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: false
+      languages:
+      - en
+      metrics:
+      - Accuracy
+      original_task: true
+    name: en_yes_no_none
+    reference: ''
+  7b8b7707-dbad-40d2-a5c2-430e6ace10bb: !Template
+    answer_choices: 예 ||| 아니요 ||| 없음
+    id: 7b8b7707-dbad-40d2-a5c2-430e6ace10bb
+    jinja: '처음 두 답변 중 어느 것도 해당되지 않는 경우 다음 질문에 "{{answer_choices[0]}}", "{{answer_choices[1]}}"
+      또는 "{{answer_choices[2]}}"로 답하세요.
+
+      질문: {{question_text}}
+
+      주제: {{document_title}}
+
+      기사: {{document_plaintext}}
+
+      |||
+
+      {{{"NO":"아니요","YES": "예", "NONE": "없음"}[annotations.yes_no_answer[0]]}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: true
+      languages:
+      - en
+      metrics:
+      - Accuracy
+      original_task: true
+    name: en_read_and_answer
+    reference: ''

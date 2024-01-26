@@ -1,0 +1,208 @@
+dataset: xsum
+templates:
+  13c02904-e4e2-4b4f-b115-44b437d22041: !Template
+    answer_choices:
+    id: 13c02904-e4e2-4b4f-b115-44b437d22041
+    jinja: '{{document}}
+
+
+      ===
+
+
+      위 텍스트의 요약을 작성하세요: ||| {{summary}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: false
+      languages:
+      - en
+      metrics:
+      - ROUGE
+      - BLEU
+      original_task: true
+    name: DOC_write_summary_of_above
+    reference: ''
+  30292806-8e58-463c-8d92-ba525411c6fa: !Template
+    answer_choices:
+    id: 30292806-8e58-463c-8d92-ba525411c6fa
+    jinja: '기사: {{document}}
+
+
+      요약: ||| {{summary}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: false
+      languages:
+      - en
+      metrics:
+      - ROUGE
+      - BLEU
+      original_task: true
+    name: article_DOC_summary
+    reference: Prefix-Tuning
+  3d388a1e-3361-407b-baa7-61397cc58382: !Template
+    answer_choices:
+    id: 3d388a1e-3361-407b-baa7-61397cc58382
+    jinja: '{{document}}
+
+      그것을 몇 마디로 어떻게 바꾸시겠어요? ||| {{summary}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: false
+      languages:
+      - en
+      metrics:
+      - ROUGE
+      - BLEU
+      original_task: true
+    name: DOC_how_would_you_rephrase_few_words
+    reference: http://gptprompts.wikidot.com/prompt:summarization
+  4cfe4126-b9f5-44eb-8a98-973987c5f32e: !Template
+    answer_choices:
+    id: 4cfe4126-b9f5-44eb-8a98-973987c5f32e
+    jinja: '내 대학 룸메이트가 이 기사의 의미가 무엇인지 물었습니다.
+
+
+      {{document}}
+
+
+      그래서 나는 그것을 일반인의 용어로 요약했습니다: ||| {{summary}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: false
+      languages:
+      - en
+      metrics:
+      - ROUGE
+      - BLEU
+      original_task: true
+    name: college_roommate_asked_DOC_so_I_recap
+    reference: http://gptprompts.wikidot.com/prompt:summarization
+  57a7a3f1-91f8-4f4b-b72d-745d7cb7b1e3: !Template
+    answer_choices:
+    id: 57a7a3f1-91f8-4f4b-b72d-745d7cb7b1e3
+    jinja: '{{document}}
+
+      이는 ||| {{summary}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: false
+      languages:
+      - en
+      metrics:
+      - ROUGE
+      - BLEU
+      original_task: true
+    name: DOC_boils_down_to_simple_idea_that
+    reference: http://gptprompts.wikidot.com/prompt:summarization
+  65a3c419-57e9-48c2-b090-0c5d7adb23c6: !Template
+    answer_choices:
+    id: 65a3c419-57e9-48c2-b090-0c5d7adb23c6
+    jinja: '요약: {{document}}|||
+
+      {{summary}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: false
+      languages:
+      - en
+      metrics:
+      - ROUGE
+      - BLEU
+      original_task: true
+    name: summarize_DOC
+    reference: ''
+  752fda48-e64c-47a7-8342-17c2c113f600: !Template
+    answer_choices:
+    id: 752fda48-e64c-47a7-8342-17c2c113f600
+    jinja: '이 문서를 요약하세요: {{document}}
+
+      요약: ||| {{summary}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: false
+      languages:
+      - en
+      metrics:
+      - ROUGE
+      - BLEU
+      original_task: true
+    name: summarize_this_DOC_summary
+    reference: ''
+  826ffcd4-c0e6-4f4c-bd9a-fcf8ee169ede: !Template
+    answer_choices:
+    id: 826ffcd4-c0e6-4f4c-bd9a-fcf8ee169ede
+    jinja: '{{document}}
+
+
+      ===
+
+
+      위 문서가 주어지면 한 문장으로 요약해 보세요. ||| {{summary}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: false
+      languages:
+      - en
+      metrics:
+      - ROUGE
+      - BLEU
+      original_task: true
+    name: DOC_given_above_write_one_sentence
+    reference: ''
+  9a3f617f-628f-4fa5-9b74-47d0b166a487: !Template
+    answer_choices:
+    id: 9a3f617f-628f-4fa5-9b74-47d0b166a487
+    jinja: '먼저 아래 글을 읽어보시기 바랍니다.
+
+
+      {{document}}
+
+
+      이제 이에 대한 아주 짧은 초록을 써주실 수 있나요? ||| {{summary}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: false
+      languages:
+      - en
+      metrics:
+      - ROUGE
+      - BLEU
+      original_task: true
+    name: read_below_DOC_write_abstract
+    reference: ''
+  d878b768-9da2-4d9d-9517-1edcca3b1b26: !Template
+    answer_choices:
+    id: d878b768-9da2-4d9d-9517-1edcca3b1b26
+    jinja: '{{document}}
+
+
+      요약: ||| {{summary}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: false
+      languages:
+      - en
+      metrics:
+      - ROUGE
+      - BLEU
+      original_task: true
+    name: DOC_tldr
+    reference: GPT-2 TLDR
+  d878b769-9da2-4d9d-9517-1edcca3b1b26: !Template
+    answer_choices:
+    id: d878b769-9da2-4d9d-9517-1edcca3b1b26
+    jinja: '{{summary}}\n위의 요약을 고려할 때 이에 적합한 뉴스 기사는 무엇입니까? ||| {{document}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: false
+      languages:
+      - en
+      metrics:
+      - ROUGE
+      - BLEU
+      original_task: true
+    name: xp3longfittingnews
+    reference: ''
+  d879b768-9da2-4d9d-9517-1edcca3b1b26: !Template
+    answer_choices:
+    id: d879b768-9da2-4d9d-9517-1edcca3b1b26
+    jinja: '"{{summary}}"으로 요약될 수 있는 뉴스 기사를 생성합니다. 기사: ||| {{document}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: false
+      languages:
+      - en
+      metrics:
+      - ROUGE
+      - BLEU
+      original_task: true
+    name: xp3longsummarizedas
+    reference: ''
