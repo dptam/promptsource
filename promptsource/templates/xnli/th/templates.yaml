@@ -9,8 +9,9 @@ templates:
     metadata: !TemplateMetadata
       choices_in_prompt: null
       languages: null
-      metrics: null
-      original_task: null
+      metrics:
+      - Accuracy
+      original_task: true
     name: justified in saying_thmt
     reference: ''
   549bf8a4-c0a9-413d-9f19-0688a89f8099: !Template
@@ -21,8 +22,9 @@ templates:
     metadata: !TemplateMetadata
       choices_in_prompt: null
       languages: null
-      metrics: null
-      original_task: null
+      metrics:
+      - Accuracy
+      original_task: true
     name: can we infer_thmt
     reference: ''
   c50d6c82-c8c8-46df-beef-a7e4fc6fd6fd: !Template
@@ -36,8 +38,9 @@ templates:
     metadata: !TemplateMetadata
       choices_in_prompt: null
       languages: null
-      metrics: null
-      original_task: null
+      metrics:
+      - Accuracy
+      original_task: true
     name: guaranteed/possible/impossible_thmt
     reference: ''
   db82374c-c0f4-48f2-8d8d-f9c682a732f4: !Template
@@ -49,8 +52,9 @@ templates:
     metadata: !TemplateMetadata
       choices_in_prompt: null
       languages: null
-      metrics: null
-      original_task: null
+      metrics:
+      - Accuracy
+      original_task: true
     name: GPT-3 style_thmt
     reference: ''
   dc028dd3-14d3-4e24-b2f4-ebd3930a01e5: !Template
@@ -62,7 +66,8 @@ templates:
     metadata: !TemplateMetadata
       choices_in_prompt: null
       languages: null
-      metrics: null
-      original_task: null
+      metrics:
+      - Accuracy
+      original_task: true
     name: MNLI crowdsource_thmt
     reference: ''
