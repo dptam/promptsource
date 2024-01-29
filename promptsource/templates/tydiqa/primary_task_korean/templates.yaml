@@ -44,7 +44,8 @@ templates:
   7b8b7707-dbad-40d2-a5c2-430e6ace10bb: !Template
     answer_choices: 예 ||| 아니요 ||| 없음
     id: 7b8b7707-dbad-40d2-a5c2-430e6ace10bb
-    jinja: '처음 두 답변 중 어느 것도 해당되지 않는 경우 다음 질문에 "{{answer_choices[0]}}", "{{answer_choices[1]}}"
+    jinja: '처음 두 답변 중 어느 것도 해당되지 않는 경우 다음 질문에 "{{answer_choices[0]}}", "  
+      {{answer_choices[1]}}"
       또는 "{{answer_choices[2]}}"로 답하세요.
 
       질문: {{question_text}}
