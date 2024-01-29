@@ -30,8 +30,8 @@ templates:
   297fc59f-bd92-493b-ae61-3c3adcb46eb3: !Template
     answer_choices: 예 ||| 아니요 ||| 없음
     id: 297fc59f-bd92-493b-ae61-3c3adcb46eb3
-    jinja: '질문: {{question_text}}\n질문에 {{\"Yes\"}} 또는 {{\"No\"}}로 답하세요. 가능하지 않다면 {{\"\
-      None\"}}이라고 대답하세요.\n힌트: {{document_plaintext}}\n|||\n      {{{"NO":"아니요","YES": "예", "NONE": "없음"}[annotations.yes_no_answer[0]]}}'
+    jinja: '질문: {{question_text}}\n질문에 {{"Yes"}} 또는 {{"No"}}로 답하세요. 가능하지 않다면 {{"
+      None"}}이라고 대답하세요.\n힌트: {{document_plaintext}}\n|||\n      {{{"NO":"아니요","YES": "예", "NONE": "없음"}[annotations.yes_no_answer[0]]}}'
     metadata: !TemplateMetadata
       choices_in_prompt: false
       languages:
