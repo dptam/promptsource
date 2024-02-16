@@ -13,8 +13,7 @@ templates:
       ||| __삼__
 
       {{answer_choices[label]}}
-
-      {% endif %}'
+      '
     metadata: !TemplateMetadata
       choices_in_prompt: true
       languages:
@@ -36,8 +35,7 @@ templates:
       ||| __삼__
 
       {{answer_choices[label]}}
-
-      {% endif %}'
+      '
     metadata: !TemplateMetadata
       choices_in_prompt: false
       languages:
@@ -62,8 +60,7 @@ templates:
       ||| __삼__
 
       {{answer_choices[label]}}
-
-      {% endif %}'
+      '
     metadata: !TemplateMetadata
       choices_in_prompt: true
       languages:
@@ -86,8 +83,7 @@ templates:
       ||| __삼__
 
       {{answer_choices[label]}}
-
-      {% endif %}'
+        '
     metadata: !TemplateMetadata
       choices_in_prompt: true
       languages:
@@ -109,8 +105,7 @@ templates:
       ||| __삼__
 
       {{answer_choices[label]}}
-
-      {% endif %}'
+      '
     metadata: !TemplateMetadata
       choices_in_prompt: false
       languages:
@@ -133,8 +128,7 @@ templates:
       ||| __삼__
 
       {{answer_choices[label]}}
-
-      {% endif %}'
+      '
     metadata: !TemplateMetadata
       choices_in_prompt: true
       languages:
@@ -148,7 +142,7 @@ templates:
     answer_choices: 아니요 ||| 예
     id: dfbc1637-10b8-4f20-a31c-55292f3cebd0
     jinja: "아래 두 문장에서 '{{target_word}}'이라는 단어가 같은 방식으로 사용되었는지 확인하세요.\n{{context_1}}\n
-      {{context_2}}\n||| __삼__\n{{answer_choices[label]}}\n{% endif %}"
+      {{context_2}}\n||| __삼__\n{{answer_choices[label]}}\n"
     metadata: !TemplateMetadata
       choices_in_prompt: false
       languages:
@@ -170,8 +164,7 @@ templates:
       ||| __삼__
 
       {{answer_choices[label]}}
-
-      {% endif %}'
+      '
     metadata: !TemplateMetadata
       choices_in_prompt: true
       languages:
@@ -195,8 +188,7 @@ templates:
       ||| __삼__
 
       {{answer_choices[label]}}
-
-      {% endif %}'
+    '
     metadata: !TemplateMetadata
       choices_in_prompt: true
       languages:
@@ -218,8 +210,7 @@ templates:
       ||| __삼__
 
       {{answer_choices[label]}}
-
-      {% endif %}'
+      '
     metadata: !TemplateMetadata
       choices_in_prompt: false
       languages:
