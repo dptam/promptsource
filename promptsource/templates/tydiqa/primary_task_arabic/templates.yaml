@@ -2,7 +2,7 @@ dataset: tydiqa
 subset: primary_task
 templates:
   16f11e56-a78d-4e33-bba1-586f9947baf7: !Template
-    answer_choices: نعم ||| لا ||| لا شيء
+    answer_choices: لا شيء ||| لا ||| نعم  
     id: 16f11e56-a78d-4e33-bba1-586f9947baf7
     jinja: 'أتساءل {{question_text}}.
 
@@ -28,7 +28,7 @@ templates:
     name: en_heres_what_I_found
     reference: ''
     297fc59f-bd92-493b-ae61-3c3adcb46eb3: !Template
-      answer_choices: نعم ||| لا ||| لا شيء
+      answer_choices: لا شيء ||| لا ||| نعم  
       id: 297fc59f-bd92-493b-ae61-3c3adcb46eb3
       jinja: 'سؤال: {{question_text}}\nأجب على السؤال مع {{نع"}} أو {{ل}}.
         إذا            
@@ -44,7 +44,7 @@ templates:
       name: en_yes_no_none
       reference: ''
   7b8b7707-dbad-40d2-a5c2-430e6ace10bb: !Template
-    answer_choices: نعم ||| لا ||| لا شيء
+    answer_choices: لا شيء ||| لا ||| نعم 
     id: 7b8b7707-dbad-40d2-a5c2-430e6ace10bb
     jinja: 'أجب عن السؤال التالي باستخدام "{{answer_choices[0]}}" أو "  
       {{answer_choices[1]}}"
