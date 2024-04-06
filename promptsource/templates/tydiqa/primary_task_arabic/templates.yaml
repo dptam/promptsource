@@ -30,9 +30,9 @@ templates:
     297fc59f-bd92-493b-ae61-3c3adcb46eb3: !Template
       answer_choices: نعم ||| لا ||| لا شيء
       id: 297fc59f-bd92-493b-ae61-3c3adcb46eb3
-      jinja: 'سؤال: {{question_text}}\nأجب على السؤال مع {{\"Yes\"}} أو {{\"No\"}}.
+      jinja: 'سؤال: {{question_text}}\nأجب على السؤال مع {{نع"}} أو {{ل}}.
         إذا            
-        لم يكن ذلك ممكنًا ، أجب {{\"None\"}}.\nتلميح: {{document_plaintext}}\n|||\n
+        لم يكن ذلك ممكنًا ، أجب {{لا شيء}}}.\nتلميح: {{document_plaintext}}\n|||\n
         {{{"NO":"لا","YES": "نعم", "NONE": "لا شيء"}[annotations.yes_no_answer[0] | capitalize]}}"'
       metadata: !TemplateMetadata
         choices_in_prompt: false
@@ -50,7 +50,7 @@ templates:
       {{answer_choices[1]}}"
       أو "{{answer_choices[2]}}" إذا لم يتم تطبيق أي من الإجابات الأولين.
 
-      السؤال 3__
+      سؤال: {{question_text}}
 
       الموضوع: {{document_title}}
 
