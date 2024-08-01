@@ -27,22 +27,22 @@ templates:
       original_task: true
     name: en_heres_what_I_found
     reference: ''
-  297fc59f-bd92-493b-ae61-3c3adcb46eb3: !Template
-    answer_choices: نعم ||| لا ||| لا أحد
-    id: 297fc59f-bd92-493b-ae61-3c3adcb46eb3
-    jinja: 'سؤال: {{question_text}}\nأجب على السؤال مع {{نع"}} أو {{ل}}.
-      إذا            
-      لم يكن ذلك ممكنًا ، أجب {{لا شيء}}}.\nتلميح: {{document_plaintext}}\n|||\n
-      {{{"NO":"لا","YES": "نعم", "NONE": "لا أحد"}[annotations.yes_no_answer[0] | capitalize]}}'
-    metadata: !TemplateMetadata
-      choices_in_prompt: false
-      languages:
-      - en
-      metrics:
-      - Accuracy
-      original_task: true
-    name: en_yes_no_none
-    reference: ''
+  # 297fc59f-bd92-493b-ae61-3c3adcb46eb3: !Template
+  #   answer_choices: نعم ||| لا ||| لا أحد
+  #   id: 297fc59f-bd92-493b-ae61-3c3adcb46eb3
+  #   jinja: 'سؤال: {{question_text}}\nأجب على السؤال مع {{نع"}} أو {{ل}}.
+  #     إذا            
+  #     لم يكن ذلك ممكنًا ، أجب {{لا شيء}}}.\nتلميح: {{document_plaintext}}\n|||\n
+  #     {{{"NO":"لا","YES": "نعم", "NONE": "لا أحد"}[annotations.yes_no_answer[0] | capitalize]}}'
+  #   metadata: !TemplateMetadata
+  #     choices_in_prompt: false
+  #     languages:
+  #     - en
+  #     metrics:
+  #     - Accuracy
+  #     original_task: true
+  #   name: en_yes_no_none
+  #   reference: ''
   7b8b7707-dbad-40d2-a5c2-430e6ace10bb: !Template
     answer_choices: نعم ||| لا ||| لا أحد
     id: 7b8b7707-dbad-40d2-a5c2-430e6ace10bb
