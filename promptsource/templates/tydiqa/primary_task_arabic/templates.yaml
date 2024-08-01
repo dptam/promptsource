@@ -30,10 +30,10 @@ templates:
   297fc59f-bd92-493b-ae61-3c3adcb46eb3: !Template
     answer_choices: نعم ||| لا ||| لا أحد
     id: 297fc59f-bd92-493b-ae61-3c3adcb46eb3
-    jinja: 'سؤال: {{question_text}}\nأجب على السؤال مع {{نع}} أو {{ل}}.
+    jinja: 'سؤال: {{question_text}}أجب على السؤال مع نع أو  ل. 
       إذا            
       لم يكن ذلك ممكنًا ، أجب {{لا شيء}}}.\nتلميح: {{document_plaintext}}\n|||\n
-      {{{"NO":"لا","YES": "نعم", "NONE": "لا أحد"}[annotations.yes_no_answer[0] | capitalize]}}'
+      {{{"NO":"لا","YES": "نعم", "NONE": "لا أحد"}[annotations.yes_no_answer[0] ]}}'
     metadata: !TemplateMetadata
       choices_in_prompt: false
       languages:
