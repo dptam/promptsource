@@ -17,7 +17,7 @@ templates:
 
       |||
 
-       {{{"NO":"لا","YES": "نعم", "NONE": "لا أحد"}[annotations.yes_no_answer[0] | capitalize]}}'
+       {{{"NO":"لا","YES": "نعم", "NONE": "لا أحد"}[annotations.yes_no_answer[0]]}}'
     metadata: !TemplateMetadata
       choices_in_prompt: true
       languages:
@@ -58,7 +58,7 @@ templates:
 
       |||
 
-       {{{"NO":"لا","YES": "نعم", "NONE": "لا أحد"}[annotations.yes_no_answer[0] | capitalize]}}'
+       {{{"NO":"لا","YES": "نعم", "NONE": "لا أحد"}[annotations.yes_no_answer[0]]}}'
     metadata: !TemplateMetadata
       choices_in_prompt: true
       languages:
